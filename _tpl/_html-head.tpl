@@ -5,8 +5,9 @@
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" id="modernizrcom" class="no-js"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title>{{ if $gimme->article->defined }}{{ $gimme->article->name }} | {{ elseif $gimme->section->defined }}{{ $gimme->section->name }} | {{ /if }}{{ $gimme->publication->name }}</title>
   <meta name="author" content="Aleksander Baćko Jeličič" />
@@ -19,6 +20,30 @@
 
   <!-- RSS & Pingback -->
   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://{{ $gimme->publication->site }}/en/static/rss/">
+
+  <!-- Airtime stream info -->
+  <script>
+    // default to SF stream if one has not been set in the back-end
+    var apiSrc = "http://sourcefabric.airtime.pro";
+    var streamSrc = "http://sourcefabric.out.airtime.pro";
+    var stream_a = "sourcefabric_a";
+    var stream_b = "sourcefabric_b";
+    // port shouldn't change but just in case…
+    var port = "8000";
+    {{ local }}
+    {{ set_issue number = "1" }}
+    {{ set_section number = "10" }}
+      {{ list_articles }}
+      {{ if $gimme->article->Location }}
+        apiSrc = "{{ $gimme->article->API }}";
+        streamSrc = "{{ $gimme->article->stream }}";
+        stream_a = "{{ $gimme->article->stream_a }}";
+        stream_b = "{{ $gimme->article->stream_b }}";
+        port = "{{ $gimme->article->port }}";
+      {{ /if }}
+      {{ /list_articles }}
+    {{ /local }}
+  </script>
 
   {{ if $gimme->article->defined }}{{* Open Graph protocol metatags for Facebook sharing *}}
     <meta property="og:title" content="{{$gimme->article->name|html_entity_decode|regex_replace:'/&(.*?)quo;/':'&quot;'}}" />
@@ -47,10 +72,11 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>window.jQuery || document.write("<script src='{{ url static_file="assets/js/libs/jquery.min.js" }}'>\x3C/script>")</script>
-        
+
     <script src="{{ url static_file="assets/js/libs/modernizr-2.0.6.js" }}"></script>
-    
-  <!-- Video.js -->
-  <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
-  <script src="http://vjs.zencdn.net/c/video.js"></script>    
+
+    <!-- Video.js -->
+    <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
+
 </head>

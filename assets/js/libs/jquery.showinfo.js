@@ -5,10 +5,11 @@
 
     var defaults = {
         updatePeriod: 20, //seconds
-        sourceDomain: "http://ryerson.airtime.pro/", //where to get show status from
+        sourceDomain: apiSrc, //where to get show status from
         text: {onAirToday:"On air today"},
         showLimit: 5
     };
+    // console.log('airtime show schedule says apiSrc is ' + apiSrc);
     options = $.extend(true, defaults, options);
     options.sourceDomain = addEndingBackslash(options.sourceDomain);
 
@@ -75,9 +76,10 @@
 
     var defaults = {
         updatePeriod: 5, //seconds
-        sourceDomain: "http://ryerson.airtime.pro/", //where to get show status from
+        sourceDomain: apiSrc, //where to get show status from
         text: {onAirNow:"Listen <span>Live</span>", offline:"Offline", current:"Current", next:"Next"}
     };
+    console.log('airtime live info says apiSrc is ' + apiSrc);
     options = $.extend(true, defaults, options);    
     options.sourceDomain = addEndingBackslash(options.sourceDomain);
 
@@ -175,9 +177,10 @@
 
        var defaults = {
            updatePeriod: 5, //seconds
-           sourceDomain: "http://ryerson.airtime.pro/", //where to get show status from
+           sourceDomain: apiSrc, //where to get show status from
            text: {onAirNow:"Now Playing", offline:"Offline", current:"Current", next:"Next"}
        };
+       console.log('airtime live track info says apiSrc is ' + apiSrc);
        options = $.extend(true, defaults, options);
        options.sourceDomain = addEndingBackslash(options.sourceDomain);
 
@@ -231,7 +234,7 @@
                           /*"</ul>"*/);
                 // click to open player in new window
                 $('#playNow').bind('click',function(){
-                  window.open('http://ryerson.out.airtime.pro:8000/ryerson_a');
+                  window.open(streamSrc + ":" + port + "/" + stream_a);
                 });
            }
 
@@ -261,7 +264,7 @@
  $.fn.airtimeWeekSchedule = function(options) {
 
     var defaults = {
-        sourceDomain: "http://ryerson.airtime.pro/", //where to get show status from
+        sourceDomain: apiSrc, //where to get show status from
         updatePeriod: 600,
         dowText: {monday:"Monday", tuesday:"Tuesday", wednesday:"Wednesday", thursday:"Thursday", friday:"Friday", saturday:"Saturday", sunday:"Sunday"},
         miscText: {time:"Time", programName:"Program Name", details:"Details", readMore:"Read More"}
@@ -351,6 +354,7 @@
                   }, error:airtimeScheduleJsonpError});
             setTimeout(getServerData, options.updatePeriod*1000);
         }
+        console.log('airtime week scehdule says apiSrc is ' + apiSrc);    
     });
  };
 })(jQuery);
