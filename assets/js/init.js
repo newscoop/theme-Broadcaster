@@ -105,19 +105,19 @@ $(document).ready(function() {
 
   // programgrid
   $("#headerLiveHolder").airtimeLiveInfo({
-      sourceDomain: "http://ryerson.airtime.pro",
+      sourceDomain: apiSrc,
       text: {onAirNow:"On Air Now", offline:"Offline", current:"Current", next:"Next"},
       updatePeriod: 20 //seconds
   });
 
   $("#headerLiveTrackHolder").airtimeLiveTrackInfo({
-      sourceDomain: "http://ryerson.airtime.pro",
+      sourceDomain: apiSrc,
       text: {onAirNow:"On Air Now", offline:"Offline", current:"Current", next:"Next"},
       updatePeriod: 20 //seconds
   });
 
   $("#onAirToday").airtimeShowSchedule({
-      sourceDomain: "http://ryerson.airtime.pro",
+      sourceDomain: apiSrc,
       text: {onAirToday:"On air today"},
       updatePeriod: 5, //seconds
       showLimit: 10
@@ -159,7 +159,7 @@ $(document).ready(function() {
 
 
     $("#scheduleTabs").airtimeWeekSchedule({
-      sourceDomain:"http://ryerson.airtime.pro",
+      sourceDomain: apiSrc,
       dowText:{monday:"Monday", tuesday:"Tuesday", wednesday:"Wednesday", thursday:"Thursday", friday:"Friday", saturday:"Saturday", sunday:"Sunday"},
       miscText:{time:"Time", programName:"Program Name", details:"Details", readMore:"Read More"},
       updatePeriod: 600 //seconds
