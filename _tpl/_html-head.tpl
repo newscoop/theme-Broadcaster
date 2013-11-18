@@ -6,40 +6,53 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" id="modernizrcom" class="no-js"> <!--<![endif]-->
 <head>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
   <title>{{ if $gimme->article->defined }}{{ $gimme->article->name }} | {{ elseif $gimme->section->defined }}{{ $gimme->section->name }} | {{ /if }}{{ $gimme->publication->name }}</title>
   <meta name="author" content="Aleksander Baćko Jeličič" />
   {{ if empty($siteinfo) }}{{ $siteinfo=['description' => '', 'keywords' => ''] }}{{ /if }}
   {{* if an article is active, meta-description of web page will be article's intro, otherwise it will pull site's description from System Preferences (/Configure/System Preferences) *}}
-  <meta name="description" content="{{ if $gimme->article->defined }}{{ $gimme->article->deck|strip_tags:false|strip|escape:'html':'utf-8' }}{{ else }}{{ $siteinfo.description }}{{ /if }}">
+  <meta name="description" content="{{ if $gimme->article->defined }}{{ $gimme->article->deck|strip_tags:false|strip|escape:'html':'utf-8' }}{{ else }}{{ $siteinfo.description }}{{ /if }}" />
   {{* if an article is active, meta-keywords will be generated of article keywords (defined on article edit screen), otherwise it will use site-wide keywords from System Preferences (/Configure/System Preferences) *}}
   <meta name="keywords" content="{{ if $gimme->article->defined }}{{ $gimme->article->keywords }}{{ else }}{{$siteinfo.keywords}}{{ /if }}" />
-  <meta name="generator" content="Bluefish 2.0.3" >  
+  <meta name="generator" content="Bluefish 2.0.3" />
 
   <!-- RSS & Pingback -->
-  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://{{ $gimme->publication->site }}/en/static/rss/">
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://{{ $gimme->publication->site }}/en/static/rss/" />
 
   <!-- Airtime stream info -->
   <script>
     // default to SF stream if one has not been set in the back-end
     var apiSrc = "http://sourcefabric.airtime.pro";
     var streamSrc = "http://sourcefabric.out.airtime.pro";
+    // $todo: check browser capability and swap streams
+    // mp3
     var stream_a = "sourcefabric_a";
+    // ogg
     var stream_b = "sourcefabric_b";
     // port shouldn't change but just in case…
     var port = "8000";
     {{ local }}
     {{ set_issue number = "1" }}
     {{ set_section number = "10" }}
-      {{ list_articles }}
-      {{ if $gimme->article->Location }}
+      {{ list_articles length = "1" constraints = "number is 204" }}
+      {{ if $gimme->article->name == "Airtime Info" }}
+        {{ if $gimme->article->API }}
         apiSrc = "{{ $gimme->article->API }}";
+        {{ /if }}
+        {{ if $gimme->article->stream }}
         streamSrc = "{{ $gimme->article->stream }}";
+        {{ /if }}
+        {{ if $gimme->article->stream_a }}
         stream_a = "{{ $gimme->article->stream_a }}";
+        {{ /if }}
+        {{ if $gimme->article->stream_b }}
         stream_b = "{{ $gimme->article->stream_b }}";
+        {{ /if }}
+        {{ if $gimme->article->port }}
         port = "{{ $gimme->article->port }}";
+        {{ /if }}
       {{ /if }}
       {{ /list_articles }}
     {{ /local }}
