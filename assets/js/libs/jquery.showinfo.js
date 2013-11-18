@@ -9,7 +9,6 @@
         text: {onAirToday:"On air today"},
         showLimit: 5
     };
-    // console.log('airtime show schedule says apiSrc is ' + apiSrc);
     options = $.extend(true, defaults, options);
     options.sourceDomain = addEndingBackslash(options.sourceDomain);
 
@@ -79,7 +78,6 @@
         sourceDomain: apiSrc, //where to get show status from
         text: {onAirNow:"Listen <span>Live</span>", offline:"Offline", current:"Current", next:"Next"}
     };
-    console.log('airtime live info says apiSrc is ' + apiSrc);
     options = $.extend(true, defaults, options);    
     options.sourceDomain = addEndingBackslash(options.sourceDomain);
 
@@ -180,7 +178,6 @@
            sourceDomain: apiSrc, //where to get show status from
            text: {onAirNow:"Now Playing", offline:"Offline", current:"Current", next:"Next"}
        };
-       console.log('airtime live track info says apiSrc is ' + apiSrc);
        options = $.extend(true, defaults, options);
        options.sourceDomain = addEndingBackslash(options.sourceDomain);
 
