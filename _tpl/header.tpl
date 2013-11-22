@@ -103,19 +103,6 @@
               <p>Current:</p>
             </div>
 
-            <p class="donate">
-              {{ local }}
-              {{ unset_topic }}
-              {{ set_issue number=1 }}
-              {{ set_section number=5 }}
-              {{ list_articles length=1 constraints="name is Donate" }}
-                <a href="{{ url options='article' }}">CLICK HERE TO <span>DONATE</span></a>
-              {{ /list_articles }}
-              {{ unset_section }}
-              {{ unset_issue }}
-              {{ /local }}
-            </p>
-
         </div><!-- / Header -->
         
         <div id="nav-bar" class="clearfix">
