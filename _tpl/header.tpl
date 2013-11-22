@@ -45,7 +45,7 @@
                           <a href="https://twitter.com/{{ $gimme->article->Twitter }}" rel="external">{{ #followAtTwitter# }}</a>
                         </li>
                       {{ /if }}
-                      {{ if $gimme->article->Twitter }}
+                      {{ if $gimme->article->Facebook }}
                         <li>
                           <a href="https://www.facebook.com/{{ $gimme->article->Facebook }}" rel="external">{{ #likeOnFacebook# }}</a>
                         </li>
