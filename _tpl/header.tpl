@@ -1,4 +1,4 @@
-<body>
+<body dir="{{ if $gimme->issue->language->code == ar }}rtl{{ else }}ltr{{ /if }}">
     <header id="main_header">
         <div id="top" class="clearfix">
 
