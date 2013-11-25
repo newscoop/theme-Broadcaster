@@ -11,22 +11,20 @@
     {{ /list_playlist_articles }}
     </section>
 
-    <div class="chart_home">
-      <h2>Current <span>Charts</span></h2>
-      {{*<h2>CHART <span>{{ $smarty.now|camp_date_format:"%M" }}</span></h2>*}}
-      {{ local }}
-      {{ set_section number="90" }}
-      {{ list_articles length="1" order="byPublishDate desc" }}
-        <ol>
-          <li><span>{{ $gimme->article->one_artist }} - {{ $gimme->article->one_album }}</span></li>
-          <li><span>{{ $gimme->article->two_artist }} - {{ $gimme->article->two_album }}</span></li>
-          <li><span>{{ $gimme->article->three_artist }} - {{ $gimme->article->three_album }}</span></li>
-        </ol>
-        <p><a href="{{ url options='article' }}">Full chart</a></p>
-      {{ /list_articles }}
-      {{ unset_section }}
-      {{ /local }}
-    </div>
+    <article>
+        <h2>LATEST <span>NEWS</span></h2>
+        {{ set_section number="60" }}
+        {{ list_articles length="1" order="bydate desc" }}
+            <figure>
+                <a href="{{ url option='article' }}">{{ include file="_tpl/img/img_onethird.tpl" }}</a>
+            </figure>
+            <h4><a href="{{ url options='article' }}">{{ $gimme->article->name }}</a></h4>
+            <p><span class="time">{{ $gimme->article->publish_date }}</span> /
+            <a class="comments_num" href="{{ url options='article' }}#comments">{{ $gimme->article->comment_count }} comment{{ if $gimme->article->comment_count != 1 }}s{{ /if }}</a></p>
+        {{ /list_articles }}
+        {{ unset_section }}
+    </article>
+
     <div class="current_widget" id="headerLiveHolder">
       <h2>Offline</h2>
     </div>
