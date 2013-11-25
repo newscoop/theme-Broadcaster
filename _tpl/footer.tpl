@@ -1,6 +1,6 @@
   <div id="footer">
       
-    {{ include file="_tpl/sponsors-tweet.tpl" }}
+    {{* include file="_tpl/sponsors-tweet.tpl" *}}
     
     <div id="bottom">
     
@@ -61,10 +61,22 @@
           </ul>
         </li>
         <li>
-          <p>The Scope at Ryerson<br />
-          55 Gould Street - Rm 201<br />
-          Toronto, ON M5B 1E9<br />
-          416.904.6889<p>
+        {{ local }}
+        {{ set_issue number = "1"}}
+        {{ set_section number = "10" }}
+        {{ list_articles constraints = "number is 205" }}
+        {{ if $gimme->article->Address }}
+         {{ $gimme->article->Address }}
+        {{ else }}
+        <p><b>Sourcefabric GmbH</b><br />
+        Prinzessinnenstr. 20, Aufgang A<br />
+        10969 Berlin<br />
+        +49 (0) 30 616 29 281</p>
+        {{ /if }}
+        {{ /list_articles }}
+        {{ unset_section }}
+        {{ unset_issue }}
+        {{ /local }}
         </li>
         <li>
           <p>
