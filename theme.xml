@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<theme name="The Scope" designer="default" version="1.0" require="4.0">
+<theme name="Broadcaster" designer="default" version="1.0" require="4.0">
     <description>Theme for Newscoop Version 4</description>
     
     <presentation-img src="themethumbs/front.jpg" name="Front page" />
@@ -18,9 +18,9 @@
   <renditions>
     <rendition name="front" width="610" height="372" specs="crop" />
     <rendition name="big" width="600" height="400" specs="crop" />
-  <rendition name="onethird" width="290" height="190" specs="crop" />
-  <rendition name="onehalf" width="450" height="295" specs="crop" />
-  <rendition name="square" width="130" height="130" specs="crop" />
+    <rendition name="onethird" width="290" height="190" specs="crop" />
+    <rendition name="onehalf" width="450" height="295" specs="crop" />
+    <rendition name="square" width="130" height="130" specs="crop" />
     <rendition name="square large" width="290" height="290" specs="crop" />
     <rendition name="square album" width="320" height="320" specs="crop" />
     <rendition name="show" width="930" height="260" specs="crop" />
