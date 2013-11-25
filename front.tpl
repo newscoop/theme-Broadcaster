@@ -10,8 +10,6 @@
 
 {{ include file="_tpl/front-playlist-articles.tpl" }}
 
-{{ include file="_tpl/front-three-blocks.tpl" }}
-
       </div><!-- / Content -->
 
 {{ include file="_tpl/footer.tpl" }}
