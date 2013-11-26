@@ -109,56 +109,22 @@
           <a href="#" class="cat-trigger">Content</a>
           {{ local }}
           {{ set_issue number="10" }}
-          {{ $count = 1 }}
           <ul class="show">
             <li><a href="/">Home</a></li>
             {{ list_sections constraints="number not 30 number not 40 number not 80 number not 90 number not 100" }}
 
-            {{ if $count === 1 }}
-            <li>
-              <a href="#">Programs</a>
-              <ul>
               {{ local }}
               {{ set_issue number="1" }}
               {{ list_articles constraints="number is 110"}}
-                <li><a href="{{ url options='article' }}">{{* $gimme->article->number *}}{{ $gimme->article->name }}</a></li>
+                <li><a href="{{ url options='article' }}">{{ $gimme->article->name }}</a></li>
               {{ /list_articles }}
               {{ /local }}
               {{ list_sections constraints="number is 100" }}
-                <li><a href="{{ url options='section' }}">{{* $gimme->section->number *}}Shows</a></li>
+                <li><a href="{{ url options='section' }}">Shows</a></li>
               {{ /list_sections }}
-              {{* list_sections constraints="number is 80" }}
-                <li><a href="{{ url options='section' }}">Podcasts</a></li>
-              {{ /list_sections *}}
-              </ul>
-            </li>
-            {{ /if }}
   
-            {{ if $count === 3 }}
-            <li>
-              <a href="#">Music</a>
-              <ul>
-              {{ list_sections constraints="number greater 20 number smaller 40" }}
-                <li><a href="{{ url options='section' }}">{{* $gimme->section->number *}}{{ $gimme->section->name }}</a></li>
-              {{ /list_sections }}
-              {{ list_sections constraints="number greater 30 number smaller 50" }}
-                <li><a href="{{ url options='section' }}">{{* $gimme->section->number *}}{{ $gimme->section->name }}</a></li>
-              {{ /list_sections }}
-              {{ list_sections constraints="number greater 80 number smaller 100" }}
-              <li><a href="{{ url options='section' }}">{{* $gimme->section->number *}}{{ $gimme->section->name }}</a></li>
-              {{ /list_sections }}
-              {{ local }}
-              {{ set_issue number="1" }}
-              {{ list_articles constraints="name is Charts" }}
-                <li><a href="{{ url options='article' }}">{{* $gimme->article->number *}}{{ $gimme->article->name }}</a></li>
-              {{ /list_articles }}
-                {{*<li><a href="{{ $view->url(['controller' => 'user', 'action' => 'index'], 'default') }}" title="{{ #communityIndex# }}">{{ #artists# }}</a></li>*}}
-              {{ /local }}
-              </ul>
             </li>
-            {{ /if }}
-            <li><a href="{{ url options='section' }}">{{* $gimme->section->number *}}{{ $gimme->section->name }}</a></li>
-            {{ $count = $count + 1 }}
+            <li><a href="{{ url options='section' }}">{{ $gimme->section->name }}</a></li>
           {{ /list_sections }}
           </ul>
           {{ /local }}
