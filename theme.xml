@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<theme name="Broadcaster" designer="default" version="1.0" require="4.0">
-    <description>Theme for Newscoop Version 4</description>
+<theme name="Broadcaster" designer="Pete Haughie" version="1.0" require="4.0">
+    <description>This theme for Newscoop 4 integrates support for the Airtime broadcast automation system. It is based on Rockstar by Stephanie Miebach and Christian Kobben.</description>
     
     <presentation-img src="themethumbs/front.jpg" name="Front page" />
     <presentation-img src="themethumbs/section.jpg" name="Section page" />
