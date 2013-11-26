@@ -80,7 +80,6 @@
         </li>
         <li>
           <p>
-            <a href="mailto:admin@thescopeatryerson.ca">admin@thescopeatryerson.ca</a><br />
             &copy; Powered by <a href="http://www.sourcefabric.org/en/newscoop/" target="_blank">Newscoop</a> and <a href="http://www.sourcefabric.org/en/airtime/" target="_blank">Airtime</a>
           </p>
         </li>
