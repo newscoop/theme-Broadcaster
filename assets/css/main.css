@@ -277,7 +277,7 @@ audio {
 section {
   padding-bottom: 30px;
   margin-bottom: 30px;
-  border-bottom: #dddddd solid 1px;
+  /*border-bottom: @border-color solid 1px;*/
 }
 .cs_img img {
   width: 100%;
