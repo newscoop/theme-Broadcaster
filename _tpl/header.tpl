@@ -12,8 +12,7 @@
                   {{ set_issue number="1" }}
                   {{* Set pages section *}}
                   {{ set_section number="5" }}
-                  {{* List all pages that aren't charts, program grid, or the 'music' section placeholder *}}
-                  {{ list_articles constraints="name not Charts number not 110 number not 111 number not 115 name not Sponsors" order="bynumber asc" }}
+                  {{ list_articles order="bynumber asc" }}
                   <li><a href="{{ url options='article' }}">{{ $gimme->article->name }}</a></li>
                   {{ /list_articles }}
                   {{ /local }}
@@ -87,21 +86,30 @@
         </div><!-- / Top -->
         
         <div id="header" class="clearfix">
-            <h1>
-              <a href="/">Ryerson Radio</a>
-            </h1>
 
-<!--             <div class="radio_player">
-              <h2>LISTEN <span>LIVE</span></h2>
-              <img src="{{ url options='site' }}assets/img/player_buttons.png">
-              <p>Current: Good Morning Canada</p>
-            </div>
- -->
-            <div id="headerLiveTrackHolder" class="radio_player">
-              <h2>Offline</h2>
-              <button id="playNow" aria-controls="audio" title="Begin audio streaming">Play Now</button>
-              <p>Current:</p>
-            </div>
+          <h1>
+            <a href="/">Ryerson Radio</a>
+          </h1>
+
+          <div id="headerLiveTrackHolder" class="radio_player">
+            <h2>Offline</h2>
+            <button id="playNow" aria-controls="audio" title="Begin audio streaming">Play Now</button>
+            <p>Current:</p>
+          </div>
+
+          <nav id="language_select">
+            {{ unset_issue }}
+            {{ unset_language }}
+            <ul>
+            {{ list_issues constraints = "number is 10" }}
+            {{ $currLang = $gimme->language->name }}
+            {{ set_language name="$currLang" }}
+              <li {{ if $gimme->language->name == $gimme->default_language->name }}class="active"{{ /if }}><a href="{{ uri }}">{{ $gimme->language->name }}</a></li>
+            {{ /list_issues }}
+            </ul>
+            {{ set_default_language }}
+            {{ set_default_issue }}
+          </nav>
 
         </div><!-- / Header -->
         
