@@ -120,7 +120,7 @@ audio { width: 100%; }
         max-width: 610px !important;
         width: 100%;
         margin-right: 30px;
-        
+        direction: ltr;
         h2 {
         background: url('../img/slider_bck.png') repeat;
         position: absolute;
@@ -1199,11 +1199,15 @@ aside {
         li {
           float: left;
           margin: 0 10px 0 0;
+          font-family: @font-sec; font-size: 12px;
           a {
             color: #ff5d1a;
             &:hover {
               text-decoration: underline;
               }
+            }
+          &.active {
+            font-weight: bold;
             }
           }
         }
@@ -1221,7 +1225,6 @@ aside {
                     box-sizing: border-box;
                     height: 100%;
                     background-size: 4px 100%;
-                    margin-bottom: 15px;
                     white-space: nowrap;
                     float: right;
                     clear: right;
@@ -1642,7 +1645,9 @@ aside {
 
     .grid-3 article:nth-child(3n) { margin-right: 30px; }
     
-    .bx-wrapper { margin-bottom: 30px !important; }
+    .bx-wrapper {
+      margin-bottom: 30px !important;
+      }
     .chart_home { margin-right: 30px; }
     
     .bottom_box {
@@ -1737,7 +1742,9 @@ aside {
     #main_header #header .radio_player { float: left; margin: 0 20px 20px 0; }
     #main_header #header .donate { float: left; margin: 0px 0px 20px 0px; }
   
-   .home_top .bx-wrapper { max-width: 100% !important; }
+    .home_top .bx-wrapper {
+      max-width: 100% !important;
+      }
    .home_top .chart_home { max-width: 100%; margin-right: 0px; }
    .home_top .current_widget { max-width: 100%; }
   

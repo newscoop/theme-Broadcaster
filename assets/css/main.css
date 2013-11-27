@@ -184,6 +184,7 @@ audio {
   max-width: 610px !important;
   width: 100%;
   margin-right: 30px;
+  direction: ltr;
 }
 .home_top .bx-wrapper h2 {
   background: url('../img/slider_bck.png') repeat;
@@ -1774,12 +1775,17 @@ aside .aside-box p a:hover {
 #main_header #header #language_select li {
   float: left;
   margin: 0 10px 0 0;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-size: 12px;
 }
 #main_header #header #language_select li a {
   color: #ff5d1a;
 }
 #main_header #header #language_select li a:hover {
   text-decoration: underline;
+}
+#main_header #header #language_select li.active {
+  font-weight: bold;
 }
 #main_header #header .radio_player {
   background: url('../img/radio_player_colors.png') no-repeat left center;
@@ -1794,7 +1800,6 @@ aside .aside-box p a:hover {
   box-sizing: border-box;
   height: 100%;
   background-size: 4px 100%;
-  margin-bottom: 15px;
   white-space: nowrap;
   float: right;
   clear: right;
