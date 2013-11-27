@@ -1,7 +1,11 @@
 <section class="home_top">
 
+    {{ $currlang = $gimme->language->code }}
+    {{ $currplaylist = "Carousel-" }}
+    {{ $currplaylist = $currplaylist|cat:$currlang }}
+
     <section class="bxslider">
-    {{ list_playlist_articles name="Carousel" length="4" }}
+    {{ list_playlist_articles name="$currplaylist" length="4" }}
 
         <article>
             <a href="{{ url options='article' }}">{{ include file="_tpl/img/img_front.tpl" where="topfront" }}</a>
