@@ -1768,11 +1768,22 @@ aside .aside-box p a:hover {
   position: relative;
   min-height: 95px;
 }
+#main_header #header #language_select {
+  clear: both;
+}
+#main_header #header #language_select li {
+  float: left;
+  margin: 0 10px 0 0;
+}
+#main_header #header #language_select li a {
+  color: #ff5d1a;
+}
+#main_header #header #language_select li a:hover {
+  text-decoration: underline;
+}
 #main_header #header .radio_player {
   background: url('../img/radio_player_colors.png') no-repeat left center;
   background-color: #fbfbfb;
-  margin-left: 190px;
-  float: left;
   max-width: 260px;
   border: 1px solid #dddddd;
   min-height: 120px;
@@ -1785,6 +1796,8 @@ aside .aside-box p a:hover {
   background-size: 4px 100%;
   margin-bottom: 15px;
   white-space: nowrap;
+  float: right;
+  clear: right;
 }
 #main_header #header .radio_player h2 {
   font-size: 26px;
@@ -1816,15 +1829,24 @@ aside .aside-box p a:hover {
 #main_header #header a {
   text-decoration: none;
 }
-#main_header #header h1 a {
-  max-width: 252px;
+#main_header #header h1 {
+  position: relative;
+  width: 252px;
   height: 110px;
+  float: left;
+}
+#main_header #header h1 a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   margin-bottom: 15px;
   text-indent: -9999px;
   background: url("../img/logo.png") 0 0 no-repeat;
   background-size: 100% auto;
-  float: left;
   width: 100%;
+  height: 100%;
 }
 #main_header #header h4 {
   max-width: 283px;
