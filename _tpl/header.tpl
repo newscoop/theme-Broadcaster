@@ -98,6 +98,7 @@
           </div>
 
           <nav id="language_select">
+            {{ local }}
             {{ unset_issue }}
             {{ unset_language }}
             <ul>
@@ -109,6 +110,7 @@
             </ul>
             {{ set_default_language }}
             {{ set_default_issue }}
+            {{ /local }}
           </nav>
 
         </div><!-- / Header -->
