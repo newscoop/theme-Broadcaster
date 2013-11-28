@@ -2818,6 +2818,27 @@ aside .aside-box p a:hover {
     line-height: 34px;
   }
 }
+/* rtl */
+body[dir=rtl] #main_header #header h1 {
+  float: right;
+}
+body[dir=rtl] #main_header #header .radio_player {
+  position: absolute;
+  left: 0;
+  float: none;
+}
+body[dir=rtl] #main_header #header #language_select ul li {
+  margin-top: 10px;
+  float: right;
+}
+body[dir=rtl] .bx-wrapper {
+  float: right;
+  margin-right: 0;
+  margin-left: 30px;
+}
+body[dir=rtl] .bx-wrapper section h2 {
+  direction: rtl;
+}
 @media (max-width: 400px) {
   comments fieldset ul li.left {
     width: 100%;

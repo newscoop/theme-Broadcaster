@@ -1896,6 +1896,40 @@ aside {
     
 }
 
+/* rtl */
+body[dir=rtl] {
+  #main_header {
+    #header {
+      h1 {
+        float: right;
+        }
+      .radio_player {
+        position: absolute;
+        left: 0;
+        float: none;
+        }
+      #language_select {
+        ul {
+          li {
+            margin-top: 10px;
+            float: right;
+            }
+          }
+        }  
+      }
+    }
+  .bx-wrapper {
+    float: right;
+    margin-right: 0;
+    margin-left: 30px;
+    section {
+      h2 {
+        direction: rtl;
+        }
+      }
+    }
+  }
+
 @media (max-width: 400px) {
     comments fieldset ul li.left { width: 100%;} .comments fieldset ul li textarea { width: 90%; } 
     .article_album {
