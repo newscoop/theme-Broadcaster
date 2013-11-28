@@ -36,6 +36,7 @@
                 <li class="social_links follow"><a href="#">{{ #followUs# }}</a>
                   <ul class="sub">
                     {{ local }}
+                    {{ unset_language }}
                     {{ set_issue number = "1"}}
                     {{ set_section number = "10" }}
                     {{ list_articles constraints = "number is 205" }}
@@ -52,6 +53,7 @@
                     {{ /list_articles }}
                     {{ unset_section }}
                     {{ unset_issue }}
+                    {{ set_default_language }}
                     {{ /local }}
                     <li><a href="http://{{ $gimme->publication->site }}/en/static/rss/">{{ #signupRSS# }}</a></li>
                   </ul>
