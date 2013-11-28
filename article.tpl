@@ -10,6 +10,12 @@
       <div id="content" class="program_grid">
         {{ include file="_tpl/program-grid-cont.tpl" }}
       </div>
+      {{ else if $gimme->section->number == 100 }}
+      <section>
+        <div id="content">
+        {{ include file="_tpl/podcast-cont.tpl" }}
+        </div>
+      </section>
       {{ else }}
       <section class="main entry">
         <div id="content" class="clearfix">
@@ -20,15 +26,11 @@
       </section><!-- / Entry -->
       {{ /if }}
 
-{{*
-      {{ if $gimme->article->number != 127 && $gimme->article->number != 110 && $gimme->section->number != 90 && $gimme->section->number != 80 && $gimme->section->number != 100 }}
-        {{ include file="_tpl/article-aside.tpl" }}
-      {{ /if }}
-
-      {{ if $gimme->article->number != 110 && $gimme->section->number != 80 && $gimme->section->number != 10 && $gimme->section->number != 100 }}
+      {{ if $gimme->section->number != 100 }}
+      {{ include file="_tpl/article-aside.tpl" }}
       <div class="divider"></div>
       {{ /if }}
-*}}
+
       {{ include file="_tpl/footer.tpl" }}
 
   </div><!-- / Wrapper -->
