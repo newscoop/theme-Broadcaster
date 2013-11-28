@@ -28,7 +28,6 @@
 
       {{ if $gimme->section->number != 100 }}
       {{ include file="_tpl/article-aside.tpl" }}
-      <div class="divider"></div>
       {{ /if }}
 
       {{ include file="_tpl/footer.tpl" }}
