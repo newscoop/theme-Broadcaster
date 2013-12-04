@@ -230,8 +230,29 @@
                           // "<li class='next track-metadata'>"+options.text.next+": "+sd.nextTrack.getTitle()+"</span></li>" +
                           /*"</ul>"*/);
                 // click to open player in new window
-                $('#playNow').bind('click',function(){
-                  window.open(streamSrc + ":" + port + "/" + stream_a);
+                $('.desktop button').bind('click', function(){
+                  window.open($url, 'playerWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=no, resizable=no, width=230, height=120');
+                });
+                $('.mobile button').bind('click', function(){
+                  var $url = stream_a;
+                  window.open($url, 'playerWindow');
+                });
+                $('.player #playNow').bind('click', function(){
+                  var audio = new Audio();
+                      audio.src = Modernizr.audio.mp3 ? stream_a + '?callback=?':
+                                  Modernizr.audio.ogg ? stream_b + '?callback=?':
+                                  audio.play();
+                  if (audio.src != null || undefined || '') {
+                    audio.play();
+                    function updatePlayState(){
+                      if (audio.canplay != false || undefined){
+                        $('#playNow').addClass('playing');
+                      }
+                    };
+                    setInterval(function(){
+                      updatePlayState();
+                    }, 100);
+                  }
                 });
            }
 

@@ -1827,6 +1827,9 @@ aside .aside-box p a:hover {
   margin-top: 0px;
   border: none;
 }
+#main_header #header .radio_player #playNow.playing {
+  background: url('../img/pause_btn.png') no-repeat 0 0;
+}
 #main_header #header .radio_player img {
   float: right;
   display: inline-block;

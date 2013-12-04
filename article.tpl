@@ -2,6 +2,13 @@
 
 {{ include file="_tpl/_html-head.tpl" }}
 
+
+  {{ if $gimme->article->number == 206 }}
+
+  {{ include file="_tpl/player_header.tpl" }}
+
+  {{ else }}
+
   {{ include file="_tpl/header.tpl" }}
 
   <div id="wrapper">
@@ -33,6 +40,8 @@
       {{ include file="_tpl/footer.tpl" }}
 
   </div><!-- / Wrapper -->
+
+  {{ /if }}
 
 {{ include file="_tpl/_html-foot.tpl" }}
 

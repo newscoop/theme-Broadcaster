@@ -1241,16 +1241,19 @@ aside {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 }
-                    #playNow { 
-                            background: url('../img/play_btn.png') no-repeat 0 0;
-                            height: 44px;
-                            width: 44px;
-                            text-indent: -9999em;
-                            cursor: pointer;
-                            display: inline-block;
-                            margin-top: 0px;
-                            border: none;
-                            }
+                #playNow { 
+                  background: url('../img/play_btn.png') no-repeat 0 0;
+                  height: 44px;
+                  width: 44px;
+                  text-indent: -9999em;
+                  cursor: pointer;
+                  display: inline-block;
+                  margin-top: 0px;
+                  border: none;
+                  &.playing {
+                    background: url('../img/pause_btn.png') no-repeat 0 0;
+                    }
+                  }
                     img { float: right; display: inline-block; }
                     }
 

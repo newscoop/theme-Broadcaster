@@ -93,7 +93,24 @@
             <a href="/">Ryerson Radio</a>
           </h1>
 
-          <div id="headerLiveTrackHolder" class="radio_player">
+          {{ if $gimme->browser->ua_type == "mobile" }}
+          <div id="headerLiveTrackHolder" class="radio_player mobile">
+          {{ else }}
+          <div id="headerLiveTrackHolder" class="radio_player desktop">
+            {{ local }}
+            {{ set_publication number = "2" }}
+            {{ set_issue number = "1" }}
+            {{ set_section number = "10" }}
+            {{ list_articles length = "1" constraints = "number is 206" }}
+            <script>
+            var $url = '{{ $gimme->article->url }}';
+            </script>
+            {{ /list_articles }}
+            {{ unset_section }}
+            {{ set_default_issue }}
+            {{ set_default_publication }}
+            {{ /local }}
+          {{ /if }}
             <h2>Offline</h2>
             <button id="playNow" aria-controls="audio" title="Begin audio streaming">Play Now</button>
             <p>Current:</p>
