@@ -99,6 +99,7 @@
             <p>Current:</p>
           </div>
 
+          {{*
           <nav id="language_select">
             {{ local }}
             {{ unset_issue }}
@@ -114,6 +115,7 @@
             {{ set_default_issue }}
             {{ /local }}
           </nav>
+          *}}
 
         </div><!-- / Header -->
         
