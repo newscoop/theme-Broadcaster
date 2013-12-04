@@ -1,5 +1,5 @@
 @import "reset.css";
-@import "http://fonts.googleapis.com/css?family=PT+Sans:700,400,400italic|PT+Sans+Narrow:700|Droid+Serif:400,400italic,700,700italic";
+@import "fonts.css";
 .text-indent {
   text-indent: -9999px;
 }
@@ -8,7 +8,7 @@
   list-style-type: none;
 }
 p {
-  font-family: 'Droid Serif', Arial, Helvetica, serif;
+  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
   color: #444444;
   line-height: 20px;
 }
@@ -25,8 +25,8 @@ p {
   line-height: 35px;
 }
 .title p a {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-  color: #222222;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  color: #000000;
   font-size: 13px;
   font-style: normal;
   text-decoration: none;
@@ -39,7 +39,7 @@ p {
 h2 {
   font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
   font-size: 35px;
-  color: #222222;
+  color: #000000;
   line-height: 35px;
   text-transform: uppercase;
 }
@@ -47,7 +47,7 @@ h2 span {
   color: #ff5d1a;
 }
 h2 a {
-  color: #222222;
+  color: #000000;
   text-decoration: none;
 }
 h2 a:hover {
@@ -55,7 +55,7 @@ h2 a:hover {
 }
 h3,
 h4 {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 h3 {
@@ -72,10 +72,10 @@ h3 a:hover {
 }
 h4 {
   font-size: 13px;
-  color: #222222;
+  color: #000000;
 }
 h4 a {
-  color: #222222;
+  color: #000000;
   text-decoration: none;
 }
 h4 a:hover {
@@ -83,9 +83,9 @@ h4 a:hover {
 }
 .paging {
   margin-left: 5px;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 13px;
-  color: #222222;
+  color: #000000;
   font-weight: bold;
   list-style: none;
 }
@@ -94,7 +94,7 @@ h4 a:hover {
   display: inline-block;
 }
 .paging a {
-  color: #222222;
+  color: #000000;
   text-decoration: none;
 }
 .paging a.active {
@@ -112,7 +112,7 @@ h4 a:hover {
   top: 0px;
 }
 .title .paging .jump {
-  font-family: 'Droid Serif', Arial, Helvetica, serif;
+  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
   font-style: italic;
   color: #444444;
   font-weight: normal;
@@ -121,7 +121,7 @@ h4 a:hover {
   position: relative;
   padding: 0 0 25px 0;
   margin-bottom: 30px;
-  border-bottom: #dddddd 1px solid;
+  border-bottom: #b23b09 1px solid;
 }
 .paging-holder .paging {
   display: block;
@@ -135,7 +135,7 @@ h4 a:hover {
 }
 .paging-holder .paging li .prev,
 .paging-holder .paging li .next {
-  font-family: 'Droid Serif', Arial, Helvetica, serif;
+  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
 }
 .paging-holder .prev,
 .paging-holder .next {
@@ -149,10 +149,10 @@ h4 a:hover {
 }
 .paging-holder .prev span,
 .paging-holder .next span {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: bold;
-  color: #222222;
+  color: #000000;
   font-style: normal;
 }
 .paging-holder .prev:hover,
@@ -166,7 +166,7 @@ h4 a:hover {
   right: 0;
 }
 body {
-  font-family: 'Droid Serif', Arial, Helvetica, serif;
+  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
   background: url("../img/top-background.png") 0 0 repeat-x #ffffff;
 }
 #wrapper {
@@ -227,7 +227,7 @@ audio {
   margin-left: 0px;
 }
 .home_top .chart_home ol li {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
@@ -260,7 +260,7 @@ audio {
 }
 .home_top .current_widget ul li {
   display: block;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
@@ -312,7 +312,7 @@ article .time a {
   font-weight: bold;
   font-style: italic;
   text-decoration: none;
-  color: #222222;
+  color: #000000;
   font-size: 10px;
 }
 article .date a:hover,
@@ -343,7 +343,7 @@ article .comments_num {
   font-weight: bold;
   font-style: italic;
   text-decoration: none;
-  color: #222222;
+  color: #000000;
   font-size: 10px;
 }
 article .comments_num:hover {
@@ -357,7 +357,7 @@ article .more {
   font-style: italic;
 }
 article .more a {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 13px;
   color: #444444;
   text-decoration: none;
@@ -373,7 +373,7 @@ article small {
   font-size: 10px;
 }
 article small a {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -407,11 +407,11 @@ article .info {
   left: 0;
   top: 0;
   width: 100%;
-  background: #222222;
+  background: #000000;
 }
 article .info li {
   padding: 2px 5px;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 12px;
   color: #fff;
   font-weight: bold;
@@ -469,7 +469,7 @@ article .info li a {
   margin-bottom: 15px;
 }
 .article_show article span {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: bold;
   font-style: italic;
@@ -492,10 +492,10 @@ article .info li a {
 }
 .article_show .show_years a {
   font-size: 18px;
-  color: #222222;
+  color: #000000;
   float: left;
   display: inline-block;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-decoration: none;
   background: url('../img/bullet-3.png') no-repeat left center;
@@ -509,7 +509,7 @@ article .info li a {
 }
 .article_show .show_archive a.archive_play {
   font-size: 12px;
-  color: #222222;
+  color: #000000;
   display: block;
   text-decoration: none;
   font-style: italic;
@@ -532,7 +532,7 @@ article .info li a {
   height: 4px;
 }
 .article_chart {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 14px;
   margin-bottom: 30px;
 }
@@ -569,7 +569,7 @@ article .info li a {
   background: #fbf0d3;
 }
 .article_chart tbody tr .label_col {
-  font-family: 'Droid Serif', Arial, Helvetica, serif;
+  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
   font-style: italic;
 }
 .artist_profile article {
@@ -621,7 +621,7 @@ article .info li a {
 .years_section .grid-3 ul {
   list-style: none;
   margin-left: 0px;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-weight: bold;
   -moz-column-count: 2;
   /* Firefox */
@@ -643,8 +643,8 @@ article .info li a {
 }
 .years_section .grid-3 ul li a {
   text-decoration: none;
-  color: #222222;
-  font-family: 'Droid Serif', Arial, Helvetica, serif;
+  color: #000000;
+  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
   font-weight: normal;
   font-style: italic;
   margin-top: 20px;
@@ -722,11 +722,11 @@ article .info li a {
   padding: 15px 33px;
 }
 .program_grid .tabs li a {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  color: #222222;
+  color: #000000;
 }
 .program_grid .tabs li.active {
   background: #fff;
@@ -779,7 +779,7 @@ article .info li a {
   border-top: none;
 }
 .program_grid table .time_grid {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
 }
 .program_grid table .more_grid {
   text-align: right;
@@ -825,11 +825,11 @@ article .info li a {
 }
 .program_grid .color_legend {
   color: #767676;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   margin: 20px 0px 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #b23b09;
 }
 .program_grid .color_legend li {
   max-width: 105px;
@@ -882,7 +882,7 @@ article .info li a {
   position: relative;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: #b23b09 solid 1px;
 }
 .form-content dl {
   margin-bottom: 10px;
@@ -928,7 +928,7 @@ article .info li a {
 .form-content #attributes-email_public-label {
   display: block;
   float: left;
-  font-family: 'Droid Serif', Arial, Helvetica, serif;
+  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
   line-height: 25px;
   font-style: italic;
   color: #444444;
@@ -944,8 +944,8 @@ article .info li a {
 }
 .form-content #attributes-gender-element label {
   float: left;
-  color: #222222;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-style: normal;
 }
 .form-content #attributes-gender-element label input {
@@ -992,7 +992,7 @@ article .info li a {
   width: 222px;
   padding: 0 10px;
   margin-bottom: 18px;
-  font-family: 'Droid Serif', Arial, Helvetica, serif;
+  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
   font-size: 12px;
   font-style: italic;
   color: #444444;
@@ -1006,7 +1006,7 @@ article .info li a {
 .form-content input[type=submit] {
   height: 25px;
   width: 244px;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: bold;
   color: #fff;
@@ -1024,7 +1024,7 @@ article .info li a {
   display: inline-block;
   padding-left: 20px;
   margin-left: 14px;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: bold;
   color: #ff5d1a;
@@ -1163,7 +1163,7 @@ article .info li a {
 }
 .grid-6 article .article {
   margin-bottom: 15px;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: #b23b09 solid 1px;
 }
 .grid-6 article .article:last-child {
   border-bottom: 0;
@@ -1176,7 +1176,7 @@ article .info li a {
   height: 78px;
 }
 .grid-6 article .article h4 em {
-  font-family: 'Droid Serif', Arial, Helvetica, serif;
+  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
   font-style: italic;
   font-size: 10px;
   text-transform: none;
@@ -1186,12 +1186,12 @@ article .info li a {
 }
 .grid-6.extended article {
   margin-bottom: 30px;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: #b23b09 solid 1px;
 }
 .grid-6.extended-small article {
   padding-bottom: 15px;
   margin-bottom: 20px;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: #b23b09 solid 1px;
   max-height: 220px;
   min-height: 220px;
 }
@@ -1301,7 +1301,7 @@ article .info li a {
   float: left;
 }
 .article_album .social_links ul li a {
-  color: #222222;
+  color: #000000;
   text-decoration: none;
 }
 .article_album .social_links ul li a:hover {
@@ -1311,7 +1311,7 @@ article .info li a {
   clear: both;
   margin-bottom: 30px;
   padding-top: 20px;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: #b23b09 solid 1px;
 }
 .main {
   float: left;
@@ -1322,7 +1322,7 @@ article .info li a {
   float: none;
   padding-bottom: 20px;
   margin-bottom: 30px;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: #b23b09 solid 1px;
 }
 .entry article p {
   margin-bottom: 10px;
@@ -1337,13 +1337,13 @@ article .info li a {
 .entry article blockquote {
   padding: 5px 15px 7px;
   margin-bottom: 10px;
-  color: #222222;
+  color: #000000;
   font-style: italic;
   background: #dddddd;
 }
 .entry article blockquote p {
   margin: 0;
-  color: #222222;
+  color: #000000;
 }
 .entry article figure {
   margin-bottom: 0px;
@@ -1358,7 +1358,7 @@ article .info li a {
 .entry article figure figcaption em {
   font-size: 10px;
   font-weight: bold;
-  color: #222222;
+  color: #000000;
 }
 .entry article ul {
   margin: 0;
@@ -1367,7 +1367,7 @@ article .info li a {
 }
 .entry article ul li {
   padding-left: 26px;
-  font-family: 'Droid Serif', Arial, Helvetica, serif;
+  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
   font-size: 13px;
   line-height: 20px;
   background: url(../img/bullet-3.png) 10px 7px no-repeat;
@@ -1386,7 +1386,7 @@ article .info li a {
   overflow: hidden;
   clear: both;
   margin-bottom: 20px;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: #b23b09 solid 1px;
 }
 .author-info p,
 .author-info h3 {
@@ -1397,7 +1397,7 @@ article .info li a {
 }
 .author-info p em b {
   font-size: 10px;
-  color: #222222;
+  color: #000000;
 }
 .author-info img {
   float: left;
@@ -1409,9 +1409,9 @@ article .info li a {
   right: 0;
 }
 .author-info .more a {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 13px;
-  color: #222222;
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
 }
@@ -1422,13 +1422,13 @@ article .info li a {
   margin: 0;
   list-style-type: none;
   margin-bottom: 30px;
-  border-top: #dddddd solid 1px;
+  border-top: #b23b09 solid 1px;
 }
 .comments ol li {
   position: relative;
   min-height: 60px;
   padding: 20px 0 20px 80px;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: #b23b09 solid 1px;
 }
 .comments ol li img {
   position: absolute;
@@ -1438,10 +1438,10 @@ article .info li a {
 .comments ol li h5 {
   margin-bottom: 5px;
   font-size: 12px;
-  color: #222222;
+  color: #000000;
 }
 .comments ol li h5 a {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   color: #ff5d1a;
   text-decoration: none;
   text-transform: uppercase;
@@ -1450,9 +1450,9 @@ article .info li a {
   text-decoration: underline;
 }
 .comments ol li h5 em {
-  font-family: 'Droid Serif', Arial, Helvetica, serif;
+  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
   font-size: 10px;
-  color: #222222;
+  color: #000000;
   font-weight: bold;
 }
 .comments ol li p {
@@ -1471,7 +1471,7 @@ article .info li a {
 }
 .comments fieldset ul input[type=text],
 .comments fieldset ul textarea {
-  font-family: 'Droid Serif', Arial, Helvetica, serif;
+  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
   font-size: 12px;
   font-style: italic;
   color: #444444;
@@ -1493,12 +1493,12 @@ article .info li a {
 .comments fieldset ul input.button {
   width: 225px;
   height: 50px;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
-  background: #222222;
+  background: #000000;
   border: 0;
 }
 .comments fieldset ul input.button:hover {
@@ -1515,7 +1515,7 @@ aside section,
 aside .aside-box {
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: #b23b09 solid 1px;
 }
 aside section:last-child,
 aside .aside-box:last-child {
@@ -1537,11 +1537,11 @@ aside .aside-box p a:hover {
   margin: 0;
   list-style-type: none;
   margin-top: 20px;
-  border-top: #dddddd solid 1px;
+  border-top: #b23b09 solid 1px;
 }
 .list-large li {
   padding: 20px 0 0 0;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: #b23b09 solid 1px;
 }
 .geo_map_mapcanvas {
   width: 100% !important;
@@ -1552,7 +1552,7 @@ aside .aside-box p a:hover {
 }
 #top h3 {
   float: left;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   color: #fff;
   font-size: 13px;
   text-transform: none;
@@ -1597,7 +1597,7 @@ aside .aside-box p a:hover {
   display: block;
   padding: 0 10px 0 27px;
   margin-right: 20px;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   color: #fff;
   font-size: 13px;
   line-height: 35px;
@@ -1612,7 +1612,7 @@ aside .aside-box p a:hover {
   left: -10px;
   z-index: 100;
   width: 150px;
-  background: #222222;
+  background: #000000;
 }
 #top .top-menu ul li .sub li {
   float: none;
@@ -1645,7 +1645,7 @@ aside .aside-box p a:hover {
 #top .top-menu ul li .login-box fieldset p,
 #top .top-menu ul li .login-box fieldset input[type=text],
 #top .top-menu ul li .login-box fieldset input.button {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 12px;
   color: #fff;
   font-style: italic;
@@ -1725,7 +1725,7 @@ aside .aside-box p a:hover {
   width: 88px;
   height: 23px;
   padding: 0 30px 0 10px;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 12px;
   color: #fff;
   font-style: italic;
@@ -1756,7 +1756,7 @@ aside .aside-box p a:hover {
 #main_header {
   width: 100%;
   margin: 0 auto 30px auto;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #b23b09;
 }
 #main_header #top,
 #main_header #header,
@@ -1775,7 +1775,7 @@ aside .aside-box p a:hover {
 #main_header #header #language_select li {
   float: left;
   margin: 0 10px 0 0;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
 #main_header #header #language_select li a {
@@ -1810,7 +1810,7 @@ aside .aside-box p a:hover {
   line-height: 28px;
 }
 #main_header #header .radio_player p {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   margin-top: 5px;
 }
 #main_header #header .radio_player .current {
@@ -1870,7 +1870,7 @@ aside .aside-box p a:hover {
 }
 #nav-bar a.cat-trigger {
   display: none;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 13px;
   color: #fff;
   text-transform: uppercase;
@@ -1892,8 +1892,8 @@ aside .aside-box p a:hover {
 }
 #nav-bar ul li a {
   display: block;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-  color: #222222;
+  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
+  color: #000000;
   line-height: 49px;
   text-transform: uppercase;
   font-size: 16px;
@@ -1906,7 +1906,7 @@ aside .aside-box p a:hover {
 }
 #nav-bar ul li ul {
   display: none;
-  border: 1px solid #dddddd;
+  border: 1px solid #b23b09;
   z-index: 999;
   background: #fff;
   margin-left: -10px;
@@ -1930,15 +1930,15 @@ aside .aside-box p a:hover {
   top: 0;
   right: 10px;
   float: none;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-  color: #222222;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  color: #000000;
   line-height: 49px;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
 }
 #nav-bar .right a {
-  color: #222222;
+  color: #000000;
   text-decoration: none;
 }
 #nav-bar .right a:hover {
@@ -1950,7 +1950,7 @@ aside .aside-box p a:hover {
 }
 #pages_top a.cat-trigger {
   display: none;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-size: 13px;
   color: #fff;
   text-transform: uppercase;
@@ -1972,7 +1972,7 @@ aside .aside-box p a:hover {
 }
 #pages_top ul li a {
   display: block;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   padding: 0px;
   margin-right: 10px;
   color: #fff;
@@ -1989,15 +1989,15 @@ aside .aside-box p a:hover {
   top: 0;
   right: 10px;
   float: none;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-  color: #222222;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  color: #000000;
   line-height: 49px;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
 }
 #pages_top .right a {
-  color: #222222;
+  color: #000000;
   text-decoration: none;
 }
 #pages_top .right a:hover {
@@ -2024,7 +2024,7 @@ aside .aside-box p a:hover {
 #bottom ul li li {
   float: none;
   margin: 0;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   color: #1a171b;
   font-size: 12px;
   line-height: 15px;
@@ -2070,7 +2070,7 @@ aside .aside-box p a:hover {
 .bottom_box ul {
   list-style: none;
   margin-left: 0px;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   font-weight: bold;
   -moz-column-count: 2;
   /* Firefox */
@@ -2085,7 +2085,7 @@ aside .aside-box p a:hover {
   width: 100%;
 }
 .bottom_box ul li {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #b23b09;
   padding: 10px 0px;
   display: inline-block;
   width: 100%;
@@ -2109,8 +2109,8 @@ aside .aside-box p a:hover {
 .bottom_box .tweet_wrap .tweet_meta {
   padding: 10px 0px 10px 40px;
   margin-top: 20px;
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #b23b09;
+  border-bottom: 1px solid #b23b09;
   background: url('../img/tw_icon.png') no-repeat 10px center;
 }
 .bottom_box .tweet_wrap .tweet_meta:before {
@@ -2126,7 +2126,7 @@ aside .aside-box p a:hover {
   overflow: hidden;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: #b23b09 solid 1px;
 }
 .event-map #map-canvas {
   height: 275px;
@@ -2138,15 +2138,15 @@ aside .aside-box p a:hover {
 }
 .event-map p.right,
 .event-map p.left a {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-  color: #222222;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  color: #000000;
   font-size: 13px;
   font-weight: bold;
   font-style: normal;
 }
 .event-map p a {
   text-decoration: none;
-  color: #222222;
+  color: #000000;
 }
 .event-map p a:hover {
   text-decoration: underline;
@@ -2160,7 +2160,7 @@ aside .aside-box p a:hover {
 .comments-list li {
   padding-bottom: 5px;
   margin-bottom: 5px;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: #b23b09 solid 1px;
 }
 .article-list li:first-child,
 .comments-list li:first-child {
@@ -2185,13 +2185,13 @@ aside .aside-box p a:hover {
 .page-title h2 {
   padding-bottom: 20px;
   margin-bottom: 30px;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: #b23b09 solid 1px;
 }
 .section-search {
   overflow: hidden;
   padding-bottom: 20px;
   margin-bottom: 30px;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: #b23b09 solid 1px;
 }
 .section-search fieldset {
   float: left;
@@ -2202,7 +2202,7 @@ aside .aside-box p a:hover {
   width: 255px;
   height: 23px;
   padding: 0 5px 0 10px;
-  font-family: 'Droid Serif', Arial, Helvetica, serif;
+  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
   font-size: 12px;
   font-style: italic;
   color: #444444;
@@ -2224,7 +2224,7 @@ aside .aside-box p a:hover {
   float: left;
   padding-left: 20px;
   margin-right: 14px;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   line-height: 25px;
   background: url(../img/bullet-3.png) 0 50% no-repeat;
 }
@@ -2254,7 +2254,7 @@ aside .aside-box p a:hover {
 .user-slider li {
   overflow: hidden;
   float: left;
-  background: #222222;
+  background: #000000;
   width: 100%;
 }
 .user-slider li article {
@@ -2263,7 +2263,7 @@ aside .aside-box p a:hover {
 }
 .user-slider li article h3,
 .user-slider li article p {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
   color: #fff;
   font-weight: bold;
   text-transform: none;
@@ -2311,7 +2311,7 @@ aside .aside-box p a:hover {
   padding: 5px 0 5px 20px;
   background-image: url(../img/feed-icons.png);
   background-repeat: no-repeat;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: #b23b09 solid 1px;
 }
 .community-feed li:last-child {
   border-bottom: 0;
@@ -2329,7 +2329,7 @@ aside .aside-box p a:hover {
 }
 .community-feed li p small {
   font-size: 10px;
-  color: #222222;
+  color: #000000;
   font-weight: bold;
 }
 .community-feed li p a {
@@ -2652,7 +2652,7 @@ aside .aside-box p a:hover {
     z-index: 10;
     width: 300px;
     padding: 10px;
-    background: #222222;
+    background: #000000;
   }
   #top .top-menu .search-box .hiden input {
     width: 255px;
@@ -2676,8 +2676,8 @@ aside .aside-box p a:hover {
     clear: both;
     padding-top: 20px;
     margin-top: 15px;
-    border-top: #dddddd solid 1px;
-    border-bottom: #dddddd solid 1px;
+    border-top: #b23b09 solid 1px;
+    border-bottom: #b23b09 solid 1px;
   }
   #header .grid-3-top article {
     width: 45%;
@@ -2702,7 +2702,7 @@ aside .aside-box p a:hover {
     left: 0;
     z-index: 100;
     width: 100%;
-    background: #222222;
+    background: #000000;
   }
   #nav-bar ul.show li {
     float: none;
@@ -2770,7 +2770,7 @@ aside .aside-box p a:hover {
     left: 0;
     z-index: 100;
     width: 100%;
-    background: #222222;
+    background: #000000;
   }
   #pages_top ul.show li {
     float: none;
@@ -2811,7 +2811,7 @@ aside .aside-box p a:hover {
     clear: both;
   }
   .social_links ul li a {
-    color: #222222;
+    color: #000000;
     text-decoration: none;
   }
   #top .top-menu ul li .sub li a {
