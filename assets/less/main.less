@@ -2,12 +2,12 @@
 @import "reset.css";
 
 // Fonts
-@import "http://fonts.googleapis.com/css?family=PT+Sans:700,400,400italic|PT+Sans+Narrow:700|Droid+Serif:400,400italic,700,700italic";
+@import "fonts.css";
 
 // Global Variables
 @main-color: #ff5d1a;
-@sec-color: #222222;
-@border-color: #dddddd;
+@sec-color: #000000;
+@border-color: #B23B09;
 @title-article-color: #1a171b;
 @body-text-color: #444444; 
 
@@ -16,8 +16,8 @@
 .list-reset {margin:0; list-style-type: none;}
 
 // Font Families
-@font-prim: 'Droid Serif', Arial, Helvetica, serif;
-@font-sec: 'PT Sans', Arial, Helvetica, sans-serif;
+@font-prim: 'RockwellStdRegular', Arial, Helvetica, serif;
+@font-sec: 'Droid Serif', Arial, Helvetica, sans-serif;
 @font-ter: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
 
 // Global type styles
@@ -1304,7 +1304,7 @@ aside {
             &:first-child {padding-left:0;}
             a {
                 display: block;
-                font-family: @font-sec; color: @sec-color; line-height: 49px; text-transform: uppercase; font-size: 16px; font-weight:bold; text-decoration: none;
+                font-family: @font-prim; color: @sec-color; line-height: 49px; text-transform: uppercase; font-size: 16px; font-weight:bold; text-decoration: none;
                 &.active, &:hover {color: @main-color;}
                 }
             ul {
