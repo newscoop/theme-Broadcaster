@@ -6,7 +6,7 @@
   <div>
     <h2>{{ $gimme->article->name }}</h2>
 
-      {{ include file="_tpl/complex_date.tpl" }}
+      {{* include file="_tpl/complex_date.tpl" *}}
 
     {{ if $gimme->article->host }}
     <span>hosted by: {{ $gimme->article->host }}</span>
