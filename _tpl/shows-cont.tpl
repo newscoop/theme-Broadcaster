@@ -15,7 +15,7 @@
         <a href="{{ url options='article' }}">{{ include file="_tpl/img/img_onethird.tpl" where="article" }}</a>
       </figure>
       <h4><a href="{{ url options='article' }}">{{ $gimme->article->name }}</a></h4>
-      {{ include file="_tpl/complex_date.tpl" }}
+      {{* include file="_tpl/complex_date.tpl" *}}
       {{*
       <p class="dat_aut"><span class="time">{{ $gimme->article->publish_date|camp_date_format:"%M %d, %Y" }} /  {{ #by# }} {{ list_article_authors }}{{ if $gimme->author->user->defined }}<a href="{{ $view->url(['username' => $gimme->author->user->uname], 'user') }}">{{ /if }}{{ $gimme->author->name }}{{ if $gimme->author->user->defined }}</a>{{ /if }} ({{ $gimme->author->type|lower }}){{ if !$gimme->current_list->at_end }}, {{ /if }}{{ /list_article_authors }}</span></p>
       *}}
