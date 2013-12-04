@@ -26,7 +26,7 @@
       </section><!-- / Entry -->
       {{ /if }}
 
-      {{ if $gimme->article->number != 110 }}
+      {{ if $gimme->article->number != 110 && $gimme->section->number != 100 }}
       {{ include file="_tpl/article-aside.tpl" }}
       {{ /if }}
 
