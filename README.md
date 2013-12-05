@@ -16,6 +16,26 @@ First, install Newscoop as shown in the [Newscoop user manual](http://sourcefabr
 
 The Newscoop administration interface includes a theme management and template editing tool, which you can find by clicking Configure on the main navigation menu, then Themes. A new theme can be added to Newscoop by clicking the **Import theme** button on the **Theme management** page. This action opens a dialog box which enables you to select a theme file from your computer. Click the **Browse button** to locate the theme's zip file, then click the **Import** button. Newscoop should report that the import was successful. The new theme should now be displayed in the table on the Theme management page.
 
+Setting up Article Types
+========================
+
+The Broadcaster theme uses several Article Types to display content in different ways. Each Article Type has specific fields of various kinds. These types and fields are:
+
+news (standard Article Type in Newscoop demo):
+   highlight (switch)
+   deck (HTML WYSIWYG)
+   full_text (HTML WYSIWYG)
+
+page (standard Article Type in Newscoop demo):
+   full_text (HTML WYSIWYG)
+
+show (custom Article Type for Broadcaster):
+   show_name (single line text)
+   host (single line text)
+   deck (multi line text)
+   full_text (HTML WYSIWYG)
+   shows (multi line text) - for SoundCloud links if you have them
+   show_times (complex date)
 
 Further reading
 ===============
