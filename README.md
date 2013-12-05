@@ -48,7 +48,7 @@ Within the custom Article Type of *show*, the fields should look like this:
 Static articles and news
 ========================
 
-Typically you will want to have some static pages such as 'About us' or 'Contact the station' on your Newscoop site. The Broadcaster theme accommodates this desire, so that links to articles in your first issue and section appear in the left side of the page header. For example, your first issue could be called *static* and contain a section called *pages*, although you can name this issue and section anything you want. It does not matter if you use the *news* or *page* Article Type for this type of article.
+Typically you will want to have some static pages such as 'About us' or 'Contact the station' on your Newscoop site. The Broadcaster theme accommodates this desire, so that links to articles in your first issue and section appear in the left side of the page header. For example, your first issue could be called *static* and contain a section called *pages*, although you can name this issue and section anything you want. It does not matter if you use the *news* or *page* Article Type for this type of article, but only *news* articles show up in the RSS feed by default.
 
 More topical content should be placed in second and subsequent issues. These articles are handled differently, with the **Latest News** article displayed on the right side of the homepage. Up to four playlisted articles are given the most prominent treatment on the homepage, rotating in a carousel.
 
