@@ -37,6 +37,10 @@ The Broadcaster theme uses several Article Types to display content in different
    * shows (multi line text) - for SoundCloud links if you have them
    * show_times (complex date) - dates of the show in question
 
+In the Newscoop administration interface, click Configure on the main navigation menu, then Article Types. If the news, page and show Article Types are not listed, you will have to create them, as shown in the manual chapter [Article Types](http://sourcefabric.booktype.pro/newscoop-42-for-journalists-and-editors/article-types/).
+
+![List of Article Types](documentation/Screenshot-Article_Types.png)
+
 Further reading
 ===============
 
