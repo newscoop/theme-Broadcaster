@@ -21,21 +21,21 @@ Setting up Article Types
 
 The Broadcaster theme uses several Article Types to display content in different ways. Each Article Type has specific fields of various kinds. These types and fields are:
 
-news (standard Article Type in Newscoop demo):
-   highlight (switch)
-   deck (HTML WYSIWYG)
-   full_text (HTML WYSIWYG)
+1. news (standard Article Type in Newscoop demo):
+   * highlight (switch) - to promote the article in lists
+   * deck (HTML WYSIWYG) - a standfirst for the article
+   * full_text (HTML WYSIWYG) - body text for the article
 
-page (standard Article Type in Newscoop demo):
-   full_text (HTML WYSIWYG)
+2. page (standard Article Type in Newscoop demo):
+   * full_text (HTML WYSIWYG) - body text for the article
 
-show (custom Article Type for Broadcaster):
-   show_name (single line text)
-   host (single line text)
-   deck (multi line text)
-   full_text (HTML WYSIWYG)
-   shows (multi line text) - for SoundCloud links if you have them
-   show_times (complex date)
+3. show (custom Article Type for Broadcaster):
+   * show_name (single line text) - the name of the show
+   * host (single line text) - the presenter of the show
+   * deck (multi line text) - a standfirst for the article
+   * full_text (HTML WYSIWYG) - body text for the article
+   * shows (multi line text) - for SoundCloud links if you have them
+   * show_times (complex date) - dates of the show in question
 
 Further reading
 ===============
