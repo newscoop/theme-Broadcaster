@@ -90,7 +90,7 @@
         <div id="header" class="clearfix">
 
           <h1>
-            <a href="/">Ryerson Radio</a>
+            <a href="/">{{ $gimme->publication->name }}</a>
           </h1>
 
           {{ if $gimme->browser->ua_type == "mobile" }}
