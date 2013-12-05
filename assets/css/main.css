@@ -703,10 +703,13 @@ article .info li a {
   color: #444444;
 }
 .program_grid {
-  font-size: 14px;
+  font-size: 12px;
 }
 .program_grid a {
-  font-size: 14px;
+  font-size: 12px;
+}
+.program_grid h4 {
+  font-size: 12px;
 }
 .program_grid ul {
   list-style: none;
@@ -715,7 +718,7 @@ article .info li a {
 .program_grid .tabs {
   background: #f0f0f0;
   border: 1px solid #dddddd;
-  border-bottom: 1px solid #eab223;
+  border-bottom: 1px solid #ff5d1a;
 }
 .program_grid .tabs li {
   display: inline-block;
@@ -730,7 +733,7 @@ article .info li a {
 }
 .program_grid .tabs li.active {
   background: #fff;
-  border: 1px solid #eab223;
+  border: 1px solid #ff5d1a;
   border-bottom: 1px solid #fff;
   margin-bottom: -1px;
 }
@@ -740,7 +743,7 @@ article .info li a {
   position: relative;
 }
 .program_grid table tr {
-  border-bottom: 1px solid #cfcfcf;
+  border-bottom: 1px solid #ff5d1a;
 }
 .program_grid table tr td {
   padding: 15px;
@@ -749,33 +752,33 @@ article .info li a {
   display: none;
 }
 .program_grid table .col_one {
-  background: #f9f4eb;
+  background: #ffa781;
   border: 1px solid #e8d093;
-  border-left: 3px solid #eab122;
+  border-left: 3px solid #ff5d1a;
   border-top: none;
 }
 .program_grid table .col_two {
-  background: #ebf9f8;
-  border: 1px solid #8dd2cc;
-  border-left: 3px solid #12a89d;
+  background: #ffa781;
+  border: 1px solid #ff5d1a;
+  border-left: 3px solid #ff5d1a;
   border-top: none;
 }
 .program_grid table .col_three {
-  background: #f1ede8;
+  background: #ffa781;
   border: 1px solid #e4caad;
-  border-left: 3px solid #726658;
+  border-left: 3px solid #ff5d1a;
   border-top: none;
 }
 .program_grid table .col_four {
-  background: #e1ebfd;
+  background: #ffa781;
   border: 1px solid #c3d4f2;
-  border-left: 3px solid #22a1ea;
+  border-left: 3px solid #ff5d1a;
   border-top: none;
 }
 .program_grid table .col_five {
-  background: #f9ebf0;
+  background: #ffa781;
   border: 1px solid #f4c1d2;
-  border-left: 3px solid #d91b5b;
+  border-left: 3px solid #ff5d1a;
   border-top: none;
 }
 .program_grid table .time_grid {

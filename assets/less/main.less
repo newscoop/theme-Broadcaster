@@ -511,8 +511,13 @@ article {
 // Program grid
 
 .program_grid {
-        font-size: 14px;
-        a { font-size: 14px; }
+        font-size: 12px;
+        a {
+          font-size: 12px;
+          }
+        h4 {
+          font-size: 12px;
+          }
         ul {
             list-style: none;
             margin-left: 0px;
@@ -520,15 +525,20 @@ article {
         .tabs {
                 background: #f0f0f0;
                 border: 1px solid #dddddd;
-                border-bottom: 1px solid #eab223;
+                border-bottom: 1px solid @main-color;
                 li {
                     display: inline-block;
                     padding: 15px 33px;
-                    a { font-family: @font-sec; text-transform: uppercase; font-weight: bold; text-decoration: none; color: @sec-color; }
-                    }
+                    a { font-family: @font-sec;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: @sec-color;
+                        }
+                      }
                 li.active {
                             background: #fff;
-                            border: 1px solid #eab223;
+                            border: 1px solid @main-color;
                             border-bottom: 1px solid #fff;
                             margin-bottom: -1px;
                             }
@@ -538,17 +548,42 @@ article {
                     margin-bottom: 30px;
                     position: relative;
                     tr {
-                        border-bottom: 1px solid #cfcfcf;
+                        border-bottom: 1px solid @main-color;
                         td {
                             padding: 15px;
                             }
                         }
                     tfoot { display: none; }
-                    .col_one { background: #f9f4eb; border: 1px solid #e8d093; border-left: 3px solid #eab122; border-top: none; }
-                    .col_two { background: #ebf9f8; border: 1px solid #8dd2cc; border-left: 3px solid #12a89d; border-top: none; }
-                    .col_three { background: #f1ede8; border: 1px solid #e4caad; border-left: 3px solid #726658; border-top: none; }
-                    .col_four { background: #e1ebfd; border: 1px solid #c3d4f2; border-left: 3px solid #22a1ea; border-top: none; }
-                    .col_five { background: #f9ebf0; border: 1px solid #f4c1d2; border-left: 3px solid #d91b5b; border-top: none; }
+                    .col_one {
+                              background: #ffa781;
+                              border: 1px solid #e8d093;
+                              border-left: 3px solid @main-color;
+                              border-top: none;
+                              }
+                    .col_two {
+                              background: #ffa781;
+                              border: 1px solid @main-color;
+                              border-left: 3px solid @main-color;
+                              border-top: none;
+                              }
+                    .col_three {
+                              background: #ffa781;
+                              border: 1px solid #e4caad;
+                              border-left: 3px solid @main-color;
+                              border-top: none;
+                              }
+                    .col_four {
+                              background: #ffa781;
+                              border: 1px solid #c3d4f2;
+                              border-left: 3px solid @main-color;
+                              border-top: none;
+                              }
+                    .col_five {
+                              background: #ffa781;
+                              border: 1px solid #f4c1d2;
+                              border-left: 3px solid @main-color;
+                              border-top: none;
+                              }
                     .time_grid { font-family: @font-sec; }
                     .more_grid {
                                 text-align: right;
