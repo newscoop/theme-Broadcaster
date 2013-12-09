@@ -514,21 +514,20 @@ function convertDateToPosixTime(s){
 
     var date = datetime[0].split("-");
     var time = datetime[1].split(":");
-
-	var year = date[0];
-	var month = date[1];
-	var day = date[2];
-	var hour = time[0];
-	var minute = time[1];
+  	var year = date[0];
+  	var month = date[1];
+  	var day = date[2];
+  	var hour = time[0];
+  	var minute = time[1];
     var sec = 0;
     var msec = 0;
 
     if (time[2].indexOf(".") != -1){
-        var temp = time[2].split(".");
-        sec = temp[0];
-        msec = temp[1];
+      var temp = time[2].split(".");
+      sec = temp[0];
+      msec = temp[1];
     } else
-        sec = time[2];
+      sec = time[2];
 
 	return Date.UTC(year, month-1, day, hour, minute, sec, msec);
 }
