@@ -72,21 +72,21 @@ Section and article numbers
 
 The Broadcaster theme uses the section number to provide different treatments to specific sections. The default issue 1, for static content, contains three sections:
 
-*5 	Pages
-*10 	Application pages
-*50 	RSS placeholder
+* 5 	Pages
+* 10 	Application pages
+* 50 	RSS placeholder
 
 Within the special section *Application pages* there are four articles, with the following Article Types:
 
-|player		|Player|
-|Program Grid	|page|
-|Site Info	|Site_Info|
-|Airtime Info	|Stream_Info|
+| player	| Player 	|
+| Program Grid	| page 		|
+| Site Info	| Site_Info 	|
+| Airtime Info	| Stream_Info 	|
 
 By default, issue 10 contains two sections:
 
-*60 	News
-*100 	Shows
+* 60 	News
+* 100 	Shows
 
 The News section includes articles of type *news* and the Shows section includes articles of type *shows*, as you might expect.
 
