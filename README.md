@@ -19,23 +19,38 @@ The Newscoop administration interface includes a theme management and template e
 Setting up Article Types
 ========================
 
-The Broadcaster theme uses several *Article Types* to display content in different ways. Each Article Type has specific fields of various kinds. These types and fields are:
+The Broadcaster theme uses several *Article Types* to display content in different ways. Each Article Type has specific fields of various kinds. The *news* and *page* Article Types are standard in Newscoop, but the Broadcaster theme uses additional custom Article Types. These are the Article Types you should set up on your Newscoop server, and the fields they should contain:
 
-1. news (standard Article Type in Newscoop demo):
+1. news (standard Article Type):
    * highlight (switch) - to promote the article in lists
-   * deck (HTML WYSIWYG) - page description in meta and Open Graph tags
-   * full_text (HTML WYSIWYG) - body text for the article
+   * deck (Multi-line Text with WYSIWYG) - page description in meta and Open Graph tags
+   * full_text (Multi-line Text with WYSIWYG) - body text for the article
 
-2. page (standard Article Type in Newscoop demo):
-   * full_text (HTML WYSIWYG) - body text for the article
+2. page (standard Article Type):
+   * full_text (Multi-line Text with WYSIWYG) - body text for the article
 
-3. show (custom Article Type for Broadcaster):
-   * show_name (single line text) - the name of the show
-   * host (single line text) - the presenter of the show
-   * deck (multi line text) - page description in meta and Open Graph tags
-   * full_text (HTML WYSIWYG) - body text for the article
-   * shows (multi line text) - for SoundCloud links if you have them
-   * show_times (complex date) - dates of the show in question
+3. Player (custom Article Type):
+   * player (Single-line Text) - used for the stream player widget
+
+4. show (custom Article Type):
+   * show_name (Single-line Text) - the name of the show
+   * host (Single-line Text) - the presenter of the show
+   * deck (Multi-line Text) - page description in meta and Open Graph tags
+   * full_text (Multi-line Text with WYSIWYG) - body text for the article
+   * shows (Multi-line Text) - for SoundCloud links if you have them
+   * show_times (Complex Date) - dates of the show in question
+
+5. Site_Info (custom Article Type):
+   * Facebook (Single-line Text) - Facebook page of your station
+   * Twitter (Single-line Text) - Twitter page of your station
+   * Address (Multi-line Text with WYSIWYG) - street address of your station
+
+6. Stream_Info (custom Article Type):
+   * API (Single-line Text) - URL of your Airtime server (default: http://sourcefabric.airtime.pro)
+   * stream  (Single-line Text) - URL of your streaming server (default: http://sourcefabric.out.airtime.pro)
+   * stream_a (Single-line Text) - mount point of your first stream (default: sourcefabric_a)
+   * stream_b (Single-line Text) - mount point of your second stream (default: sourcefabric_b)
+   * port (Single-line Text) - Port used by your stream (default is: 8000)
 
 In the Newscoop administration interface, click **Configure** on the main navigation menu, then **Article Types**. If the news, page and show Article Types are not listed, you will have to create them, as shown in the manual chapter [Article Types](http://sourcefabric.booktype.pro/newscoop-42-for-journalists-and-editors/article-types/). Then the list of Article Types should look like this:
 
