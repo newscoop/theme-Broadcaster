@@ -25,23 +25,21 @@ p {
   line-height: 35px;
 }
 .title p a {
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   color: #000000;
   font-size: 13px;
   font-style: normal;
   text-decoration: none;
   font-weight: bold;
-  text-transform: uppercase;
 }
 .title p a:hover {
   text-decoration: underline;
 }
 h2 {
-  font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
   font-size: 35px;
   color: #000000;
   line-height: 35px;
-  text-transform: uppercase;
 }
 h2 span {
   color: #ff5d1a;
@@ -55,8 +53,7 @@ h2 a:hover {
 }
 h3,
 h4 {
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
+  font-family: sans-serif;
 }
 h3 {
   font-size: 20px;
@@ -83,7 +80,7 @@ h4 a:hover {
 }
 .paging {
   margin-left: 5px;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 13px;
   color: #000000;
   font-weight: bold;
@@ -149,7 +146,7 @@ h4 a:hover {
 }
 .paging-holder .prev span,
 .paging-holder .next span {
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 13px;
   font-weight: bold;
   color: #000000;
@@ -227,9 +224,8 @@ audio {
   margin-left: 0px;
 }
 .home_top .chart_home ol li {
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 14px;
-  text-transform: uppercase;
   font-weight: bold;
   border-top: 1px solid #dddddd;
   padding: 6px 0px;
@@ -260,9 +256,8 @@ audio {
 }
 .home_top .current_widget ul li {
   display: block;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 14px;
-  text-transform: uppercase;
   font-weight: bold;
   border-top: 1px solid #dddddd;
   padding: 6px 0px;
@@ -357,11 +352,10 @@ article .more {
   font-style: italic;
 }
 article .more a {
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 13px;
   color: #444444;
   text-decoration: none;
-  text-transform: uppercase;
   font-style: normal;
 }
 article .more a:hover {
@@ -373,10 +367,9 @@ article small {
   font-size: 10px;
 }
 article small a {
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 14px;
   font-weight: bold;
-  text-transform: uppercase;
   color: #ff5d1a;
   text-decoration: none;
 }
@@ -411,7 +404,7 @@ article .info {
 }
 article .info li {
   padding: 2px 5px;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 12px;
   color: #fff;
   font-weight: bold;
@@ -469,7 +462,7 @@ article .info li a {
   margin-bottom: 15px;
 }
 .article_show article span {
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 18px;
   font-weight: bold;
   font-style: italic;
@@ -495,7 +488,7 @@ article .info li a {
   color: #000000;
   float: left;
   display: inline-block;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
   text-decoration: none;
   background: url('../img/bullet-3.png') no-repeat left center;
@@ -532,7 +525,7 @@ article .info li a {
   height: 4px;
 }
 .article_chart {
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 14px;
   margin-bottom: 30px;
 }
@@ -621,7 +614,7 @@ article .info li a {
 .years_section .grid-3 ul {
   list-style: none;
   margin-left: 0px;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
   -moz-column-count: 2;
   /* Firefox */
@@ -725,8 +718,7 @@ article .info li a {
   padding: 15px 33px;
 }
 .program_grid .tabs li a {
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
+  font-family: sans-serif;
   font-weight: bold;
   text-decoration: none;
   color: #000000;
@@ -782,7 +774,7 @@ article .info li a {
   border-top: none;
 }
 .program_grid table .time_grid {
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
 }
 .program_grid table .more_grid {
   text-align: right;
@@ -828,8 +820,7 @@ article .info li a {
 }
 .program_grid .color_legend {
   color: #767676;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
+  font-family: sans-serif;
   margin: 20px 0px 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #b23b09;
@@ -948,7 +939,7 @@ article .info li a {
 .form-content #attributes-gender-element label {
   float: left;
   color: #000000;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-style: normal;
 }
 .form-content #attributes-gender-element label input {
@@ -1009,7 +1000,7 @@ article .info li a {
 .form-content input[type=submit] {
   height: 25px;
   width: 244px;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 12px;
   font-weight: bold;
   color: #fff;
@@ -1027,11 +1018,10 @@ article .info li a {
   display: inline-block;
   padding-left: 20px;
   margin-left: 14px;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 12px;
   font-weight: bold;
   color: #ff5d1a;
-  text-transform: uppercase;
   text-decoration: none;
   background: url(../img/bullet-3.png) 0 50% no-repeat;
 }
@@ -1219,11 +1209,11 @@ article .info li a {
   font-size: 20px;
 }
 .album_section .grid-3 article h4 span {
-  font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-weight: normal;
 }
 .article_album .entry article h2 span {
-  font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   display: block;
   color: #222222;
   font-weight: normal;
@@ -1254,7 +1244,6 @@ article .info li a {
   font-size: 35px;
   color: #222222;
   line-height: 35px;
-  text-transform: uppercase;
   font-weight: bold;
 }
 .article_album .artist_name.label,
@@ -1288,7 +1277,7 @@ article .info li a {
 }
 .article_album .social_links h3 {
   font-size: 24px;
-  font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
 }
 .article_album .social_links h3 span {
   color: #ff5d1a;
@@ -1412,7 +1401,7 @@ article .info li a {
   right: 0;
 }
 .author-info .more a {
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 13px;
   color: #000000;
   text-decoration: none;
@@ -1444,10 +1433,9 @@ article .info li a {
   color: #000000;
 }
 .comments ol li h5 a {
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   color: #ff5d1a;
   text-decoration: none;
-  text-transform: uppercase;
 }
 .comments ol li h5 a:hover {
   text-decoration: underline;
@@ -1496,10 +1484,9 @@ article .info li a {
 .comments fieldset ul input.button {
   width: 225px;
   height: 50px;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 20px;
   font-weight: bold;
-  text-transform: uppercase;
   color: #fff;
   background: #000000;
   border: 0;
@@ -1555,7 +1542,7 @@ aside .aside-box p a:hover {
 }
 #top h3 {
   float: left;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   color: #fff;
   font-size: 13px;
   text-transform: none;
@@ -1600,7 +1587,7 @@ aside .aside-box p a:hover {
   display: block;
   padding: 0 10px 0 27px;
   margin-right: 20px;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   color: #fff;
   font-size: 13px;
   line-height: 35px;
@@ -1648,7 +1635,7 @@ aside .aside-box p a:hover {
 #top .top-menu ul li .login-box fieldset p,
 #top .top-menu ul li .login-box fieldset input[type=text],
 #top .top-menu ul li .login-box fieldset input.button {
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 12px;
   color: #fff;
   font-style: italic;
@@ -1728,7 +1715,7 @@ aside .aside-box p a:hover {
   width: 88px;
   height: 23px;
   padding: 0 30px 0 10px;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 12px;
   color: #fff;
   font-style: italic;
@@ -1778,7 +1765,7 @@ aside .aside-box p a:hover {
 #main_header #header #language_select li {
   float: left;
   margin: 0 10px 0 0;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 12px;
 }
 #main_header #header #language_select li a {
@@ -1813,7 +1800,7 @@ aside .aside-box p a:hover {
   line-height: 28px;
 }
 #main_header #header .radio_player p {
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   margin-top: 5px;
 }
 #main_header #header .radio_player .current {
@@ -1876,10 +1863,9 @@ aside .aside-box p a:hover {
 }
 #nav-bar a.cat-trigger {
   display: none;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 13px;
   color: #fff;
-  text-transform: uppercase;
   line-height: 35px;
   font-weight: bold;
   text-decoration: none;
@@ -1901,7 +1887,6 @@ aside .aside-box p a:hover {
   font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
   color: #000000;
   line-height: 49px;
-  text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
@@ -1936,10 +1921,9 @@ aside .aside-box p a:hover {
   top: 0;
   right: 10px;
   float: none;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   color: #000000;
   line-height: 49px;
-  text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
 }
@@ -1956,10 +1940,9 @@ aside .aside-box p a:hover {
 }
 #pages_top a.cat-trigger {
   display: none;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 13px;
   color: #fff;
-  text-transform: uppercase;
   line-height: 35px;
   font-weight: bold;
   text-decoration: none;
@@ -1978,7 +1961,7 @@ aside .aside-box p a:hover {
 }
 #pages_top ul li a {
   display: block;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   padding: 0px;
   margin-right: 10px;
   color: #fff;
@@ -1995,10 +1978,9 @@ aside .aside-box p a:hover {
   top: 0;
   right: 10px;
   float: none;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   color: #000000;
   line-height: 49px;
-  text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
 }
@@ -2030,7 +2012,7 @@ aside .aside-box p a:hover {
 #bottom ul li li {
   float: none;
   margin: 0;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   color: #1a171b;
   font-size: 12px;
   line-height: 15px;
@@ -2076,7 +2058,7 @@ aside .aside-box p a:hover {
 .bottom_box ul {
   list-style: none;
   margin-left: 0px;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
   -moz-column-count: 2;
   /* Firefox */
@@ -2144,7 +2126,7 @@ aside .aside-box p a:hover {
 }
 .event-map p.right,
 .event-map p.left a {
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   color: #000000;
   font-size: 13px;
   font-weight: bold;
@@ -2230,7 +2212,7 @@ aside .aside-box p a:hover {
   float: left;
   padding-left: 20px;
   margin-right: 14px;
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   line-height: 25px;
   background: url(../img/bullet-3.png) 0 50% no-repeat;
 }
@@ -2243,7 +2225,6 @@ aside .aside-box p a:hover {
 }
 .section-search ul li a {
   color: #ff5d1a;
-  text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
   text-decoration: none;
@@ -2269,7 +2250,7 @@ aside .aside-box p a:hover {
 }
 .user-slider li article h3,
 .user-slider li article p {
-  font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   color: #fff;
   font-weight: bold;
   text-transform: none;
