@@ -19,7 +19,7 @@ The Newscoop administration interface includes a theme management and template e
 Setting up Article Types
 ========================
 
-The Broadcaster theme uses several *Article Types* to display content in different ways. Each Article Type has specific fields of various kinds. The *news* and *page* Article Types are standard in Newscoop, but the Broadcaster theme uses additional custom Article Types. These are the Article Types you should set up on your Newscoop server, and the fields they should contain:
+The Broadcaster theme uses several *Article Types* to display content in different ways. Each Article Type has specific fields of various kinds. The *news* and *page* Article Types are standard in Newscoop, but the Broadcaster theme uses additional custom Article Types. These are the Article Types required, and the fields they should contain:
 
 1. news (standard Article Type):
    * highlight (switch) - to promote the article in lists
@@ -52,7 +52,7 @@ The Broadcaster theme uses several *Article Types* to display content in differe
    * stream_b (Single-line Text) - mount point of your second stream (default: sourcefabric_b)
    * port (Single-line Text) - Port used by your stream (default is: 8000)
 
-In the Newscoop administration interface, click **Configure** on the main navigation menu, then **Article Types**. If the news, page and show Article Types are not listed, you will have to create them, as shown in the manual chapter [Article Types](http://sourcefabric.booktype.pro/newscoop-42-for-journalists-and-editors/article-types/). Then the list of Article Types should look like this:
+In the Newscoop administration interface, click **Configure** on the main navigation menu, then **Article Types**. If the Article Types shown above are not listed, you will have to create them, as shown in the manual chapter [Article Types](http://sourcefabric.booktype.pro/newscoop-42-for-journalists-and-editors/article-types/). Then the list of Article Types should look like this:
 
 ![List of Article Types](documentation/Screenshot-Article_Types.png)
 
@@ -66,6 +66,29 @@ Static articles and news
 Typically you will want to have some static pages such as 'About us' or 'Contact the station' on your Newscoop site. The Broadcaster theme accommodates this desire, so that links to articles in your first issue and section appear in the left side of the page header. For example, your first issue could be called *static* and contain a section called *pages*, although you can name this issue and section anything you want. It does not matter if you use the *news* or *page* Article Type for this type of article, but only *news* articles show up in the RSS feed by default.
 
 More topical content should be placed in second and subsequent issues. These articles are handled differently, with the **Latest News** article displayed on the right side of the homepage. Up to four playlisted articles are given the most prominent treatment on the homepage, rotating in a carousel.
+
+Section and article numbers
+===========================
+
+The Broadcaster theme uses the section number to provide different treatments to specific sections. The default issue 1, for static content, contains three sections:
+
+5 	Pages
+10 	Application pages
+50 	RSS placeholder
+
+Within the special section *Application pages* there are four articles, with the following Article Types:
+
+player		Player
+Program Grid	page
+Site Info	Site_Info
+Airtime Info	Stream_Info
+
+By default, issue 10 contains two sections:
+
+60 	News
+100 	Shows
+
+The News section includes articles of type *news* and the Shows section includes articles of type *shows*, as you might expect.
 
 These are only the default behaviours, as like all Newscoop themes, Broadcaster can be customised to be what you need it to be.
 
