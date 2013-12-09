@@ -78,10 +78,10 @@ The Broadcaster theme uses the section number to provide different treatments to
 
 Within the special section *Application pages* there are four articles, with the following Article Types:
 
-| player	| Player 	|
-| Program Grid	| page 		|
-| Site Info	| Site_Info 	|
-| Airtime Info	| Stream_Info 	|
+1. player (Player)
+2. Program Grid	(page)
+3. Site Info (Site_Info)
+4. Airtime Info	(Stream_Info)
 
 By default, issue 10 contains two sections:
 
