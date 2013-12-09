@@ -1,5 +1,5 @@
 <div class="title">
-  <h2>PROGRAM <span>GRID</span></h2>
+  <h2>Program <span>Grid</span></h2>
 </div>
 
 <div id="scheduleTabs"></div>
