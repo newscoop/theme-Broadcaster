@@ -76,6 +76,8 @@ The Broadcaster theme uses the section number to provide different treatments to
 * 10 	Application pages
 * 50 	RSS placeholder
 
+The Section Template for the RSS placeholder must be set to rss.tpl for the RSS feed to be rendered correctly.
+
 Within the special section *Application pages* there are four articles, with the following Article Types:
 
 1. player (Player)
