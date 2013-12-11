@@ -1746,7 +1746,7 @@ aside .aside-box p a:hover {
 #main_header {
   width: 100%;
   margin: 0 auto 30px auto;
-  border-bottom: 1px solid #b23b09;
+  border-bottom: 1px solid #dddddd;
 }
 #main_header #top,
 #main_header #header,
