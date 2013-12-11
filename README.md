@@ -7,7 +7,8 @@ The distinctive feature of this theme is the integration with the [Airtime](http
 
 Like Newscoop, the 'Broadcaster' theme is &copy; Sourcefabric 2013 and released under the [GNU General Public License, version 3](https://www.gnu.org/licenses/gpl.html).
 
-Please note that the 'Download this repository as a zip file' button on GitHub exports Newscoop theme files within a folder, whereas a working Newscoop theme should have its main template files in the zip file root.
+Important: If you go to the theme page and not to the release page, the 'Download this repository as a zip file' button on GitHub exports Newscoop theme files within a folder, whereas a working Newscoop theme should have its main template files in the zip file root. Please always take the file from the release page directly to get the correct file structure
+Any Newscoop theme should have its main template files in the zip file root. 
 
 How to install
 ==============
