@@ -1098,20 +1098,21 @@ article .info li a {
 .grid-3 article {
   float: left;
   width: 290px;
-  margin-right: 30px;
+  margin-right: 20px;
   min-height: 370px;
+  /*
+	&:nth-child(3n) {margin-right: 0;}
+        &:nth-child(3n + 1) {clear:left;}
+	*/
   /*
         h4 {height: 30px; overflow: hidden;}
         */
 }
-.grid-3 article:nth-child(3n) {
-  margin-right: 0;
-}
-.grid-3 article:nth-child(3n + 1) {
-  clear: left;
-}
 .grid-3 article p a {
   color: #ff5d1a;
+}
+.grid-3 article h2 {
+  margin-bottom: 20px;
 }
 .grid-3 article h4 {
   min-height: 30px;

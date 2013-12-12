@@ -15,22 +15,27 @@
     {{ /list_playlist_articles }}
     </section>
 
-    <article>
-        <h2>LATEST <span>NEWS</span></h2>
+    <div class="current_widget" id="headerLiveHolder">
+      <h2>On Air Now</h2>
+    </div>
+
+</section>
+
+<section class="grid-3">
+
+        <h2>Latest <span>News</span></h2>
+
         {{ set_section number="60" }}
-        {{ list_articles length="1" order="bydate desc" }}
+        {{ list_articles length="3" order="bydate desc" }}
+          <article>
             <figure>
                 <a href="{{ url option='article' }}">{{ include file="_tpl/img/img_onethird.tpl" }}</a>
             </figure>
             <h4><a href="{{ url options='article' }}">{{ $gimme->article->name }}</a></h4>
             <p><span class="time">{{ $gimme->article->publish_date }}</span> /
             <a class="comments_num" href="{{ url options='article' }}#comments">{{ $gimme->article->comment_count }} comment{{ if $gimme->article->comment_count != 1 }}s{{ /if }}</a></p>
+          </article>
         {{ /list_articles }}
         {{ unset_section }}
-    </article>
-
-    <div class="current_widget" id="headerLiveHolder">
-      <h2>Offline</h2>
-    </div>
 
 </section>
