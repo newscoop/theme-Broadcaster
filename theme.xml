@@ -22,7 +22,6 @@
     <rendition name="onehalf" width="450" height="295" specs="crop" />
     <rendition name="square" width="130" height="130" specs="crop" />
     <rendition name="square large" width="290" height="290" specs="crop" />
-    <rendition name="square album" width="320" height="320" specs="crop" />
     <rendition name="show" width="930" height="260" specs="crop" />
   </renditions> 
 </theme>

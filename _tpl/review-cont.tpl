@@ -1,7 +1,4 @@
 <article>
-  <figure>
-    {{ include file="_tpl/img/img_square_album.tpl" where=article }}
-  </figure>
   <small>
     <a href="{{ url options='section' }}">{{ $gimme->section->name }}</a>
   </small>
