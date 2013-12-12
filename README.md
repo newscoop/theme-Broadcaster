@@ -41,12 +41,15 @@ The Broadcaster theme uses several *Article Types* to display content in differe
    * shows (Multi-line Text) - for SoundCloud links if you have them
    * show_times (Complex Date) - dates of the show in question
 
-5. Site_Info (custom Article Type):
-   * Facebook (Single-line Text) - Facebook page of your station
-   * Twitter (Single-line Text) - Twitter page of your station
+5. Program_Grid (custom Article Type):
+   * program_grid (Multi-line Text) - used for the program grid widget
+
+6. Site_Info (custom Article Type):
+   * Facebook (Single-line Text) - Facebook name of your station
+   * Twitter (Single-line Text) - Twitter name of your station
    * Address (Multi-line Text with WYSIWYG) - street address of your station
 
-6. Stream_Info (custom Article Type):
+7. Stream_Info (custom Article Type):
    * API (Single-line Text) - URL of your Airtime server (default: http://sourcefabric.airtime.pro)
    * stream  (Single-line Text) - URL of your streaming server (default: http://sourcefabric.out.airtime.pro)
    * stream_a (Single-line Text) - mount point of your first stream (default: sourcefabric_a)
@@ -64,9 +67,9 @@ Within the custom Article Type of *show*, the fields should look like this:
 Static articles and news
 ========================
 
-Typically you will want to have some static pages such as 'About us' or 'Contact the station' on your Newscoop site. The Broadcaster theme accommodates this desire, so that links to articles in your first issue and section appear in the left side of the page header. For example, your first issue could be called *static* and contain a section called *pages*, although you can name this issue and section anything you want. It does not matter if you use the *news* or *page* Article Type for this type of article, but only *news* articles show up in the RSS feed by default.
+Typically you will want to have some static pages such as 'About us' or 'Contribute' on your Newscoop site. The Broadcaster theme accommodates this desire, so that links to articles in your first issue and section appear in the left side of the page header. For example, your first issue could be called *static* and contain a section called *pages*, although you can name this issue and section anything you want. It does not matter if you use the *news* or *page* Article Type for this type of article, but only *news* articles show up in the RSS feed by default.
 
-More topical content should be placed in second and subsequent issues. These articles are handled differently, with the **Latest News** article displayed on the right side of the homepage. Up to four playlisted articles are given the most prominent treatment on the homepage, rotating in a carousel.
+More topical content should be placed in second and subsequent issues. These articles are handled differently, with the **Latest News** articles displayed on the homepage. Up to four featured articles are given the most prominent treatment on the homepage, rotating in a carousel. These articles need to be placed in a Featured Article List named *Carousel-en*, where *-en* is the language code for English content. For more information on Featured Article Lists, see the manual chapter [Managing Content](http://sourcefabric.booktype.pro/newscoop-42-for-journalists-and-editors/managing-content/).
 
 Section and article numbers
 ===========================
@@ -82,9 +85,9 @@ The Section Template for the RSS placeholder must be set to rss.tpl for the RSS 
 Within the special section *Application pages* there are four articles, with the following Article Types:
 
 1. player (Player)
-2. Program Grid	(page)
+2. Program Grid (Program_Grid)
 3. Site Info (Site_Info)
-4. Airtime Info	(Stream_Info)
+4. Stream Info (Stream_Info)
 
 By default, issue 10 contains two sections:
 
