@@ -1,4 +1,4 @@
-Broadcaster - a theme for Newscoop
+Broadcaster - Airtime theme for Newscoop
 ==================================
 
 Broadcaster is a theme for the [Newscoop](http://www.sourcefabric.org/en/newscoop/) content management system from [Sourcefabric](http://www.sourcefabric.org/). The design is by Pete Haughie, based on the [Rockstar](https://github.com/newscoop/theme-Rockstar) theme by Stephanie Miebach and Christian Kobben.
