@@ -1,7 +1,5 @@
   <div id="footer">
       
-    {{* include file="_tpl/sponsors-tweet.tpl" *}}
-    
     <div id="bottom">
     
       <ul class="clearfix">
