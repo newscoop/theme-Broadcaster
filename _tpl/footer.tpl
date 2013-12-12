@@ -14,7 +14,7 @@
               {{ if $count == 1 }}
                 {{ local }}
                 {{ set_issue number = "1" }}
-                {{ list_articles constraints = "number is 110" }}
+                {{ list_articles constraints = "type is Program_Grid" }}
                   <li><a href="{{ url options="article" }}" title="{{ $gimme->article->name }}">{{ $gimme->article->name }}</a></li>
                 {{ /list_articles }}
                 {{ /local }}
@@ -42,7 +42,7 @@
             {{ local }}
             {{ set_issue number = "1"}}
             {{ set_section number = "10" }}
-            {{ list_articles constraints = "number is 205" }}
+            {{ list_articles constraints = "type is Site_Info" }}
               {{ if $gimme->article->Twitter }}
                 <li>
                   <a href="https://twitter.com/{{ $gimme->article->Twitter }}" rel="external">{{ #followAtTwitter# }}</a>
@@ -64,7 +64,7 @@
         {{ local }}
         {{ set_issue number = "1"}}
         {{ set_section number = "10" }}
-        {{ list_articles constraints = "number is 205" }}
+        {{ list_articles constraints = "type is Site_Info" }}
         {{ if $gimme->article->Address }}
          {{ $gimme->article->Address }}
         {{ else }}

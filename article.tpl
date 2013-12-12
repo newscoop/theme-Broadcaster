@@ -2,8 +2,7 @@
 
 {{ include file="_tpl/_html-head.tpl" }}
 
-
-  {{ if $gimme->article->number == 206 }}
+  {{ if $gimme->article->type_name == Player }}
 
   {{ include file="_tpl/player_header.tpl" }}
 
@@ -13,7 +12,7 @@
 
   <div id="wrapper">
 
-      {{ if $gimme->article->number == 110 }}
+      {{ if $gimme->article->type_name == Program_Grid }}
       <div id="content" class="program_grid">
         {{ include file="_tpl/program-grid-cont.tpl" }}
       </div>
@@ -33,7 +32,7 @@
       </section><!-- / Entry -->
       {{ /if }}
 
-      {{ if $gimme->article->number != 110 && $gimme->section->number != 100 }}
+      {{ if $gimme->article->type_name != Program_Grid && $gimme->section->number != 100 }}
       {{ include file="_tpl/article-aside.tpl" }}
       {{ /if }}
 

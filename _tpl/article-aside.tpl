@@ -83,7 +83,7 @@
                 <div class="aside-box">
                     <ul class="article-list">
 {{ assign var="curart" value=$gimme->article->number }}        
-{{ list_articles length="5" ignore_issue="true" order="bypublishdate desc" constraints="number not $curart number not 110" }}
+{{ list_articles length="5" ignore_issue="true" order="bypublishdate desc" constraints="number not $curart type not Program_Grid" }}
                     <li><h4><a href="{{ url options="article" }}">{{ $gimme->article->name }}</a></h4></li>
 {{ /list_articles }}
                     </ul>

@@ -39,7 +39,7 @@
                     {{ unset_language }}
                     {{ set_issue number = "1"}}
                     {{ set_section number = "10" }}
-                    {{ list_articles constraints = "number is 205" }}
+                    {{ list_articles constraints = "type is Site_Info" }}
                       {{ if $gimme->article->Twitter }}
                         <li>
                           <a href="https://twitter.com/{{ $gimme->article->Twitter }}" rel="external">{{ #followAtTwitter# }}</a>
@@ -64,7 +64,7 @@
                     {{ local }}
                     {{ set_issue number = "1"}}
                     {{ set_section number = "10" }}
-                    {{ list_articles constraints = "number is 205" }}
+                    {{ list_articles constraints = "type is Site_Info" }}
                       {{ if $gimme->article->Twitter }}
                       <li><a href="http://twitter.com/share?url={{ $whereami }}&text={{ if $gimme->article->name }}{{ $gimme->article->name }}{{ else }}{{ $gimme->issue->name }}{{ /if }}&via={{ $gimme->article->Twitter }}">{{ #tweetOnTwitter# }}</a></li>
                       {{ /if}}
@@ -101,7 +101,7 @@
             {{ set_publication number = "2" }}
             {{ set_issue number = "1" }}
             {{ set_section number = "10" }}
-            {{ list_articles length = "1" constraints = "number is 206" }}
+            {{ list_articles length = "1" constraints = "type is Player" }}
             <script>
             var $url = '{{ $gimme->article->url }}';
             </script>
@@ -146,7 +146,7 @@
 
               {{ local }}
               {{ set_issue number="1" }}
-              {{ list_articles constraints="number is 110"}}
+              {{ list_articles constraints="type is Program_Grid"}}
                 <li><a href="{{ url options='article' }}">{{ $gimme->article->name }}</a></li>
               {{ /list_articles }}
               {{ /local }}
