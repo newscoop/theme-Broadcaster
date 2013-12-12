@@ -822,7 +822,7 @@ article .info li a {
   font-family: sans-serif;
   margin: 20px 0px 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #b23b09;
+  border-bottom: 1px solid #dddddd;
 }
 .program_grid .color_legend li {
   max-width: 105px;
@@ -875,7 +875,7 @@ article .info li a {
   position: relative;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  border-bottom: #b23b09 solid 1px;
+  border-bottom: #dddddd solid 1px;
 }
 .form-content dl {
   margin-bottom: 10px;
@@ -1155,7 +1155,7 @@ article .info li a {
 }
 .grid-6 article .article {
   margin-bottom: 15px;
-  border-bottom: #b23b09 solid 1px;
+  border-bottom: #dddddd solid 1px;
 }
 .grid-6 article .article:last-child {
   border-bottom: 0;
@@ -1178,12 +1178,12 @@ article .info li a {
 }
 .grid-6.extended article {
   margin-bottom: 30px;
-  border-bottom: #b23b09 solid 1px;
+  border-bottom: #dddddd solid 1px;
 }
 .grid-6.extended-small article {
   padding-bottom: 15px;
   margin-bottom: 20px;
-  border-bottom: #b23b09 solid 1px;
+  border-bottom: #dddddd solid 1px;
   max-height: 220px;
   min-height: 220px;
 }
@@ -1302,7 +1302,7 @@ article .info li a {
   clear: both;
   margin-bottom: 30px;
   padding-top: 20px;
-  border-bottom: #b23b09 solid 1px;
+  border-bottom: #dddddd solid 1px;
 }
 .main {
   float: left;
@@ -1313,7 +1313,7 @@ article .info li a {
   float: none;
   padding-bottom: 20px;
   margin-bottom: 30px;
-  border-bottom: #b23b09 solid 1px;
+  border-bottom: #dddddd solid 1px;
 }
 .entry article p {
   margin-bottom: 10px;
@@ -1377,7 +1377,7 @@ article .info li a {
   overflow: hidden;
   clear: both;
   margin-bottom: 20px;
-  border-bottom: #b23b09 solid 1px;
+  border-bottom: #dddddd solid 1px;
 }
 .author-info p,
 .author-info h3 {
@@ -1413,13 +1413,13 @@ article .info li a {
   margin: 0;
   list-style-type: none;
   margin-bottom: 30px;
-  border-top: #b23b09 solid 1px;
+  border-top: #dddddd solid 1px;
 }
 .comments ol li {
   position: relative;
   min-height: 60px;
   padding: 20px 0 20px 80px;
-  border-bottom: #b23b09 solid 1px;
+  border-bottom: #dddddd solid 1px;
 }
 .comments ol li img {
   position: absolute;
@@ -1504,7 +1504,7 @@ aside section,
 aside .aside-box {
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: #b23b09 solid 1px;
+  border-bottom: #dddddd solid 1px;
 }
 aside section:last-child,
 aside .aside-box:last-child {
@@ -1526,11 +1526,11 @@ aside .aside-box p a:hover {
   margin: 0;
   list-style-type: none;
   margin-top: 20px;
-  border-top: #b23b09 solid 1px;
+  border-top: #dddddd solid 1px;
 }
 .list-large li {
   padding: 20px 0 0 0;
-  border-bottom: #b23b09 solid 1px;
+  border-bottom: #dddddd solid 1px;
 }
 .geo_map_mapcanvas {
   width: 100% !important;
@@ -1896,7 +1896,7 @@ aside .aside-box p a:hover {
 }
 #nav-bar ul li ul {
   display: none;
-  border: 1px solid #b23b09;
+  border: 1px solid #dddddd;
   z-index: 999;
   background: #fff;
   margin-left: -10px;
@@ -2072,7 +2072,7 @@ aside .aside-box p a:hover {
   width: 100%;
 }
 .bottom_box ul li {
-  border-bottom: 1px solid #b23b09;
+  border-bottom: 1px solid #dddddd;
   padding: 10px 0px;
   display: inline-block;
   width: 100%;
@@ -2096,8 +2096,8 @@ aside .aside-box p a:hover {
 .bottom_box .tweet_wrap .tweet_meta {
   padding: 10px 0px 10px 40px;
   margin-top: 20px;
-  border-top: 1px solid #b23b09;
-  border-bottom: 1px solid #b23b09;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
   background: url('../img/tw_icon.png') no-repeat 10px center;
 }
 .bottom_box .tweet_wrap .tweet_meta:before {
@@ -2113,7 +2113,7 @@ aside .aside-box p a:hover {
   overflow: hidden;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: #b23b09 solid 1px;
+  border-bottom: #dddddd solid 1px;
 }
 .event-map #map-canvas {
   height: 275px;
@@ -2147,7 +2147,7 @@ aside .aside-box p a:hover {
 .comments-list li {
   padding-bottom: 5px;
   margin-bottom: 5px;
-  border-bottom: #b23b09 solid 1px;
+  border-bottom: #dddddd solid 1px;
 }
 .article-list li:first-child,
 .comments-list li:first-child {
@@ -2172,13 +2172,13 @@ aside .aside-box p a:hover {
 .page-title h2 {
   padding-bottom: 20px;
   margin-bottom: 30px;
-  border-bottom: #b23b09 solid 1px;
+  border-bottom: #dddddd solid 1px;
 }
 .section-search {
   overflow: hidden;
   padding-bottom: 20px;
   margin-bottom: 30px;
-  border-bottom: #b23b09 solid 1px;
+  border-bottom: #dddddd solid 1px;
 }
 .section-search fieldset {
   float: left;
@@ -2297,7 +2297,7 @@ aside .aside-box p a:hover {
   padding: 5px 0 5px 20px;
   background-image: url(../img/feed-icons.png);
   background-repeat: no-repeat;
-  border-bottom: #b23b09 solid 1px;
+  border-bottom: #dddddd solid 1px;
 }
 .community-feed li:last-child {
   border-bottom: 0;
@@ -2662,8 +2662,8 @@ aside .aside-box p a:hover {
     clear: both;
     padding-top: 20px;
     margin-top: 15px;
-    border-top: #b23b09 solid 1px;
-    border-bottom: #b23b09 solid 1px;
+    border-top: #dddddd solid 1px;
+    border-bottom: #dddddd solid 1px;
   }
   #header .grid-3-top article {
     width: 45%;
