@@ -4,7 +4,7 @@
         <div id="header" class="clearfix">
 
           <div id="headerLiveTrackHolder" class="radio_player player">
-            <h2>Offline</h2>
+            <h2>Listen Live</h2>
             <button id="playNow" aria-controls="audio" title="Begin audio streaming">Play Now</button>
             <p>Current:</p>
           </div>

@@ -3,7 +3,7 @@
         <div id="top" class="clearfix">
 
             <div id="pages_top" class="clearfix">
-                <a href="#" class="cat-trigger">CONTACT</a>
+                <a href="#" class="cat-trigger">Contact</a>
                 <ul class="show">
                   {{* Set local context *}}
                   {{ local }}
@@ -111,7 +111,7 @@
             {{ set_default_publication }}
             {{ /local }}
           {{ /if }}
-            <h2>Offline</h2>
+            <h2>Listen Live</h2>
             <button id="playNow" aria-controls="audio" title="Begin audio streaming">Play Now</button>
             <p>Current:</p>
           </div>
