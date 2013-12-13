@@ -26,37 +26,47 @@
 
   <!-- Airtime stream info -->
   <script>
-    // default to SF stream if one has not been set in the back-end
-    var apiSrc = "http://sourcefabric.airtime.pro";
-    var streamSrc = "http://sourcefabric.out.airtime.pro";
     // $todo: check browser capability and swap streams
-    // mp3
-    var stream_a = "sourcefabric_a";
-    // ogg
-    var stream_b = "sourcefabric_b";
-    // port shouldn't change but just in case…
-    var port = "8000";
     {{ local }}
     {{ set_issue number = "1" }}
     {{ set_section number = "10" }}
-      {{ list_articles length = "1" constraints = "number is 204" }}
-      {{ if $gimme->article->name == "Airtime Info" }}
+      {{ list_articles length = "1" constraints = "type is Stream_Info" }}
+
+        // default to Sourcefabric Radio API if Airtime URL has not been set in the back-end
         {{ if $gimme->article->API }}
-        apiSrc = "{{ $gimme->article->API }}";
+          var apiSrc = "{{ $gimme->article->API }}";
+        {{ else }}
+          var apiSrc = "http://sourcefabric.airtime.pro";
         {{ /if }}
+
+        // default to Sourcefabric Radio stream if Icecast URL has not been set in the back-end
         {{ if $gimme->article->stream }}
-        streamSrc = "{{ $gimme->article->stream }}";
+          var streamSrc = "{{ $gimme->article->stream }}";
+        {{ else }}
+          var streamSrc = "http://sourcefabric.out.airtime.pro";
         {{ /if }}
+
+        // Primary stream on Sourcefabric Radio is Ogg Vorbis
         {{ if $gimme->article->stream_a }}
-        stream_a = "{{ $gimme->article->stream_a }}";
+          var stream_a = "{{ $gimme->article->stream_a }}";
+        {{ else }}
+          var stream_a = "sourcefabric_a"; 
         {{ /if }}
+
+        // Secondary stream on Sourcefabric Radio is MP3
         {{ if $gimme->article->stream_b }}
-        stream_b = "{{ $gimme->article->stream_b }}";
+          var stream_b = "{{ $gimme->article->stream_b }}";
+        {{ else }}
+          var stream_b = "sourcefabric_b";
         {{ /if }}
+
+        // Port of the streaming server, usually 8000 or 80
         {{ if $gimme->article->port }}
-        port = "{{ $gimme->article->port }}";
+          var port = "{{ $gimme->article->port }}";
+        {{ else }}
+          var port = "8000";
         {{ /if }}
-      {{ /if }}
+
       {{ /list_articles }}
     {{ /local }}
   </script>
