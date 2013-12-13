@@ -75,7 +75,7 @@ More topical content should be placed in second and subsequent issues. These art
 Section numbers in templates
 ============================
 
-The Broadcaster theme uses the section number to provide different treatments to specific sections. The default issue 1, for static content, contains three sections:
+The Broadcaster theme uses the [section number](http://sourcefabric.booktype.pro/newscoop-42-for-journalists-and-editors/creating-a-section/) to provide different treatments to specific sections. The default issue 1, for static content, contains three sections:
 
 * 5 	Pages
 * 10 	Application pages
