@@ -53,8 +53,8 @@ The Broadcaster theme uses several *Article Types* to display content in differe
 7. Stream_Info (custom Article Type):
    * API (Single-line Text) - URL of your Airtime server (default: http://sourcefabric.airtime.pro)
    * stream  (Single-line Text) - URL of your streaming server (default: http://sourcefabric.out.airtime.pro)
-   * stream_a (Single-line Text) - mount point of your first stream (default: sourcefabric_a)
-   * stream_b (Single-line Text) - mount point of your second stream (default: sourcefabric_b)
+   * stream_a (Single-line Text) - mount point of your Ogg Vorbis stream (default: sourcefabric_a)
+   * stream_b (Single-line Text) - mount point of your MP3 stream (default: sourcefabric_b)
    * port (Single-line Text) - Port used by your stream (default is: 8000)
 
 In the Newscoop administration interface, click **Configure** on the main navigation menu, then **Article Types**. If the Article Types shown above are not listed, you will have to create them, as shown in the manual chapter [Article Types](http://sourcefabric.booktype.pro/newscoop-42-for-journalists-and-editors/article-types/). Then the list of Article Types should look like this:
