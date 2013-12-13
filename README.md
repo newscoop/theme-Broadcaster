@@ -72,8 +72,8 @@ Typically you will want to have some static pages such as 'About us' or 'Contrib
 
 More topical content should be placed in second and subsequent issues. These articles are handled differently, with the **Latest News** articles displayed on the homepage. Up to four featured articles are given the most prominent treatment on the homepage, rotating in a carousel. These articles need to be placed in a Featured Article List named *Carousel-en*, where *-en* is the language code for English content. For more information on Featured Article Lists, see the manual chapter [Managing Content](http://sourcefabric.booktype.pro/newscoop-42-for-journalists-and-editors/managing-content/).
 
-Section and article numbers
-===========================
+Section numbers in templates
+============================
 
 The Broadcaster theme uses the section number to provide different treatments to specific sections. The default issue 1, for static content, contains three sections:
 
