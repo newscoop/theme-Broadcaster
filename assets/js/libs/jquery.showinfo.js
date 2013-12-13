@@ -239,8 +239,8 @@
                 });
                 $('.player #playNow').bind('click', function(){
                   var audio = new Audio();
-                      audio.src = Modernizr.audio.mp3 ? streamSrc + ':' + port + '/' + stream_a + '?callback=?':
-                                  Modernizr.audio.ogg ? streamSrc + ':' + port + '/' + stream_b + '?callback=?':
+                      audio.src = Modernizr.audio.ogg ? streamSrc + ':' + port + '/' + stream_a + '?callback=?':
+                                  Modernizr.audio.mp3 ? streamSrc + ':' + port + '/' + stream_b + '?callback=?':
                                   audio.play();
                   if (audio.src != null || undefined || '') {
                     audio.play();
