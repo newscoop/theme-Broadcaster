@@ -9,7 +9,7 @@
     <ttl>60</ttl>
     <generator>Newscoop</generator>
     <image>
-      <url>{{ url static_file="_img/logo.png" }}</url>
+      <url>{{ url static_file="assets/img/logo.png" }}</url>
       <title>{{$gimme->publication->name}}</title>
       <link>http://{{$gimme->publication->site}}</link>
     </image>
