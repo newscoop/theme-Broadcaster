@@ -2,11 +2,11 @@
 @import "reset.css";
 
 // Fonts
-@import "fonts.css";
+@import url(http://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow:700&subset=latin,latin-ext);
 
 // Global Variables
-@main-color: #ff5d1a;
-@sec-color: #000000;
+@main-color: #ed901e;
+@sec-color: #222222;
 @border-color: #dddddd;
 @title-article-color: #1a171b;
 @body-text-color: #444444; 
@@ -16,8 +16,8 @@
 .list-reset {margin:0; list-style-type: none;}
 
 // Font Families
-@font-prim: 'RockwellStdRegular', Arial, Helvetica, serif;
-@font-sec: sans-serif;
+@font-prim: 'PT Sans Narrow', sans-serif;
+@font-sec: 'PT Sans', sans-serif;
 @font-ter: sans-serif;
 
 // Global type styles
@@ -100,7 +100,7 @@ h4 { font-size: 13px;
 // Global Elements
 body {
     font-family: @font-prim;
-    background: url("../img/top-background.png") 0 0 repeat-x #fff;
+    background: url("../img/header_bck.png") top center repeat-x;
     }
 #wrapper {
     max-width: 930px;
@@ -1211,7 +1211,7 @@ aside {
 #main_header {
     width: 100%;
     margin: 0 auto 30px auto;
-    border-bottom: 1px solid @border-color
+    background: url("../img/top-background.png") 0 0 repeat-x;
 }
 
 #main_header #top, #main_header #header, #main_header #nav-bar {
@@ -1366,7 +1366,6 @@ aside {
 
 #pages_top {
     position: relative;
-    margin-bottom: 30px;
 
     a.cat-trigger {
         display:none;
