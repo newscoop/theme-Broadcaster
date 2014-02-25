@@ -22,7 +22,7 @@
 
 // Global type styles
 p {
-    font-family: @font-prim;
+    font-family: @font-sec;
     color: @body-text-color;
     line-height: 20px;
     }
@@ -39,13 +39,13 @@ p {
         }
     }
 h2 {
-    font-family: @font-prim; font-size: 35px; color: @sec-color; line-height: 35px;;
+    font-family: @font-prim; font-size: 35px; color: @sec-color; line-height: 35px; text-transform: uppercase;
     span {color: @main-color;}
     a {color: @sec-color; text-decoration: none;
     &:hover {text-decoration: underline;}
     }
 }
-h3, h4 { font-family: @font-sec;}
+h3, h4 { font-family: @font-sec; text-transform: uppercase;}
 h3 { 
     font-size: 20px; line-height: 20px; color: @title-article-color;
     a { color: @title-article-color; text-decoration: none;
@@ -250,7 +250,7 @@ article {
             display: block;
             color: @body-text-color; font-size: 10px; font-weight: bold; font-style: italic;
             a {
-                font-family: @font-sec; font-size: 13px; color: @body-text-color; text-decoration: none; font-style: normal;
+                font-family: @font-sec; font-size: 13px; color: @body-text-color !important; text-decoration: none; font-style: normal;
                 &:hover {text-decoration: underline;}
                 }
             }
@@ -259,7 +259,7 @@ article {
         margin-bottom: 7px;
         font-size: 10px;
         a {
-            font-family: @font-sec; font-size: 14px; font-weight: bold; color: @main-color; text-decoration: none;
+            font-family: @font-sec; font-size: 14px; font-weight: bold; color: @main-color; text-decoration: none; text-transform: uppercase;
             &:hover {text-decoration: underline;}
         }
         em {
@@ -530,6 +530,7 @@ article {
                         font-weight: bold;
                         text-decoration: none;
                         color: @sec-color;
+                        text-transform: uppercase;
                         }
                       }
                 li.active {
@@ -773,6 +774,7 @@ article {
 }
 .grid-3 {
     padding-bottom: 0;
+    h2 { margin-bottom: 20px; }
     article {
         float: left;
         width: 290px;
@@ -1071,6 +1073,7 @@ aside {
 #top {
     position: relative;
     margin-bottom: 20px !important;
+    z-index: 9999;
     h3 {
         float: left;
         font-family: @font-sec; color: #fff; font-size: 13px; text-transform: none; line-height: 35px;
@@ -1246,9 +1249,9 @@ aside {
     
     .radio_player {
                     background: url('../img/radio_player_colors.png') no-repeat left center;
-                    background-color: #fbfbfb;
+                    background-color: rgba(251, 251, 251, 0.4);
                     max-width: 260px;
-                    border: 1px solid #dddddd;
+                    border: 1px solid rgba(111, 193, 239, 0.4);
                     min-height: 120px;
                     width: 100%;
                     padding: 10px 10px 6px 20px;
@@ -1297,6 +1300,16 @@ aside {
         width: 252px;
         height: 110px;
         float: left;
+        margin-bottom: 20px;
+        &:after {
+        		display: block;
+				content: " ";
+				background: url("../img/logo_bck.png") top center repeat-x;
+				width: 363px;
+				height: 194px;
+				margin-top: -20px;
+				margin-left: -50px;
+				}
       a {
         position: absolute;
         left: 0;
@@ -1328,7 +1341,7 @@ aside {
 
     a.cat-trigger {
         display:none;
-        font-family: @font-sec; font-size: 13px; color: #fff; line-height: 35px; font-weight: bold; text-decoration: none;
+        font-family: @font-sec; font-size: 13px; color: #fff; text-transform: uppercase; line-height: 35px; font-weight: bold; text-decoration: none;
         }
     ul {
         overflow: hidden;
@@ -1339,7 +1352,7 @@ aside {
             &:first-child {padding-left:0;}
             a {
                 display: block;
-                font-family: @font-prim; color: @sec-color; line-height: 49px; font-size: 16px; font-weight:bold; text-decoration: none;
+                font-family: @font-sec; color: @sec-color; line-height: 49px; font-size: 16px; font-weight:bold; text-decoration: none; text-transform: uppercase;
                 &.active, &:hover {color: @main-color;}
                 }
             ul {
@@ -1357,7 +1370,7 @@ aside {
         }
     .right {
         position: absolute; top: 0; right: 10px; float: none;
-        font-family: @font-sec; color: @sec-color; line-height: 49px; font-size: 16px; font-weight:bold;
+        font-family: @font-sec; color: @sec-color; line-height: 49px; font-size: 16px; font-weight:bold; text-transform: uppercase;
         a {color: @sec-color; text-decoration: none;
             &:hover {color: @main-color;}
         }
@@ -1369,7 +1382,7 @@ aside {
 
     a.cat-trigger {
         display:none;
-        font-family: @font-sec; font-size: 13px; color: #fff; line-height: 35px; font-weight: bold; text-decoration: none;
+        font-family: @font-sec; font-size: 13px; color: #fff; line-height: 35px; font-weight: bold; text-decoration: none; text-transform: uppercase;
         }
     ul {
         overflow: hidden;
@@ -1394,7 +1407,7 @@ aside {
         }
     .right {
         position: absolute; top: 0; right: 10px; float: none;
-        font-family: @font-sec; color: @sec-color; line-height: 49px;  font-size: 16px; font-weight:bold;
+        font-family: @font-sec; color: @sec-color; line-height: 49px;  font-size: 16px; font-weight:bold; text-transform: uppercase;
         a {color: @sec-color; text-decoration: none;
             &:hover {color: @main-color;}
         }

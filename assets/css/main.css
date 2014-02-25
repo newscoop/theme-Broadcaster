@@ -8,7 +8,7 @@
   list-style-type: none;
 }
 p {
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   color: #444444;
   line-height: 20px;
 }
@@ -40,6 +40,7 @@ h2 {
   font-size: 35px;
   color: #222222;
   line-height: 35px;
+  text-transform: uppercase;
 }
 h2 span {
   color: #ed901e;
@@ -54,6 +55,7 @@ h2 a:hover {
 h3,
 h4 {
   font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
 }
 h3 {
   font-size: 20px;
@@ -353,7 +355,7 @@ article .more {
 article .more a {
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
-  color: #444444;
+  color: #444444 !important;
   text-decoration: none;
   font-style: normal;
 }
@@ -371,6 +373,7 @@ article small a {
   font-weight: bold;
   color: #ed901e;
   text-decoration: none;
+  text-transform: uppercase;
 }
 article small a:hover {
   text-decoration: underline;
@@ -721,6 +724,7 @@ article .info li a {
   font-weight: bold;
   text-decoration: none;
   color: #222222;
+  text-transform: uppercase;
 }
 .program_grid .tabs li.active {
   background: #fff;
@@ -1094,6 +1098,9 @@ article .info li a {
 }
 .grid-3 {
   padding-bottom: 0;
+}
+.grid-3 h2 {
+  margin-bottom: 20px;
 }
 .grid-3 article {
   float: left;
@@ -1539,6 +1546,7 @@ aside .aside-box p a:hover {
 #top {
   position: relative;
   margin-bottom: 20px !important;
+  z-index: 9999;
 }
 #top h3 {
   float: left;
@@ -1779,9 +1787,9 @@ aside .aside-box p a:hover {
 }
 #main_header #header .radio_player {
   background: url('../img/radio_player_colors.png') no-repeat left center;
-  background-color: #fbfbfb;
+  background-color: rgba(251, 251, 251, 0.4);
   max-width: 260px;
-  border: 1px solid #dddddd;
+  border: 1px solid rgba(111, 193, 239, 0.4);
   min-height: 120px;
   width: 100%;
   padding: 10px 10px 6px 20px;
@@ -1832,6 +1840,16 @@ aside .aside-box p a:hover {
   width: 252px;
   height: 110px;
   float: left;
+  margin-bottom: 20px;
+}
+#main_header #header h1:after {
+  display: block;
+  content: " ";
+  background: url("../img/logo_bck.png") top center repeat-x;
+  width: 363px;
+  height: 194px;
+  margin-top: -20px;
+  margin-left: -50px;
 }
 #main_header #header h1 a {
   position: absolute;
@@ -1866,6 +1884,7 @@ aside .aside-box p a:hover {
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   color: #fff;
+  text-transform: uppercase;
   line-height: 35px;
   font-weight: bold;
   text-decoration: none;
@@ -1884,12 +1903,13 @@ aside .aside-box p a:hover {
 }
 #nav-bar ul li a {
   display: block;
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   color: #222222;
   line-height: 49px;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
+  text-transform: uppercase;
 }
 #nav-bar ul li a.active,
 #nav-bar ul li a:hover {
@@ -1926,6 +1946,7 @@ aside .aside-box p a:hover {
   line-height: 49px;
   font-size: 16px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 #nav-bar .right a {
   color: #222222;
@@ -1945,6 +1966,7 @@ aside .aside-box p a:hover {
   line-height: 35px;
   font-weight: bold;
   text-decoration: none;
+  text-transform: uppercase;
 }
 #pages_top ul {
   overflow: hidden;
@@ -1982,6 +2004,7 @@ aside .aside-box p a:hover {
   line-height: 49px;
   font-size: 16px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 #pages_top .right a {
   color: #222222;
