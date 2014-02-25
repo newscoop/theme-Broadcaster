@@ -1,5 +1,5 @@
 @import "reset.css";
-@import "fonts.css";
+@import url(http://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow:700&subset=latin,latin-ext);
 .text-indent {
   text-indent: -9999px;
 }
@@ -8,7 +8,7 @@
   list-style-type: none;
 }
 p {
-  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   color: #444444;
   line-height: 20px;
 }
@@ -25,8 +25,8 @@ p {
   line-height: 35px;
 }
 .title p a {
-  font-family: sans-serif;
-  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+  color: #222222;
   font-size: 13px;
   font-style: normal;
   text-decoration: none;
@@ -36,16 +36,16 @@ p {
   text-decoration: underline;
 }
 h2 {
-  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 35px;
-  color: #000000;
+  color: #222222;
   line-height: 35px;
 }
 h2 span {
-  color: #ff5d1a;
+  color: #ed901e;
 }
 h2 a {
-  color: #000000;
+  color: #222222;
   text-decoration: none;
 }
 h2 a:hover {
@@ -53,7 +53,7 @@ h2 a:hover {
 }
 h3,
 h4 {
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 h3 {
   font-size: 20px;
@@ -69,10 +69,10 @@ h3 a:hover {
 }
 h4 {
   font-size: 13px;
-  color: #000000;
+  color: #222222;
 }
 h4 a {
-  color: #000000;
+  color: #222222;
   text-decoration: none;
 }
 h4 a:hover {
@@ -80,9 +80,9 @@ h4 a:hover {
 }
 .paging {
   margin-left: 5px;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 13px;
-  color: #000000;
+  color: #222222;
   font-weight: bold;
   list-style: none;
 }
@@ -91,17 +91,17 @@ h4 a:hover {
   display: inline-block;
 }
 .paging a {
-  color: #000000;
+  color: #222222;
   text-decoration: none;
 }
 .paging a.active {
-  color: #ff5d1a;
+  color: #ed901e;
 }
 .paging a:last-child {
   margin-right: 0;
 }
 .paging .active {
-  color: #ff5d1a;
+  color: #ed901e;
 }
 .title .paging {
   position: absolute;
@@ -109,7 +109,7 @@ h4 a:hover {
   top: 0px;
 }
 .title .paging .jump {
-  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-style: italic;
   color: #444444;
   font-weight: normal;
@@ -131,7 +131,7 @@ h4 a:hover {
 }
 .paging-holder .paging li .prev,
 .paging-holder .paging li .next {
-  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 .paging-holder .prev,
 .paging-holder .next {
@@ -145,10 +145,10 @@ h4 a:hover {
 }
 .paging-holder .prev span,
 .paging-holder .next span {
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   font-weight: bold;
-  color: #000000;
+  color: #222222;
   font-style: normal;
 }
 .paging-holder .prev:hover,
@@ -162,8 +162,8 @@ h4 a:hover {
   right: 0;
 }
 body {
-  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
-  background: url("../img/top-background.png") 0 0 repeat-x #ffffff;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background: url("../img/header_bck.png") top center repeat-x;
 }
 #wrapper {
   max-width: 930px;
@@ -223,7 +223,7 @@ audio {
   margin-left: 0px;
 }
 .home_top .chart_home ol li {
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   font-weight: bold;
   border-top: 1px solid #dddddd;
@@ -255,7 +255,7 @@ audio {
 }
 .home_top .current_widget ul li {
   display: block;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   font-weight: bold;
   border-top: 1px solid #dddddd;
@@ -306,7 +306,7 @@ article .time a {
   font-weight: bold;
   font-style: italic;
   text-decoration: none;
-  color: #000000;
+  color: #222222;
   font-size: 10px;
 }
 article .date a:hover,
@@ -337,7 +337,7 @@ article .comments_num {
   font-weight: bold;
   font-style: italic;
   text-decoration: none;
-  color: #000000;
+  color: #222222;
   font-size: 10px;
 }
 article .comments_num:hover {
@@ -351,7 +351,7 @@ article .more {
   font-style: italic;
 }
 article .more a {
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   color: #444444;
   text-decoration: none;
@@ -366,10 +366,10 @@ article small {
   font-size: 10px;
 }
 article small a {
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   font-weight: bold;
-  color: #ff5d1a;
+  color: #ed901e;
   text-decoration: none;
 }
 article small a:hover {
@@ -399,11 +399,11 @@ article .info {
   left: 0;
   top: 0;
   width: 100%;
-  background: #000000;
+  background: #222222;
 }
 article .info li {
   padding: 2px 5px;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 12px;
   color: #fff;
   font-weight: bold;
@@ -423,7 +423,7 @@ article .info li a {
   padding: 2px 5px;
   color: #fff;
   text-decoration: none;
-  background: #ff5d1a;
+  background: #ed901e;
 }
 #scheduleTabs.ui-tabs .ui-tabs-hide {
   display: none;
@@ -461,7 +461,7 @@ article .info li a {
   margin-bottom: 15px;
 }
 .article_show article span {
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   font-weight: bold;
   font-style: italic;
@@ -480,14 +480,14 @@ article .info li a {
   margin-right: 10px;
 }
 .article_show .show_years li.active a {
-  color: #ff5d1a;
+  color: #ed901e;
 }
 .article_show .show_years a {
   font-size: 18px;
-  color: #000000;
+  color: #222222;
   float: left;
   display: inline-block;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   text-decoration: none;
   background: url('../img/bullet-3.png') no-repeat left center;
@@ -501,7 +501,7 @@ article .info li a {
 }
 .article_show .show_archive a.archive_play {
   font-size: 12px;
-  color: #000000;
+  color: #222222;
   display: block;
   text-decoration: none;
   font-style: italic;
@@ -520,11 +520,11 @@ article .info li a {
   border: 1px solid #dddddd;
 }
 .article_show .show_archive .play_progress.playing .play_bar {
-  background: #ff5d1a;
+  background: #ed901e;
   height: 4px;
 }
 .article_chart {
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   margin-bottom: 30px;
 }
@@ -561,13 +561,13 @@ article .info li a {
   background: #fbf0d3;
 }
 .article_chart tbody tr .label_col {
-  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-style: italic;
 }
 .artist_profile article {
   padding: 30px;
   margin-bottom: 30px;
-  background: #ff5d1a;
+  background: #ed901e;
 }
 .artist_profile article p,
 .artist_profile article h3,
@@ -603,7 +603,7 @@ article .info li a {
   clear: left;
 }
 .years_section .grid-3 h3 {
-  color: #ff5d1a;
+  color: #ed901e;
   border-bottom: 1px solid #dddddd;
   padding-bottom: 10px;
   margin-bottom: 0px;
@@ -613,7 +613,7 @@ article .info li a {
 .years_section .grid-3 ul {
   list-style: none;
   margin-left: 0px;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   -moz-column-count: 2;
   /* Firefox */
@@ -635,8 +635,8 @@ article .info li a {
 }
 .years_section .grid-3 ul li a {
   text-decoration: none;
-  color: #000000;
-  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
+  color: #222222;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-weight: normal;
   font-style: italic;
   margin-top: 20px;
@@ -710,21 +710,21 @@ article .info li a {
 .program_grid .tabs {
   background: #f0f0f0;
   border: 1px solid #dddddd;
-  border-bottom: 1px solid #ff5d1a;
+  border-bottom: 1px solid #ed901e;
 }
 .program_grid .tabs li {
   display: inline-block;
   padding: 15px 33px;
 }
 .program_grid .tabs li a {
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   text-decoration: none;
-  color: #000000;
+  color: #222222;
 }
 .program_grid .tabs li.active {
   background: #fff;
-  border: 1px solid #ff5d1a;
+  border: 1px solid #ed901e;
   border-bottom: 1px solid #fff;
   margin-bottom: -1px;
 }
@@ -734,7 +734,7 @@ article .info li a {
   position: relative;
 }
 .program_grid table tr {
-  border-bottom: 1px solid #ff5d1a;
+  border-bottom: 1px solid #ed901e;
 }
 .program_grid table tr td {
   padding: 15px;
@@ -745,35 +745,35 @@ article .info li a {
 .program_grid table .col_one {
   background: #ffa781;
   border: 1px solid #e8d093;
-  border-left: 3px solid #ff5d1a;
+  border-left: 3px solid #ed901e;
   border-top: none;
 }
 .program_grid table .col_two {
   background: #ffa781;
-  border: 1px solid #ff5d1a;
-  border-left: 3px solid #ff5d1a;
+  border: 1px solid #ed901e;
+  border-left: 3px solid #ed901e;
   border-top: none;
 }
 .program_grid table .col_three {
   background: #ffa781;
   border: 1px solid #e4caad;
-  border-left: 3px solid #ff5d1a;
+  border-left: 3px solid #ed901e;
   border-top: none;
 }
 .program_grid table .col_four {
   background: #ffa781;
   border: 1px solid #c3d4f2;
-  border-left: 3px solid #ff5d1a;
+  border-left: 3px solid #ed901e;
   border-top: none;
 }
 .program_grid table .col_five {
   background: #ffa781;
   border: 1px solid #f4c1d2;
-  border-left: 3px solid #ff5d1a;
+  border-left: 3px solid #ed901e;
   border-top: none;
 }
 .program_grid table .time_grid {
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 .program_grid table .more_grid {
   text-align: right;
@@ -805,7 +805,7 @@ article .info li a {
   margin: 10px 15px 0px;
 }
 .program_grid table .show_desc h4 a {
-  color: #ff5d1a !important;
+  color: #ed901e !important;
 }
 .program_grid table .show_desc p {
   margin: 5px 15px 10px 15px;
@@ -819,7 +819,7 @@ article .info li a {
 }
 .program_grid .color_legend {
   color: #767676;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   margin: 20px 0px 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #dddddd;
@@ -892,7 +892,7 @@ article .info li a {
   display: none !important;
 }
 .form-content .alert-error a {
-  color: #ff5d1a;
+  color: #ed901e;
 }
 .form-content fieldset.login {
   float: left;
@@ -921,7 +921,7 @@ article .info li a {
 .form-content #attributes-email_public-label {
   display: block;
   float: left;
-  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   line-height: 25px;
   font-style: italic;
   color: #444444;
@@ -937,8 +937,8 @@ article .info li a {
 }
 .form-content #attributes-gender-element label {
   float: left;
-  color: #000000;
-  font-family: sans-serif;
+  color: #222222;
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
 }
 .form-content #attributes-gender-element label input {
@@ -985,7 +985,7 @@ article .info li a {
   width: 222px;
   padding: 0 10px;
   margin-bottom: 18px;
-  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 12px;
   font-style: italic;
   color: #444444;
@@ -999,12 +999,12 @@ article .info li a {
 .form-content input[type=submit] {
   height: 25px;
   width: 244px;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 12px;
   font-weight: bold;
   color: #fff;
   text-align: center;
-  background: #ff5d1a;
+  background: #ed901e;
   border: 0;
 }
 .form-content .input-info {
@@ -1017,10 +1017,10 @@ article .info li a {
   display: inline-block;
   padding-left: 20px;
   margin-left: 14px;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 12px;
   font-weight: bold;
-  color: #ff5d1a;
+  color: #ed901e;
   text-decoration: none;
   background: url(../img/bullet-3.png) 0 50% no-repeat;
 }
@@ -1069,7 +1069,7 @@ article .info li a {
   margin-right: 0;
 }
 .grid-2 article p a {
-  color: #ff5d1a;
+  color: #ed901e;
 }
 .grid-2 article img {
   display: block;
@@ -1109,7 +1109,7 @@ article .info li a {
         */
 }
 .grid-3 article p a {
-  color: #ff5d1a;
+  color: #ed901e;
 }
 .grid-3 article h2 {
   margin-bottom: 20px;
@@ -1169,7 +1169,7 @@ article .info li a {
   height: 78px;
 }
 .grid-6 article .article h4 em {
-  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-style: italic;
   font-size: 10px;
   text-transform: none;
@@ -1264,7 +1264,7 @@ article .info li a {
   margin-bottom: 20px;
 }
 .article_album .album_info a {
-  color: #ff5d1a;
+  color: #ed901e;
   text-decoration: none;
 }
 .article_album .album_info a:hover {
@@ -1280,12 +1280,12 @@ article .info li a {
   font-family: sans-serif;
 }
 .article_album .social_links h3 span {
-  color: #ff5d1a;
+  color: #ed901e;
 }
 .article_album .social_links p {
   float: left;
   min-width: 100px;
-  color: #ff5d1a;
+  color: #ed901e;
   font-weight: bold;
 }
 .article_album .social_links ul li {
@@ -1293,7 +1293,7 @@ article .info li a {
   float: left;
 }
 .article_album .social_links ul li a {
-  color: #000000;
+  color: #222222;
   text-decoration: none;
 }
 .article_album .social_links ul li a:hover {
@@ -1320,7 +1320,7 @@ article .info li a {
   margin-bottom: 10px;
 }
 .entry article p a {
-  color: #ff5d1a;
+  color: #ed901e;
   text-decoration: none;
 }
 .entry article p a:hover {
@@ -1329,13 +1329,13 @@ article .info li a {
 .entry article blockquote {
   padding: 5px 15px 7px;
   margin-bottom: 10px;
-  color: #000000;
+  color: #222222;
   font-style: italic;
   background: #dddddd;
 }
 .entry article blockquote p {
   margin: 0;
-  color: #000000;
+  color: #222222;
 }
 .entry article figure {
   margin-bottom: 0px;
@@ -1350,7 +1350,7 @@ article .info li a {
 .entry article figure figcaption em {
   font-size: 10px;
   font-weight: bold;
-  color: #000000;
+  color: #222222;
 }
 .entry article ul {
   margin: 0;
@@ -1359,7 +1359,7 @@ article .info li a {
 }
 .entry article ul li {
   padding-left: 26px;
-  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 13px;
   line-height: 20px;
   background: url(../img/bullet-3.png) 10px 7px no-repeat;
@@ -1389,7 +1389,7 @@ article .info li a {
 }
 .author-info p em b {
   font-size: 10px;
-  color: #000000;
+  color: #222222;
 }
 .author-info img {
   float: left;
@@ -1401,9 +1401,9 @@ article .info li a {
   right: 0;
 }
 .author-info .more a {
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 13px;
-  color: #000000;
+  color: #222222;
   text-decoration: none;
   font-weight: bold;
 }
@@ -1430,20 +1430,20 @@ article .info li a {
 .comments ol li h5 {
   margin-bottom: 5px;
   font-size: 12px;
-  color: #000000;
+  color: #222222;
 }
 .comments ol li h5 a {
-  font-family: sans-serif;
-  color: #ff5d1a;
+  font-family: 'PT Sans', sans-serif;
+  color: #ed901e;
   text-decoration: none;
 }
 .comments ol li h5 a:hover {
   text-decoration: underline;
 }
 .comments ol li h5 em {
-  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 10px;
-  color: #000000;
+  color: #222222;
   font-weight: bold;
 }
 .comments ol li p {
@@ -1462,7 +1462,7 @@ article .info li a {
 }
 .comments fieldset ul input[type=text],
 .comments fieldset ul textarea {
-  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 12px;
   font-style: italic;
   color: #444444;
@@ -1484,11 +1484,11 @@ article .info li a {
 .comments fieldset ul input.button {
   width: 225px;
   height: 50px;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: #fff;
-  background: #000000;
+  background: #222222;
   border: 0;
 }
 .comments fieldset ul input.button:hover {
@@ -1517,7 +1517,7 @@ aside .aside-box h3 {
   padding-top: 5px;
 }
 aside .aside-box p a {
-  color: #ff5d1a;
+  color: #ed901e;
   text-decoration: none;
 }
 aside .aside-box p a:hover {
@@ -1542,7 +1542,7 @@ aside .aside-box p a:hover {
 }
 #top h3 {
   float: left;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   color: #fff;
   font-size: 13px;
   text-transform: none;
@@ -1587,7 +1587,7 @@ aside .aside-box p a:hover {
   display: block;
   padding: 0 10px 0 27px;
   margin-right: 20px;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   color: #fff;
   font-size: 13px;
   line-height: 35px;
@@ -1602,7 +1602,7 @@ aside .aside-box p a:hover {
   left: -10px;
   z-index: 100;
   width: 150px;
-  background: #000000;
+  background: #222222;
 }
 #top .top-menu ul li .sub li {
   float: none;
@@ -1618,7 +1618,7 @@ aside .aside-box p a:hover {
 }
 #top .top-menu ul li .sub li a:hover {
   background-position: 14px 50%;
-  color: #ff5d1a;
+  color: #ed901e;
 }
 #top .top-menu ul li .login-box {
   overflow: hidden;
@@ -1635,7 +1635,7 @@ aside .aside-box p a:hover {
 #top .top-menu ul li .login-box fieldset p,
 #top .top-menu ul li .login-box fieldset input[type=text],
 #top .top-menu ul li .login-box fieldset input.button {
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 12px;
   color: #fff;
   font-style: italic;
@@ -1656,7 +1656,7 @@ aside .aside-box p a:hover {
   width: 130px;
   font-style: normal;
   font-weight: bold;
-  background: #ff5d1a;
+  background: #ed901e;
   border: 0;
 }
 #top .top-menu ul li .login-box p {
@@ -1667,7 +1667,7 @@ aside .aside-box p a:hover {
   display: inline;
   padding: 0;
   margin: 0;
-  color: #ff5d1a;
+  color: #ed901e;
   line-height: 15px;
   font-size: 12px;
   background: none;
@@ -1715,7 +1715,7 @@ aside .aside-box p a:hover {
   width: 88px;
   height: 23px;
   padding: 0 30px 0 10px;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 12px;
   color: #fff;
   font-style: italic;
@@ -1746,7 +1746,7 @@ aside .aside-box p a:hover {
 #main_header {
   width: 100%;
   margin: 0 auto 30px auto;
-  border-bottom: 1px solid #dddddd;
+  background: url("../img/top-background.png") 0 0 repeat-x;
 }
 #main_header #top,
 #main_header #header,
@@ -1765,7 +1765,7 @@ aside .aside-box p a:hover {
 #main_header #header #language_select li {
   float: left;
   margin: 0 10px 0 0;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 12px;
 }
 #main_header #header #language_select li a {
@@ -1800,7 +1800,7 @@ aside .aside-box p a:hover {
   line-height: 28px;
 }
 #main_header #header .radio_player p {
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   margin-top: 5px;
 }
 #main_header #header .radio_player .current {
@@ -1863,7 +1863,7 @@ aside .aside-box p a:hover {
 }
 #nav-bar a.cat-trigger {
   display: none;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   color: #fff;
   line-height: 35px;
@@ -1884,8 +1884,8 @@ aside .aside-box p a:hover {
 }
 #nav-bar ul li a {
   display: block;
-  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
-  color: #000000;
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: #222222;
   line-height: 49px;
   font-size: 16px;
   font-weight: bold;
@@ -1893,7 +1893,7 @@ aside .aside-box p a:hover {
 }
 #nav-bar ul li a.active,
 #nav-bar ul li a:hover {
-  color: #ff5d1a;
+  color: #ed901e;
 }
 #nav-bar ul li ul {
   display: none;
@@ -1921,26 +1921,25 @@ aside .aside-box p a:hover {
   top: 0;
   right: 10px;
   float: none;
-  font-family: sans-serif;
-  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+  color: #222222;
   line-height: 49px;
   font-size: 16px;
   font-weight: bold;
 }
 #nav-bar .right a {
-  color: #000000;
+  color: #222222;
   text-decoration: none;
 }
 #nav-bar .right a:hover {
-  color: #ff5d1a;
+  color: #ed901e;
 }
 #pages_top {
   position: relative;
-  margin-bottom: 30px;
 }
 #pages_top a.cat-trigger {
   display: none;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   color: #fff;
   line-height: 35px;
@@ -1961,7 +1960,7 @@ aside .aside-box p a:hover {
 }
 #pages_top ul li a {
   display: block;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   padding: 0px;
   margin-right: 10px;
   color: #fff;
@@ -1978,18 +1977,18 @@ aside .aside-box p a:hover {
   top: 0;
   right: 10px;
   float: none;
-  font-family: sans-serif;
-  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+  color: #222222;
   line-height: 49px;
   font-size: 16px;
   font-weight: bold;
 }
 #pages_top .right a {
-  color: #000000;
+  color: #222222;
   text-decoration: none;
 }
 #pages_top .right a:hover {
-  color: #ff5d1a;
+  color: #ed901e;
 }
 #bottom {
   float: left;
@@ -2012,7 +2011,7 @@ aside .aside-box p a:hover {
 #bottom ul li li {
   float: none;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   color: #1a171b;
   font-size: 12px;
   line-height: 15px;
@@ -2058,7 +2057,7 @@ aside .aside-box p a:hover {
 .bottom_box ul {
   list-style: none;
   margin-left: 0px;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   -moz-column-count: 2;
   /* Firefox */
@@ -2089,7 +2088,7 @@ aside .aside-box p a:hover {
   margin-left: 30px;
 }
 .bottom_box .tweet_wrap a {
-  color: #ff5d1a;
+  color: #ed901e;
 }
 .bottom_box .tweet_wrap .tweet_published {
   display: block;
@@ -2108,7 +2107,7 @@ aside .aside-box p a:hover {
   margin-left: -26px;
 }
 .bottom_box .tweet_wrap .tweet_meta a {
-  color: #ff5d1a;
+  color: #ed901e;
 }
 .event-map {
   overflow: hidden;
@@ -2126,15 +2125,15 @@ aside .aside-box p a:hover {
 }
 .event-map p.right,
 .event-map p.left a {
-  font-family: sans-serif;
-  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+  color: #222222;
   font-size: 13px;
   font-weight: bold;
   font-style: normal;
 }
 .event-map p a {
   text-decoration: none;
-  color: #000000;
+  color: #222222;
 }
 .event-map p a:hover {
   text-decoration: underline;
@@ -2190,7 +2189,7 @@ aside .aside-box p a:hover {
   width: 255px;
   height: 23px;
   padding: 0 5px 0 10px;
-  font-family: 'RockwellStdRegular', Arial, Helvetica, serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 12px;
   font-style: italic;
   color: #444444;
@@ -2212,7 +2211,7 @@ aside .aside-box p a:hover {
   float: left;
   padding-left: 20px;
   margin-right: 14px;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   line-height: 25px;
   background: url(../img/bullet-3.png) 0 50% no-repeat;
 }
@@ -2224,7 +2223,7 @@ aside .aside-box p a:hover {
   background: none;
 }
 .section-search ul li a {
-  color: #ff5d1a;
+  color: #ed901e;
   font-size: 13px;
   font-weight: bold;
   text-decoration: none;
@@ -2241,7 +2240,7 @@ aside .aside-box p a:hover {
 .user-slider li {
   overflow: hidden;
   float: left;
-  background: #000000;
+  background: #222222;
   width: 100%;
 }
 .user-slider li article {
@@ -2250,7 +2249,7 @@ aside .aside-box p a:hover {
 }
 .user-slider li article h3,
 .user-slider li article p {
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
   color: #fff;
   font-weight: bold;
   text-transform: none;
@@ -2259,7 +2258,7 @@ aside .aside-box p a:hover {
   margin-bottom: 0;
 }
 .user-slider li article p a {
-  color: #ff5d1a;
+  color: #ed901e;
   text-decoration: none;
 }
 .user-slider li article p a:hover {
@@ -2316,7 +2315,7 @@ aside .aside-box p a:hover {
 }
 .community-feed li p small {
   font-size: 10px;
-  color: #000000;
+  color: #222222;
   font-weight: bold;
 }
 .community-feed li p a {
@@ -2639,7 +2638,7 @@ aside .aside-box p a:hover {
     z-index: 10;
     width: 300px;
     padding: 10px;
-    background: #000000;
+    background: #222222;
   }
   #top .top-menu .search-box .hiden input {
     width: 255px;
@@ -2689,7 +2688,7 @@ aside .aside-box p a:hover {
     left: 0;
     z-index: 100;
     width: 100%;
-    background: #000000;
+    background: #222222;
   }
   #nav-bar ul.show li {
     float: none;
@@ -2710,7 +2709,7 @@ aside .aside-box p a:hover {
   }
   #nav-bar ul.show li a:hover {
     background-position: 14px 50%;
-    color: #ff5d1a;
+    color: #ed901e;
   }
   #nav-bar ul.show li:hover ul {
     position: relative;
@@ -2735,7 +2734,7 @@ aside .aside-box p a:hover {
   }
   #nav-bar ul.show li ul a:hover {
     background-position: 14px 50%;
-    color: #ff5d1a;
+    color: #ed901e;
   }
   #pages_top {
     position: absolute;
@@ -2757,7 +2756,7 @@ aside .aside-box p a:hover {
     left: 0;
     z-index: 100;
     width: 100%;
-    background: #000000;
+    background: #222222;
   }
   #pages_top ul.show li {
     float: none;
@@ -2778,7 +2777,7 @@ aside .aside-box p a:hover {
   }
   #pages_top ul.show li a:hover {
     background-position: 14px 50%;
-    color: #ff5d1a;
+    color: #ed901e;
   }
   .home_top .bx-wrapper h2 {
     position: relative;
@@ -2798,7 +2797,7 @@ aside .aside-box p a:hover {
     clear: both;
   }
   .social_links ul li a {
-    color: #000000;
+    color: #222222;
     text-decoration: none;
   }
   #top .top-menu ul li .sub li a {
