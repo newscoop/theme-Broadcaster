@@ -133,8 +133,8 @@ audio { width: 100%; }
           }
         }
     }
-    .chart_home {
-      h2 { white-space: nowrap; }
+    .about_home {
+      h2 { margin-bottom: 5px; white-space: nowrap; }
         p a {
                 font-style: italic;
                 font-size: 12px;
@@ -151,10 +151,10 @@ audio { width: 100%; }
         padding: 15px 30px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-      box-sizing: border-box;
+     	box-sizing: border-box;
         height: 100%;
         background-size: 4px 100%;
-        margin-bottom: 15px;
+        margin-top: 20px;
             ol {
                 margin-left: 0px;
                 li {
@@ -304,7 +304,7 @@ article {
     ul { margin-left: 0px; list-style: none; }
     img { display: block; width: 100%; }
     article {
-    background: #ffa781;
+    background: @main-color;
     color: #fff;
     padding: 20px;
     margin-bottom: 30px;
@@ -778,12 +778,12 @@ article {
     article {
         float: left;
         width: 290px;
-        margin-right: 20px;
+        margin-right: 30px;
         min-height: 370px;
-        /*
-	&:nth-child(3n) {margin-right: 0;}
+    
+		&:nth-of-type(3n) {margin-right: 0;}
         &:nth-child(3n + 1) {clear:left;}
-	*/
+
         p a { color: @main-color; }
 	h2 { margin-bottom: 20px; }
         /*
@@ -1305,8 +1305,8 @@ aside {
         		display: block;
 				content: " ";
 				background: url("../img/logo_bck.png") top center repeat-x;
-				width: 363px;
-				height: 194px;
+				width: 394px;
+				height: 163px;
 				margin-top: -20px;
 				margin-left: -50px;
 				}
@@ -1695,7 +1695,7 @@ aside {
     .bx-wrapper {
       margin-bottom: 30px !important;
       }
-    .chart_home { margin-right: 30px; }
+    .about_home { margin-right: 30px; }
     
     .bottom_box {
                 .sponsors {
@@ -1730,6 +1730,7 @@ aside {
     #top {margin-bottom: 20px; width: 100%;}
     article img,
     aside img {float: none; display: block; width: 100%; height: auto;}
+    #main_header #header h1:after { background: none; }
     
     .event-map #map-canvas,
     
@@ -1792,7 +1793,7 @@ aside {
     .home_top .bx-wrapper {
       max-width: 100% !important;
       }
-   .home_top .chart_home { max-width: 100%; margin-right: 0px; }
+   .home_top .about_home { max-width: 100%; margin-right: 0px; }
    .home_top .current_widget { max-width: 100%; }
   
 .article_album {
