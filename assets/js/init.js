@@ -132,7 +132,6 @@ $(document).ready(function() {
       var dows = new Array('sunday','monday','tuesday','wednesday','thursday','friday','saturday');
       var day = dows[d];
       
-      var day = 'monday';
       $("#scheduleTabs .tab_container div").each(function(){
         if (!$(this).hasClass(day)){
           $(this).hide();
