@@ -127,6 +127,11 @@ $(document).ready(function() {
   if ($('.program_grid')[0]){
 
     setTimeout(function(){
+      // figure out what the current day is
+      var d = new Date().getDay();
+      var dows = new Array('sunday','monday','tuesday','wednesday','thursday','friday','saturday');
+      var day = dows[d];
+      
       var day = 'monday';
       $("#scheduleTabs .tab_container div").each(function(){
         if (!$(this).hasClass(day)){
