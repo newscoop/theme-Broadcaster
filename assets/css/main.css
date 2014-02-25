@@ -196,7 +196,7 @@ audio {
 .home_top .bx-wrapper h2 a {
   color: #fff;
 }
-.home_top .chart_home {
+.home_top .about_home {
   background-color: #f0f0f0;
   float: left;
   max-width: 290px;
@@ -209,32 +209,33 @@ audio {
   box-sizing: border-box;
   height: 100%;
   background-size: 4px 100%;
-  margin-bottom: 15px;
+  margin-top: 20px;
 }
-.home_top .chart_home h2 {
+.home_top .about_home h2 {
+  margin-bottom: 5px;
   white-space: nowrap;
 }
-.home_top .chart_home p a {
+.home_top .about_home p a {
   font-style: italic;
   font-size: 12px;
   color: #444444;
   float: right;
   text-decoration: none;
 }
-.home_top .chart_home ol {
+.home_top .about_home ol {
   margin-left: 0px;
 }
-.home_top .chart_home ol li {
+.home_top .about_home ol li {
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   font-weight: bold;
   border-top: 1px solid #dddddd;
   padding: 6px 0px;
 }
-.home_top .chart_home ol li:first-child {
+.home_top .about_home ol li:first-child {
   border-top: none;
 }
-.home_top .chart_home ol li span {
+.home_top .about_home ol li span {
   color: #767676;
 }
 .home_top .current_widget {
@@ -440,7 +441,7 @@ article .info li a {
   width: 100%;
 }
 .article_show article {
-  background: #ffa781;
+  background: #ed901e;
   color: #fff;
   padding: 20px;
   margin-bottom: 30px;
@@ -1105,15 +1106,17 @@ article .info li a {
 .grid-3 article {
   float: left;
   width: 290px;
-  margin-right: 20px;
+  margin-right: 30px;
   min-height: 370px;
-  /*
-	&:nth-child(3n) {margin-right: 0;}
-        &:nth-child(3n + 1) {clear:left;}
-	*/
   /*
         h4 {height: 30px; overflow: hidden;}
         */
+}
+.grid-3 article:nth-of-type(3n) {
+  margin-right: 0;
+}
+.grid-3 article:nth-child(3n + 1) {
+  clear: left;
 }
 .grid-3 article p a {
   color: #ed901e;
@@ -1846,8 +1849,8 @@ aside .aside-box p a:hover {
   display: block;
   content: " ";
   background: url("../img/logo_bck.png") top center repeat-x;
-  width: 363px;
-  height: 194px;
+  width: 394px;
+  height: 163px;
   margin-top: -20px;
   margin-left: -50px;
 }
@@ -2409,7 +2412,7 @@ aside .aside-box p a:hover {
   .bx-wrapper {
     margin-bottom: 30px !important;
   }
-  .chart_home {
+  .about_home {
     margin-right: 30px;
   }
   .bottom_box .sponsors {
@@ -2455,6 +2458,9 @@ aside .aside-box p a:hover {
     display: block;
     width: 100%;
     height: auto;
+  }
+  #main_header #header h1:after {
+    background: none;
   }
   .event-map #map-canvas,
   .event-map #map-canvas img {
@@ -2589,7 +2595,7 @@ aside .aside-box p a:hover {
   .home_top .bx-wrapper {
     max-width: 100% !important;
   }
-  .home_top .chart_home {
+  .home_top .about_home {
     max-width: 100%;
     margin-right: 0px;
   }

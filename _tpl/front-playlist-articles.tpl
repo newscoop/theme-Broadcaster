@@ -19,6 +19,11 @@
       <h2>On Air Now</h2>
     </div>
 
+    <div class="about_home">
+      <h2>About <span>Us</span></h2>
+      {{ include file="_tpl/front-about-us.tpl" }}
+    </div>
+
 </section>
 
 <section class="grid-3">
