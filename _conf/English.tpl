@@ -77,14 +77,12 @@ goToArchives = "GO TO ARCHIVES"
 
 # _tpl/front-three-blocks.tpl
 aboutUs = "ABOUT <span>US</span>"
-missionStatement = "ROCKSTAR IS A SOLID, SLEEK AND COMFORTABLE NEWSCOOP THEME... AND IT ROCKS!"
 mostRead = "MOST <span>READ</span>"
 communityFeed = "COMMUNITY <span>FEED</span>"
 registered = "registered"
 newCommentOn = "New comment on:"
 
 # _tpl/header.tpl
-welcomeRockstar = "Welcome to the Rockstar Magazine"
 logout = "Logout"
 login = "Login"
 loginSignup = "Login/SignUp"
