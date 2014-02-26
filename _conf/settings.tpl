@@ -3,10 +3,10 @@
 ### Site info strings, used in _tpl/header.tpl and _tpl/footer.tpl ###
 
 [Site]
-# Your station name on Twitter
+# Your station on Twitter
 TwitterName = "Sourcefabric"
 
-# Your station name on Facebook
+# Your station on Facebook
 FacebookName = "Sourcefabric"
 
 # Your station contact address
@@ -27,5 +27,5 @@ StreamA = "sourcefabric_a"
 # Mount point of your MP3 stream
 StreamB = "sourcefabric_b"
 
-# Port used by your stream
+# Port used by your streaming server
 StreamPort ="8000"
