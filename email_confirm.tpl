@@ -1,4 +1,4 @@
-{{ config_load file="{{ $gimme->language->english_name }}.conf" }}
+{{ config_load file="{{ $gimme->language->english_name }}.tpl" }}
 {{ #mailHello# }}
 
 {{ #mailAutomaticalMessage# }} {{ $gimme->publication->name }} ({{ $gimme->publication->site }})
