@@ -2,7 +2,7 @@
 @import "reset.css";
 
 // Fonts
-@import url(http://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow:700&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow:700&subset=latin,latin-ext);
 
 // Global Variables
 @main-color: #ed901e;
@@ -146,7 +146,7 @@ audio { width: 100%; }
         float: left;
         max-width: 290px;
         border: 1px solid #dddddd;
-        min-height: 193px;
+        min-height: 187px;
         width: 100%;
         padding: 15px 30px;
         -webkit-box-sizing: border-box;
@@ -225,8 +225,9 @@ article {
     .date, .time {
         display:block;
         margin-bottom: 16px;
-        font-style: italic; color: @body-text-color; font-size: 12px;
-        a {font-weight: bold; font-style: italic; text-decoration: none; color: @sec-color; font-size: 10px;
+        font-style: italic; color: @body-text-color; font-size: 12px; font-family: @font-sec;
+
+        a { font-style: italic; color: @sec-color; font-size: 12px;
             &:hover {text-decoration: underline;}
         }
     }
@@ -243,7 +244,7 @@ article {
                 &:hover { text-decoration: underline; }
                 }
             }
-    .comments_num { font-weight: bold; font-style: italic; text-decoration: none; color: @sec-color; font-size: 10px; 
+    .comments_num { font-style: italic; text-decoration: none; color: @sec-color; font-size: 12px; 
                      &:hover {text-decoration: underline;}
                     }
     .more {
@@ -301,6 +302,7 @@ article {
 // Article show
 
 .article_show {
+	a { color: #fff; font-weight: bold; }
     ul { margin-left: 0px; list-style: none; }
     img { display: block; width: 100%; }
     article {
@@ -508,12 +510,12 @@ article {
 // Program grid
 
 .program_grid {
-        font-size: 12px;
+        font-size: 13px;
         a {
-          font-size: 12px;
+          font-size: 13px;
           }
         h4 {
-          font-size: 12px;
+          font-size: 13px;
           }
         ul {
             list-style: none;
@@ -558,9 +560,9 @@ article {
                               border-top: none;
                               }
                     .col_two {
-                              background: #ffa781;
+                              background: #ccebfb;
                               border: 1px solid @main-color;
-                              border-left: 3px solid @main-color;
+                              border-left: 3px solid #5EBCEC;
                               border-top: none;
                               }
                     .col_three {
@@ -1028,6 +1030,7 @@ article {
                 font-family: @font-sec; font-size: 20px; font-weight: bold; color: #fff;
                 background: @sec-color;
                 border: 0;
+                text-transform: uppercase;
                 &:hover {background: @body-text-color;}
             }
         }
@@ -1211,7 +1214,7 @@ aside {
 
 #main_header {
     width: 100%;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 20px auto;
     background: url("../img/top-background.png") 0 0 repeat-x;
 }
 
@@ -1344,6 +1347,7 @@ aside {
     ul {
         overflow: hidden;
         margin: 0;
+        margin-top: 20px;
         li {
             float: left;
             margin-right: 30px; padding-left: 5px;
@@ -1688,7 +1692,7 @@ aside {
 
 .grid-2 iframe { max-width: 100%; margin-right: 0px; }
 
-    .grid-3 article:nth-child(3n) { margin-right: 30px; }
+    .grid-3 article:nth-of-type(3n) { margin-right: 30px; }
     
     .bx-wrapper {
       margin-bottom: 30px !important;
@@ -1738,10 +1742,10 @@ aside {
     .grid-2 article { width: 100%; }
     .grid-2 article .more { margin-bottom: 20px;}
     .grid-3 article {width: 48%; margin-right:4%;
-        &:nth-child(2n) {margin-right: 0;}
-        &:nth-child(3n) {margin-right: 4%;}
-        &:nth-child(3n + 1) {clear: none;}
-        &:nth-child(6) {margin-right: 0;}
+        &:nth-of-type(2n) {margin-right: 0;}
+        &:nth-of-type(3n) {margin-right: 4%;}
+        &:nth-of-type(3n + 1) {clear: none;}
+        &:nth-of-type(6) {margin-right: 0;}
     }
     .grid-3-top article {width: 150px; margin-right: 10px;}
     .grid-3-top article h4 {height: 45px;}
@@ -1997,7 +2001,7 @@ body[dir=rtl] {
     .grid-3 article
     {
         width: 48%;
-        &:nth-child(6n) {margin-right: 2%;}
+        &:nth-of-type(6n) {margin-right: 2%;}
     }
     .textual-block article {float: none; width: 100%; margin-right: 0; margin-bottom: 20px;}
     
@@ -2007,7 +2011,7 @@ body[dir=rtl] {
         li {width: 100%; margin-bottom: 0;}
     }
     
-    .grid-3 article:nth-child(2n) {
+    .grid-3 article:nth-of-type(2n) {
      margin-right: 0;   
     }
     
