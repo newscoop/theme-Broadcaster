@@ -1,4 +1,4 @@
-### English language template strings for Broadcaster 1.0 ### 
+### English language template strings for Broadcaster 1.1 ### 
 
 # global strings
 editArticle = "Edit article"
