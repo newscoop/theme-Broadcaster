@@ -1,5 +1,5 @@
 @import "reset.css";
-@import url(http://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow:700&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow:700&subset=latin,latin-ext);
 .text-indent {
   text-indent: -9999px;
 }
@@ -201,7 +201,7 @@ audio {
   float: left;
   max-width: 290px;
   border: 1px solid #dddddd;
-  min-height: 193px;
+  min-height: 187px;
   width: 100%;
   padding: 15px 30px;
   -webkit-box-sizing: border-box;
@@ -303,14 +303,13 @@ article .time {
   font-style: italic;
   color: #444444;
   font-size: 12px;
+  font-family: 'PT Sans', sans-serif;
 }
 article .date a,
 article .time a {
-  font-weight: bold;
   font-style: italic;
-  text-decoration: none;
   color: #222222;
-  font-size: 10px;
+  font-size: 12px;
 }
 article .date a:hover,
 article .time a:hover {
@@ -337,11 +336,10 @@ article .dat_aut a:hover {
   text-decoration: underline;
 }
 article .comments_num {
-  font-weight: bold;
   font-style: italic;
   text-decoration: none;
   color: #222222;
-  font-size: 10px;
+  font-size: 12px;
 }
 article .comments_num:hover {
   text-decoration: underline;
@@ -431,6 +429,10 @@ article .info li a {
 }
 #scheduleTabs.ui-tabs .ui-tabs-hide {
   display: none;
+}
+.article_show a {
+  color: #fff;
+  font-weight: bold;
 }
 .article_show ul {
   margin-left: 0px;
@@ -699,13 +701,13 @@ article .info li a {
   color: #444444;
 }
 .program_grid {
-  font-size: 12px;
+  font-size: 13px;
 }
 .program_grid a {
-  font-size: 12px;
+  font-size: 13px;
 }
 .program_grid h4 {
-  font-size: 12px;
+  font-size: 13px;
 }
 .program_grid ul {
   list-style: none;
@@ -754,9 +756,9 @@ article .info li a {
   border-top: none;
 }
 .program_grid table .col_two {
-  background: #ffa781;
+  background: #ccebfb;
   border: 1px solid #ed901e;
-  border-left: 3px solid #ed901e;
+  border-left: 3px solid #5EBCEC;
   border-top: none;
 }
 .program_grid table .col_three {
@@ -1496,6 +1498,7 @@ article .info li a {
   color: #fff;
   background: #222222;
   border: 0;
+  text-transform: uppercase;
 }
 .comments fieldset ul input.button:hover {
   background: #444444;
@@ -1752,7 +1755,7 @@ aside .aside-box p a:hover {
 }
 #main_header {
   width: 100%;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 20px auto;
   background: url("../img/top-background.png") 0 0 repeat-x;
 }
 #main_header #top,
@@ -1891,6 +1894,7 @@ aside .aside-box p a:hover {
 #nav-bar ul {
   overflow: hidden;
   margin: 0;
+  margin-top: 20px;
 }
 #nav-bar ul li {
   float: left;
@@ -2402,7 +2406,7 @@ aside .aside-box p a:hover {
     max-width: 100%;
     margin-right: 0px;
   }
-  .grid-3 article:nth-child(3n) {
+  .grid-3 article:nth-of-type(3n) {
     margin-right: 30px;
   }
   .bx-wrapper {
@@ -2476,16 +2480,16 @@ aside .aside-box p a:hover {
     width: 48%;
     margin-right: 4%;
   }
-  .grid-3 article:nth-child(2n) {
+  .grid-3 article:nth-of-type(2n) {
     margin-right: 0;
   }
-  .grid-3 article:nth-child(3n) {
+  .grid-3 article:nth-of-type(3n) {
     margin-right: 4%;
   }
-  .grid-3 article:nth-child(3n + 1) {
+  .grid-3 article:nth-of-type(3n + 1) {
     clear: none;
   }
-  .grid-3 article:nth-child(6) {
+  .grid-3 article:nth-of-type(6) {
     margin-right: 0;
   }
   .grid-3-top article {
@@ -2869,8 +2873,8 @@ body[dir=rtl] .bx-wrapper section h2 {
   .grid-3 article {
     width: 48%;
   }
-  .grid-6 article:nth-child(6n),
-  .grid-3 article:nth-child(6n) {
+  .grid-6 article:nth-of-type(6n),
+  .grid-3 article:nth-of-type(6n) {
     margin-right: 2%;
   }
   .textual-block article {
@@ -2895,7 +2899,7 @@ body[dir=rtl] .bx-wrapper section h2 {
     width: 100%;
     margin-bottom: 0;
   }
-  .grid-3 article:nth-child(2n) {
+  .grid-3 article:nth-of-type(2n) {
     margin-right: 0;
   }
   .grid-6 article {
