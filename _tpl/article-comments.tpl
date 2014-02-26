@@ -9,7 +9,7 @@
     {{ /if }}                	
 
                     	<li>
-                        	<img src="{{ url static_file="pictures/comment-avatar.jpg" }}" alt="" />
+                        	<img src="{{ url static_file="assets/img/comment-avatar.jpg" }}" alt="" />
             {{ if $gimme->comment->user->identifier }}
                 <h5><a href="http://{{ $gimme->publication->site }}/user/profile/{{ $gimme->comment->user->uname|urlencode }}">{{ $gimme->comment->user->uname }}</a></h5>
             {{ else }}
