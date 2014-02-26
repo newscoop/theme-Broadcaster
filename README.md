@@ -45,9 +45,7 @@ The Broadcaster theme uses several *Article Types* to display content in differe
 5. Program_Grid (custom Article Type):
    * program_grid (Multi-line Text) - used for the program grid widget
 
-In the Newscoop administration interface, click **Configure** on the main navigation menu, then **Article Types**. If the Article Types shown above are not listed, you will have to create them, as shown in the manual chapter [Article Types](http://sourcefabric.booktype.pro/newscoop-42-for-journalists-and-editors/article-types/). Then the list of Article Types should look like this:
-
-![List of Article Types](documentation/Screenshot-Article_Types.png)
+In the Newscoop administration interface, click **Configure** on the main navigation menu, then **Article Types**. If the Article Types shown above are not listed, you will have to create them, as shown in the manual chapter [Article Types](http://sourcefabric.booktype.pro/newscoop-42-for-journalists-and-editors/article-types/).
 
 Within the custom Article Type of *show*, the fields should look like this:
 
@@ -56,7 +54,7 @@ Within the custom Article Type of *show*, the fields should look like this:
 Site and stream settings
 ========================
 
-The social media, Airtime widget and stream settings for your station can be found in the theme file _conf/settings.tpl which you can edit from within Newscoop's theme management page, if you wish.
+The social media, Airtime widget and stream settings for your station can be found in the theme file *_conf/settings.tpl* which you can edit from within Newscoop's theme management page, if you wish.
 
 ![Editing the settings template in Broadcaster](documentation/Screenshot-Broadcaster_Settings.png)
 
