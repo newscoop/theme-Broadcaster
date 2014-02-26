@@ -1,4 +1,5 @@
 {{ config_load file="settings.tpl" section="Site" }}
+{{ config_load file="{{ $gimme->language->english_name }}.tpl" }}
 
   <div id="footer">
       
@@ -58,9 +59,9 @@
         {{ /if }}
         </li>
         <li>
-          <p>
-            &copy; Powered by <a href="http://www.sourcefabric.org/en/newscoop/" target="_blank">Newscoop</a> and <a href="http://www.sourcefabric.org/en/airtime/" target="_blank">Airtime</a>
-          </p>
+        {{ if #poweredBy# !=null }}
+          <p>{{ #poweredBy# }}</p>
+        {{ /if }}
         </li>
       </ul>
     

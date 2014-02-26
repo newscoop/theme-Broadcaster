@@ -63,9 +63,8 @@ pleaseLoginVote = "Please login to vote."
 proArgumentsBy = "PRO arguments by:"
 contraArgumentsBy = "CONTRA arguments by:"
 
-
 # _tpl/footer.tpl
-poweredBy = "Powered by Newscoop"
+poweredBy = "Powered by <a href="http://www.sourcefabric.org/en/newscoop/" target="_blank">Newscoop</a> and <a href="http://www.sourcefabric.org/en/airtime/" target="_blank">Airtime</a>"
 
 # _tpl/front-dynamicmap.tpl
 latestLocations = "Latest locations"
