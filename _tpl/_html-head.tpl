@@ -1,3 +1,5 @@
+{{ config_load file="settings.tpl" section="Stream" }}
+
 <!DOCTYPE html>
 
 {{ $lang = $gimme->issue->language->code }}
@@ -27,48 +29,42 @@
   <!-- Airtime stream info -->
   <script>
     // $todo: check browser capability and swap streams
-    {{ local }}
-    {{ set_issue number = "1" }}
-    {{ set_section number = "10" }}
-      {{ list_articles length = "1" constraints = "type is Stream_Info" }}
 
-        // default to Sourcefabric Radio API if Airtime URL has not been set in the back-end
-        {{ if $gimme->article->API }}
-          var apiSrc = "{{ $gimme->article->API }}";
+        // default to Sourcefabric Radio API if Airtime URL has not been set in the conf file
+        {{ if #AirtimeAPI# !=null }}
+          var apiSrc = "{{ #AirtimeAPI# }}";
         {{ else }}
           var apiSrc = "http://sourcefabric.airtime.pro";
         {{ /if }}
 
-        // default to Sourcefabric Radio stream if Icecast URL has not been set in the back-end
-        {{ if $gimme->article->stream }}
-          var streamSrc = "{{ $gimme->article->stream }}";
+        // default to Sourcefabric Radio stream if Icecast URL has not been set in the conf file
+        {{ if #StreamingServer# !=null }}
+          var streamSrc = "{{ #StreamingServer# }}";
         {{ else }}
           var streamSrc = "http://sourcefabric.out.airtime.pro";
         {{ /if }}
 
         // Primary stream on Sourcefabric Radio is Ogg Vorbis
-        {{ if $gimme->article->stream_a }}
-          var stream_a = "{{ $gimme->article->stream_a }}";
+        {{ if #StreamA# !=null }}
+          var stream_a = "{{ #StreamA# }}";
         {{ else }}
           var stream_a = "sourcefabric_a"; 
         {{ /if }}
 
         // Secondary stream on Sourcefabric Radio is MP3
-        {{ if $gimme->article->stream_b }}
-          var stream_b = "{{ $gimme->article->stream_b }}";
+        {{ if #StreamB# !=null }}
+          var stream_b = "{{ #StreamB# }}";
         {{ else }}
           var stream_b = "sourcefabric_b";
         {{ /if }}
 
         // Port of the streaming server, usually 8000 or 80
-        {{ if $gimme->article->port }}
-          var port = "{{ $gimme->article->port }}";
+        {{ if #StreamPort# !=null }}
+          var port = "{{ #StreamPort# }}";
         {{ else }}
           var port = "8000";
         {{ /if }}
 
-      {{ /list_articles }}
-    {{ /local }}
   </script>
 
   {{ if $gimme->article->defined }}{{* Open Graph protocol metatags for Facebook sharing *}}
