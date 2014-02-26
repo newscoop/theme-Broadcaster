@@ -181,7 +181,7 @@ audio {
   float: left;
   max-width: 610px !important;
   width: 100%;
-  margin-right: 24px;
+  margin-right: 30px;
   direction: ltr;
 }
 .home_top .bx-wrapper h2 {
@@ -299,17 +299,16 @@ article img {
 article .date,
 article .time {
   display: block;
-  margin-bottom: 16px;
-  font-style: italic;
+  margin-bottom: 10px;
   color: #444444;
-  font-size: 12px;
+  font-size: 13px;
   font-family: 'PT Sans', sans-serif;
 }
 article .date a,
 article .time a {
-  font-style: italic;
-  color: #222222;
-  font-size: 12px;
+  font-style: normal;
+  color: #ed901e;
+  font-size: 13px;
 }
 article .date a:hover,
 article .time a:hover {
@@ -1354,10 +1353,12 @@ article .info li a {
 .entry article figure figcaption {
   font-style: italic;
   margin-bottom: 10px;
+  font-size: 12px;
+  font-family: 'PT Sans', sans-serif;
 }
 .entry article figure figcaption em {
-  font-size: 10px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: normal;
   color: #222222;
 }
 .entry article ul {
@@ -2709,6 +2710,7 @@ aside .aside-box p a:hover {
     display: block;
     position: absolute;
     top: -35px;
+    z-index: 9999;
   }
   #nav-bar ul.show {
     display: none;
@@ -2718,6 +2720,7 @@ aside .aside-box p a:hover {
     z-index: 100;
     width: 100%;
     background: #222222;
+    margin-top: 0px;
   }
   #nav-bar ul.show li {
     float: none;
