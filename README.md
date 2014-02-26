@@ -7,7 +7,7 @@ Broadcaster is a theme for the [Newscoop](http://www.sourcefabric.org/en/newscoo
 
 The distinctive feature of this theme is the integration with the [Airtime](http://www.sourcefabric.org/en/airtime) broadcast automation system. There are widgets for stream playback and display of the schedule fetched via the Airtime API from your broadcast station, as well as Article Types designed for a typical station with an article for each show in the schedule. The [Broadcaster theme demo](http://broadcaster-dev.lab.sourcefabric.org/) site uses sample data from [Sourcefabric Radio](http://radio.sourcefabric.org/).
 
-Like Newscoop, the 'Broadcaster' theme is &copy; Sourcefabric 2013 and released under the [GNU General Public License, version 3](https://www.gnu.org/licenses/gpl.html).
+Like Newscoop, the 'Broadcaster' theme is &copy; Sourcefabric 2014 and released under the [GNU General Public License, version 3](https://www.gnu.org/licenses/gpl.html).
 
 Important: If you go to the theme page and not to the release page, the 'Download this repository as a zip file' button on GitHub exports Newscoop theme files within a folder, whereas a working Newscoop theme should have its main template files in the zip file root. Please always take the file from the [Broadcaster theme release page](https://github.com/newscoop/theme-Broadcaster/releases) directly to get the correct file structure. Any Newscoop theme should have its main template files in the zip file root. 
 
@@ -45,25 +45,18 @@ The Broadcaster theme uses several *Article Types* to display content in differe
 5. Program_Grid (custom Article Type):
    * program_grid (Multi-line Text) - used for the program grid widget
 
-6. Site_Info (custom Article Type):
-   * Facebook (Single-line Text) - Facebook name of your station
-   * Twitter (Single-line Text) - Twitter name of your station
-   * Address (Multi-line Text with WYSIWYG) - street address of your station
-
-7. Stream_Info (custom Article Type):
-   * API (Single-line Text) - URL of your Airtime server (default: http://sourcefabric.airtime.pro)
-   * stream  (Single-line Text) - URL of your streaming server (default: http://sourcefabric.out.airtime.pro)
-   * stream_a (Single-line Text) - mount point of your Ogg Vorbis stream (default: sourcefabric_a)
-   * stream_b (Single-line Text) - mount point of your MP3 stream (default: sourcefabric_b)
-   * port (Single-line Text) - Port used by your stream (default is: 8000)
-
-In the Newscoop administration interface, click **Configure** on the main navigation menu, then **Article Types**. If the Article Types shown above are not listed, you will have to create them, as shown in the manual chapter [Article Types](http://sourcefabric.booktype.pro/newscoop-42-for-journalists-and-editors/article-types/). Then the list of Article Types should look like this:
-
-![List of Article Types](documentation/Screenshot-Article_Types.png)
+In the Newscoop administration interface, click **Configure** on the main navigation menu, then **Article Types**. If the Article Types shown above are not listed, you will have to create them, as shown in the manual chapter [Article Types](http://sourcefabric.booktype.pro/newscoop-42-for-journalists-and-editors/article-types/).
 
 Within the custom Article Type of *show*, the fields should look like this:
 
 ![List of Fields](documentation/Screenshot-Article_Type_Fields.png)
+
+Site and stream settings
+========================
+
+The social media, Airtime widget and stream settings for your station can be found in the theme file *_conf/settings.tpl* which you can edit from within Newscoop's theme management page, if you wish.
+
+![Editing the settings template in Broadcaster](documentation/Screenshot-Broadcaster_Settings.png)
 
 Static articles and news
 ========================
@@ -83,12 +76,10 @@ The Broadcaster theme uses the [section number](http://sourcefabric.booktype.pro
 
 The Section Template for the RSS placeholder must be set to rss.tpl for the RSS feed to be rendered correctly.
 
-Within the special section *Application pages* there are four articles, with the following Article Types:
+Within the special section *Application pages* there are two articles, with the following Article Types:
 
 1. player (Player)
 2. Program Grid (Program_Grid)
-3. Site Info (Site_Info)
-4. Stream Info (Stream_Info)
 
 By default, issue 10 contains two sections:
 

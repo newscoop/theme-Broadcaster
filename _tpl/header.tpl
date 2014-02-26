@@ -1,3 +1,5 @@
+{{ config_load file="settings.tpl" section="Site" }}
+
 <body dir="{{ if $gimme->issue->language->code == ar }}rtl{{ else }}ltr{{ /if }}">
     <header id="main_header">
         <div id="top" class="clearfix">
@@ -35,43 +37,25 @@
                 {{ /dynamic }}
                 <li class="social_links follow"><a href="#">{{ #followUs# }}</a>
                   <ul class="sub">
-                    {{ local }}
-                    {{ unset_language }}
-                    {{ set_issue number = "1"}}
-                    {{ set_section number = "10" }}
-                    {{ list_articles constraints = "type is Site_Info" }}
-                      {{ if $gimme->article->Twitter }}
-                        <li>
-                          <a href="https://twitter.com/{{ $gimme->article->Twitter }}" rel="external">{{ #followAtTwitter# }}</a>
-                        </li>
-                      {{ /if }}
-                      {{ if $gimme->article->Facebook }}
-                        <li>
-                          <a href="https://www.facebook.com/{{ $gimme->article->Facebook }}" rel="external">{{ #likeOnFacebook# }}</a>
-                        </li>
-                      {{ /if }}
-                    {{ /list_articles }}
-                    {{ unset_section }}
-                    {{ unset_issue }}
-                    {{ set_default_language }}
-                    {{ /local }}
+                    {{ if #TwitterName# !=null }}
+                      <li>
+                      <a href="https://twitter.com/{{ #TwitterName# }}" rel="external">{{ #followAtTwitter# }}</a>
+                      </li>
+                    {{ /if }}
+                    {{ if #FacebookName# !=null }}
+                      <li>
+                      <a href="https://www.facebook.com/{{ #FacebookName# }}" rel="external">{{ #likeOnFacebook# }}</a>
+                      </li>
+                    {{ /if }}
                     <li><a href="http://{{ $gimme->publication->site }}/en/static/rss/">{{ #signupRSS# }}</a></li>
                   </ul>
                 </li>
                 <li class="share"><a href="#">{{ #shareThis# }}</a>
                   <ul class="sub">
                     {{ $whereami = $view->serverUrl($smarty.server.REQUEST_URI)|escape }}
-                    {{ local }}
-                    {{ set_issue number = "1"}}
-                    {{ set_section number = "10" }}
-                    {{ list_articles constraints = "type is Site_Info" }}
-                      {{ if $gimme->article->Twitter }}
-                      <li><a href="http://twitter.com/share?url={{ $whereami }}&text={{ if $gimme->article->name }}{{ $gimme->article->name }}{{ else }}{{ $gimme->issue->name }}{{ /if }}&via={{ $gimme->article->Twitter }}">{{ #tweetOnTwitter# }}</a></li>
+                      {{ if #TwitterName# !=null }}
+                      <li><a href="http://twitter.com/share?url={{ $whereami }}&text={{ if $gimme->article->name }}{{ $gimme->article->name }}{{ else }}{{ $gimme->issue->name }}{{ /if }}&via={{ #TwitterName# }}">{{ #tweetOnTwitter# }}</a></li>
                       {{ /if}}
-                    {{ /list_articles }}
-                    {{ unset_section }}
-                    {{ unset_issue }}
-                    {{ /local }}
                     <li><a href="//www.facebook.com/sharer/sharer.php?u={{ $whereami }}">{{ #postToFacebook# }}</a></li>
                     <li><a href="https://plus.google.com/share?url={{ $whereami }}">{{ #shareGooglePlus# }}</a></li>
                   </ul>
