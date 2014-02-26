@@ -1,3 +1,5 @@
+{{ config_load file="settings.tpl" section="Site" }}
+
   <div id="footer">
       
     <div id="bottom">
@@ -37,44 +39,23 @@
         </li>
         <li>
           <ul class='social_links'>
-            {{ local }}
-            {{ set_issue number = "1"}}
-            {{ set_section number = "10" }}
-            {{ list_articles constraints = "type is Site_Info" }}
-              {{ if $gimme->article->Twitter }}
+              {{ if #TwitterName# !=null }}
                 <li>
-                  <a href="https://twitter.com/{{ $gimme->article->Twitter }}" rel="external">{{ #followAtTwitter# }}</a>
+                  <a href="https://twitter.com/{{ #TwitterName# }}" rel="external">{{ #followAtTwitter# }}</a>
                 </li>
               {{ /if }}
-              {{ if $gimme->article->Facebook }}
+              {{ if #FacebookName# !=null }}
                 <li>
-                  <a href="https://www.facebook.com/{{ $gimme->article->Facebook }}" rel="external">{{ #likeOnFacebook# }}</a>
+                  <a href="https://www.facebook.com/{{ #FacebookName# }}" rel="external">{{ #likeOnFacebook# }}</a>
                 </li>
               {{ /if }}
-            {{ /list_articles }}
-            {{ unset_section }}
-            {{ unset_issue }}
-            {{ /local }}
             <li><a href="http://{{ $gimme->publication->site }}/{{ $gimme->language->code }}/static/rss">{{ #signupRSS# }}</a></li>
           </ul>
         </li>
         <li>
-        {{ local }}
-        {{ set_issue number = "1"}}
-        {{ set_section number = "10" }}
-        {{ list_articles constraints = "type is Site_Info" }}
-        {{ if $gimme->article->Address }}
-         {{ $gimme->article->Address }}
-        {{ else }}
-        <p><b>Sourcefabric GmbH</b><br />
-        Prinzessinnenstr. 20, Aufgang A<br />
-        10969 Berlin<br />
-        +49 (0) 30 616 29 281</p>
+        {{ if #StreetAddress# !=null }}
+          {{ #StreetAddress# }}
         {{ /if }}
-        {{ /list_articles }}
-        {{ unset_section }}
-        {{ unset_issue }}
-        {{ /local }}
         </li>
         <li>
           <p>
