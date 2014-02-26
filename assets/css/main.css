@@ -187,11 +187,12 @@ audio {
 .home_top .bx-wrapper h2 {
   background: url('../img/slider_bck.png') repeat;
   position: absolute;
-  padding: 20px 20px 35px 20px;
+  padding: 15px 20px 34px 20px;
   right: 0px;
   left: 0px;
   bottom: 0px;
   margin-bottom: 0px;
+  font-size: 32px;
 }
 .home_top .bx-wrapper h2 a {
   color: #fff;
@@ -349,6 +350,7 @@ article .more {
   font-size: 10px;
   font-weight: bold;
   font-style: italic;
+  font-family: Georgia, serif;
 }
 article .more a {
   font-family: 'PT Sans', sans-serif;
@@ -759,6 +761,7 @@ article .info li a {
   border: 1px solid #ed901e;
   border-left: 3px solid #5EBCEC;
   border-top: none;
+  text-align: center;
 }
 .program_grid table .col_three {
   background: #ffa781;
@@ -2199,13 +2202,13 @@ aside .aside-box p a:hover {
 .page-title h2 {
   padding-bottom: 20px;
   margin-bottom: 30px;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: 1px solid #ccebfb;
 }
 .section-search {
   overflow: hidden;
   padding-bottom: 20px;
   margin-bottom: 30px;
-  border-bottom: #dddddd solid 1px;
+  border-bottom: 1px solid #ccebfb;
 }
 .section-search fieldset {
   float: left;
@@ -2362,9 +2365,6 @@ aside .aside-box p a:hover {
   }
   #top .top-menu {
     margin-right: 10px;
-  }
-  #main_header #header .radio_player {
-    margin: 0 20px;
   }
   #main_header #header .donate {
     float: left;
