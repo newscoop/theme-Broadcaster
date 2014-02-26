@@ -1,18 +1,16 @@
 ### Settings file for Broadcaster 1.1 theme ### 
 
-
 ### Site info strings, used in _tpl/header.tpl and _tpl/footer.tpl ###
 
 [Site]
-# Your station's name on Twitter
+# Your station name on Twitter
 TwitterName = "Sourcefabric"
 
-# Your station's name on Facebook
+# Your station name on Facebook
 FacebookName = "Sourcefabric"
 
-# Your station's contact address
-StreetAddress = "<p><b>Sourcefabric</b> GmbH<br /> Prinzessinnenstr. 20, Aufgang A<br /> 10969 Berlin<br /> +49 (0) 30 616 29 281</p>"
-
+# Your station contact address
+StreetAddress = "<p><b>Sourcefabric GmbH</b><br /> Prinzessinnenstr. 20, Aufgang A<br /> 10969 Berlin<br /> +49 (0) 30 616 29 281</p>"
 
 ### Stream info strings, used in _tpl/_html-head.tpl ###
 
@@ -31,4 +29,3 @@ StreamB = "sourcefabric_b"
 
 # Port used by your stream
 StreamPort ="8000"
-
