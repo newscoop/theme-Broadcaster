@@ -5,7 +5,7 @@
                     {{ if $gimme->author->user->defined }}<span class="more"><a href="{{ $view->url(['username' => $gimme->author->user->uname], 'user') }}">+  {{ #viewProfile# }}</a></span>{{ /if }}
                     <p><em>{{ $gimme->author->type }}</em></p>
                     <h3>{{ $gimme->author->name }}</h3>
-                    {{*<p><em><b>Rockstar Staff*</b></em></p>*}}
+                    {{*<p><em><b>Broadcaster Staff*</b></em></p>*}}
                     <p>{{ $gimme->author->biography->text|strip_tags:false|truncate:200 }}</p>
             </div><!-- /.author-info -->
 {{ /list_article_authors }}

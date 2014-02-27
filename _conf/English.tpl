@@ -1,4 +1,4 @@
-### English language template strings for Broadcaster 1.0 ### 
+### English language template strings for Broadcaster 1.1 ### 
 
 # global strings
 editArticle = "Edit article"
@@ -63,9 +63,8 @@ pleaseLoginVote = "Please login to vote."
 proArgumentsBy = "PRO arguments by:"
 contraArgumentsBy = "CONTRA arguments by:"
 
-
 # _tpl/footer.tpl
-poweredBy = "Powered by Newscoop"
+poweredBy = "Powered by <a href=\"http://www.sourcefabric.org/en/newscoop/\" target=\"_blank\">Newscoop</a> and <a href=\"http://www.sourcefabric.org/en/airtime/\" target=\"_blank\">Airtime</a>"
 
 # _tpl/front-dynamicmap.tpl
 latestLocations = "Latest locations"
@@ -78,14 +77,12 @@ goToArchives = "GO TO ARCHIVES"
 
 # _tpl/front-three-blocks.tpl
 aboutUs = "ABOUT <span>US</span>"
-missionStatement = "ROCKSTAR IS A SOLID, SLEEK AND COMFORTABLE NEWSCOOP THEME... AND IT ROCKS!"
 mostRead = "MOST <span>READ</span>"
 communityFeed = "COMMUNITY <span>FEED</span>"
 registered = "registered"
 newCommentOn = "New comment on:"
 
 # _tpl/header.tpl
-welcomeRockstar = "Welcome to the Rockstar Magazine"
 logout = "Logout"
 login = "Login"
 loginSignup = "Login/SignUp"
