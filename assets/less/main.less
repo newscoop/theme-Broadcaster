@@ -123,11 +123,12 @@ audio { width: 100%; }
         h2 {
           background: url('../img/slider_bck.png') repeat;
           position: absolute;
-          padding: 20px 20px 35px 20px;
+          padding: 15px 20px 34px 20px;
           right: 0px;
           left: 0px;
           bottom: 0px;
           margin-bottom: 0px;
+          font-size: 32px;
           a {
             color: #fff;
           }
@@ -135,6 +136,7 @@ audio { width: 100%; }
     }
     .about_home {
       h2 { margin-bottom: 5px; white-space: nowrap; }
+        .front_read_more { font-family: @font-sec; float: right; color: #444444; font-size: 12px; }
         p a {
                 font-style: italic;
                 font-size: 12px;
@@ -249,7 +251,7 @@ article {
                     }
     .more {
             display: block;
-            color: @body-text-color; font-size: 10px; font-weight: bold; font-style: italic;
+            color: @body-text-color; font-size: 10px; font-weight: bold; font-style: italic; font-family: Georgia, serif;
             a {
                 font-family: @font-sec; font-size: 13px; color: @body-text-color !important; text-decoration: none; font-style: normal;
                 &:hover {text-decoration: underline;}
@@ -564,6 +566,7 @@ article {
                               border: 1px solid @main-color;
                               border-left: 3px solid #5EBCEC;
                               border-top: none;
+                              text-align: center;
                               }
                     .col_three {
                               background: #ffa781;
@@ -1189,6 +1192,7 @@ aside {
                     float: left; position: relative;
                     width: 128px; height: 23px;
                     margin-top: 5px;
+                    margin-right: 10px;
                     border: #666 solid 1px;
                     input[type=text] {
                         width: 88px; height: 23px;
@@ -1558,14 +1562,14 @@ aside {
 // Content specific styles
 .page-title h2{
     padding-bottom: 20px; margin-bottom: 30px;
-    border-bottom: @border-color solid 1px;
+    border-bottom: 1px solid #ccebfb;
     }
 
 // Section Search
 .section-search {
     overflow: hidden;
     padding-bottom: 20px; margin-bottom: 30px;
-    border-bottom: @border-color solid 1px;
+    border-bottom: 1px solid #ccebfb;
     fieldset {
         float: left; position: relative;
         border: #666 solid 1px;
@@ -1671,7 +1675,6 @@ aside {
 @media (max-width: 950px) {
     #main_header #top, #main_header #header, #main_header #nav-bar { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
     #top .top-menu { margin-right: 10px; }
-    #main_header #header .radio_player { margin: 0 20px; }
     #main_header #header .donate { float: left }
     aside { float: none; clear: left;}
     #header section article:last-child { display: none;}
@@ -1996,6 +1999,11 @@ body[dir=rtl] {
                 width: 100%;
                 }
             }
+    #main_header #header h1 { margin: 0 auto; }
+    #main_header #header .radio_player {
+                                        margin: 0 auto;
+                                        float: none; 
+                                        }
 }
 
 @media (max-width: 340px) {
