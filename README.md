@@ -74,7 +74,7 @@ The Broadcaster theme uses the [section number](http://sourcefabric.booktype.pro
 * 10 	Application pages
 * 50 	RSS placeholder
 
-The Section Template for the RSS placeholder must be set to rss.tpl for the RSS feed to be rendered correctly.
+The first 200 characters of the first article in the Pages section (number 5) is displayed in the *About Us* box on the front page of the publication. The Section Template for the RSS placeholder must be set to rss.tpl for the RSS feed to be rendered correctly.
 
 Within the special section *Application pages* there are two articles, with the following Article Types:
 
