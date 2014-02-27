@@ -234,7 +234,7 @@
                   window.open($url, 'playerWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=no, resizable=no, width=230, height=120');
                 });
                 $('.mobile button').bind('click', function(){
-                  var $url = stream_a;
+                  var $url = streamSrc + ':' + port + '/' + stream_b + '?callback=?';
                   window.open($url, 'playerWindow');
                 });
                 $('.player #playNow').bind('click', function(){
