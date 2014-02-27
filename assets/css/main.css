@@ -216,6 +216,12 @@ audio {
   margin-bottom: 5px;
   white-space: nowrap;
 }
+.home_top .about_home .front_read_more {
+  font-family: 'PT Sans', sans-serif;
+  float: right;
+  color: #444444;
+  font-size: 12px;
+}
 .home_top .about_home p a {
   font-style: italic;
   font-size: 12px;
@@ -1723,6 +1729,7 @@ aside .aside-box p a:hover {
   width: 128px;
   height: 23px;
   margin-top: 5px;
+  margin-right: 10px;
   border: #666 solid 1px;
 }
 #top .top-menu .search-box input[type=text] {
@@ -2869,6 +2876,13 @@ body[dir=rtl] .bx-wrapper section h2 {
   }
   .artist_profile article img {
     width: 100%;
+  }
+  #main_header #header h1 {
+    margin: 0 auto;
+  }
+  #main_header #header .radio_player {
+    margin: 0 auto;
+    float: none;
   }
 }
 @media (max-width: 340px) {
