@@ -2,7 +2,7 @@
 
 {{ include file="_tpl/_html-head.tpl" }}
 
-  {{ if $gimme->article->type_name == Player }}
+  {{ if $gimme->article->type_name == player || $gimme->article->type_name == Player }}
 
   {{ include file="_tpl/player_header.tpl" }}
 
