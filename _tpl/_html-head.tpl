@@ -33,36 +33,26 @@
         // default to Sourcefabric Radio API if Airtime URL has not been set in the conf file
         {{ if #AirtimeAPI# !=null }}
           var apiSrc = "{{ #AirtimeAPI# }}";
-        {{ else }}
-          var apiSrc = "http://sourcefabric.airtime.pro";
         {{ /if }}
 
         // default to Sourcefabric Radio stream if Icecast URL has not been set in the conf file
         {{ if #StreamingServer# !=null }}
           var streamSrc = "{{ #StreamingServer# }}";
-        {{ else }}
-          var streamSrc = "http://sourcefabric.out.airtime.pro";
         {{ /if }}
 
         // Primary stream on Sourcefabric Radio is Ogg Vorbis
         {{ if #StreamA# !=null }}
           var stream_a = "{{ #StreamA# }}";
-        {{ else }}
-          var stream_a = "sourcefabric_a"; 
         {{ /if }}
 
         // Secondary stream on Sourcefabric Radio is MP3
         {{ if #StreamB# !=null }}
           var stream_b = "{{ #StreamB# }}";
-        {{ else }}
-          var stream_b = "sourcefabric_b";
         {{ /if }}
 
         // Port of the streaming server, usually 8000 or 80
         {{ if #StreamPort# !=null }}
           var port = "{{ #StreamPort# }}";
-        {{ else }}
-          var port = "8000";
         {{ /if }}
 
   </script>
