@@ -189,6 +189,8 @@
            //refresh the UI to update the elapsed/remaining time
            setInterval(updateWidget, 1000);
 
+           var playState = false;
+
            function updateWidget(){
                if (sd === null){
                    return;
@@ -219,8 +221,14 @@
                }
 
                obj.empty();
-               obj.append("<h2>Listen <span>Live</span></h2>" +
-                          "<button id='playNow' aria-controls='audio' title='Begin audio streaming'>Play Now</button>" // +
+               var button;
+               if (playState == true){
+                  button = "<button id='playNow' aria-controls='audio' class='playing' title='Begin audio streaming'>Play Now</button>" // +
+                } else {
+                  button = "<button id='playNow' aria-controls='audio' title='Begin audio streaming'>Play Now</button>" // +
+                }
+               
+               obj.append("<h2>Listen <span>Live</span></h2>" + button
                           // "<p id='status-current-show'>"+showStatus+" &gt;&gt;&nbsp;"+currentShowName+"</p>" +
                           // "<span class='current' id='time-elapsed' class='time-elapsed'>"+timeElapsed+"</span>" +
                           /*"<span class='current' id='time-remaining' class='time-remaining'>"+timeRemaining+"</span>"*/);
@@ -231,27 +239,22 @@
                           /*"</ul>"*/);
                 // click to open player in new window
                 $('.desktop button').bind('click', function(){
+                  playState = true;
                   window.open($url, 'playerWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=no, resizable=no, width=230, height=120');
                 });
                 $('.mobile button').bind('click', function(){
+                  playState = true;
                   var $url = streamSrc + ':' + port + '/' + stream_b + '?callback=?';
                   window.open($url, 'playerWindow');
                 });
                 $('.player #playNow').bind('click', function(){
+                  playState = true;
                   var audio = new Audio();
                       audio.src = Modernizr.audio.ogg ? streamSrc + ':' + port + '/' + stream_a + '?callback=?':
                                   Modernizr.audio.mp3 ? streamSrc + ':' + port + '/' + stream_b + '?callback=?':
                                   audio.play();
                   if (audio.src != null || undefined || '') {
                     audio.play();
-                    function updatePlayState(){
-                      if (audio.canplay != false || undefined){
-                        $('#playNow').addClass('playing');
-                      }
-                    };
-                    setInterval(function(){
-                      updatePlayState();
-                    }, 100);
                   }
                 });
            }
