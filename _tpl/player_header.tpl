@@ -1,4 +1,10 @@
-<body dir="{{ if $gimme->issue->language->code == ar }}rtl{{ else }}ltr{{ /if }}">
+<script>
+$(document).ready(function(){
+  playState = true;
+  audio.play();
+});
+</script>
+<body dir="{{ if $gimme->issue->language->code == ar }}rtl{{ else }}ltr{{ /if }}" class="player">
     <header id="main_header">
         
         <div id="header" class="clearfix">
