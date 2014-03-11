@@ -16,7 +16,7 @@ StreetAddress = "<p><b>Sourcefabric GmbH</b><br /> Prinzessinnenstr. 20, Aufgang
 
 [Stream]
 # URL of your Airtime server
-AirtimeAPI = "http://sourcefabric.airtime.pro"
+AirtimeAPI = "//sourcefabric.airtime.pro"
 
 # URL of your streaming server
 StreamingServer = "http://sourcefabric.out.airtime.pro"
