@@ -19,7 +19,7 @@ StreetAddress = "<p><b>Sourcefabric GmbH</b><br /> Prinzessinnenstr. 20, Aufgang
 AirtimeAPI = "//sourcefabric.airtime.pro"
 
 # URL of your streaming server
-StreamingServer = "http://sourcefabric.out.airtime.pro"
+StreamingServer = "//sourcefabric.out.airtime.pro"
 
 # Mount point of your Ogg Vorbis stream
 StreamA = "sourcefabric_a"
