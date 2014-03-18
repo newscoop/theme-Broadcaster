@@ -15,6 +15,9 @@ StreetAddress = "<p><b>Sourcefabric GmbH</b><br /> Prinzessinnenstr. 20, Aufgang
 ### Stream info strings, used in _tpl/_html-head.tpl ###
 
 [Stream]
+# Name of your station
+StationName = "Sourcefabric Radio"
+
 # URL of your Airtime server
 AirtimeAPI = "//sourcefabric.airtime.pro"
 
