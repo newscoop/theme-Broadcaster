@@ -127,7 +127,6 @@
           <ul class="show">
             <li><a href="/">Home</a></li>
             {{ list_sections constraints="number not 30 number not 40 number not 80 number not 90 number not 100" }}
-
               {{ local }}
               {{ set_issue number="1" }}
               {{ list_articles constraints="type is Program_Grid"}}
@@ -137,8 +136,6 @@
               {{ list_sections constraints="number is 100" }}
                 <li><a href="{{ url options='section' }}">Shows</a></li>
               {{ /list_sections }}
-  
-            </li>
             <li><a href="{{ url options='section' }}">{{ $gimme->section->name }}</a></li>
           {{ /list_sections }}
           </ul>
