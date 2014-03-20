@@ -65,9 +65,9 @@
               <a href="#" class="search-trigger"></a>
               <div class="hiden">
                  {{ camp_edit object="search" attribute="keywords" html_code="placeholder=\"input search\"" }}
+              </div>
               {{ /search_form }}
               {{ /local }}
-              </div>
           </div>
         </div><!-- / Top -->
         
