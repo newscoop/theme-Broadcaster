@@ -2,9 +2,9 @@
 
 {{ include file="_tpl/_html-head.tpl" }}
 
-	<div id="wrapper">
-
 {{ include file="_tpl/header.tpl" }}
+
+  <div id="wrapper">
 
 		<div id="content">
         
