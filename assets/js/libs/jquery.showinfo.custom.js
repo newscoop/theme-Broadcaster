@@ -170,13 +170,6 @@
  };
 })(jQuery);
 
-var audio = new Audio();
-if (Modernizr.audio.ogg == true ) {
-  audio.src = streamSrc + ':' + port + '/' + stream_a + '?callback=?';
-} else {
-  audio.src = streamSrc + ':' + port + '/' + stream_b + '?callback=?';
-}
-
 (function($){
     $.fn.airtimeLiveTrackInfo = function(options) {
 
@@ -228,19 +221,22 @@ if (Modernizr.audio.ogg == true ) {
                }
 
                obj.empty();
-
-               // there's a split second between the two time tests
-               var prevPos = audio.currentTime;
-               var currPos = audio.currentTime;
-
-               if (currPos > prevPos){
-                 var button = "<button id='playNow' aria-controls='audio' class='playing' title='Pause audio streaming'>Play Now</button>" // +
+               var button;
+               if (playState == true){
+                  button = "<button id='playNow' aria-controls='audio' class='playing' title='Begin audio streaming'>Play Now</button>" // +
                 } else {
-                 var button = "<button id='playNow' aria-controls='audio' title='Begin audio streaming'>Play Now</button>" // +
+                  button = "<button id='playNow' aria-controls='audio' title='Begin audio streaming'>Play Now</button>" // +
                 }
                
-               obj.append("<h2>Listen <span>Live</span></h2>" + button);
-               obj.append("<p class='current track-metadata'>"+options.text.current+": "+sd.currentTrack.getTitle()+"</p>");
+               obj.append("<h2>Listen <span>Live</span></h2>" + button
+                          // "<p id='status-current-show'>"+showStatus+" &gt;&gt;&nbsp;"+currentShowName+"</p>" +
+                          // "<span class='current' id='time-elapsed' class='time-elapsed'>"+timeElapsed+"</span>" +
+                          /*"<span class='current' id='time-remaining' class='time-remaining'>"+timeRemaining+"</span>"*/);
+               obj.append(/*"<ul class='widget now-playing-bar'>" +*/
+                          "<p class='current track-metadata'>"+options.text.current+": "+sd.currentTrack.getTitle()+"</p>"// +
+                          // "<li class='current track-metadata'>"+options.text.current+": "+sd.currentTrack.getTitle()+"</li>" +
+                          // "<li class='next track-metadata'>"+options.text.next+": "+sd.nextTrack.getTitle()+"</span></li>" +
+                          /*"</ul>"*/);
                 // click to open player in new window
                 $('.desktop button').bind('click', function(){
                   playState = true;
@@ -252,11 +248,12 @@ if (Modernizr.audio.ogg == true ) {
                   window.open($url, 'playerWindow');
                 });
                 $('.player #playNow').bind('click', function(){
-                  if (playState == true ) {
-                    playState = false;
-                    audio.pause();
-                  } else {
-                    playState = true;
+                  playState = true;
+                  var audio = new Audio();
+                      audio.src = Modernizr.audio.ogg ? streamSrc + ':' + port + '/' + stream_a + '?callback=?':
+                                  Modernizr.audio.mp3 ? streamSrc + ':' + port + '/' + stream_b + '?callback=?':
+                                  audio.play();
+                  if (audio.src != null || undefined || '') {
                     audio.play();
                   }
                 });

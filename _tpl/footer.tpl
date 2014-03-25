@@ -64,8 +64,5 @@
         {{ /if }}
         </li>
       </ul>
-    
     </div>
-
-  </div>
-</body>
+    </div>

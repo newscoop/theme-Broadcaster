@@ -15,11 +15,14 @@ StreetAddress = "<p><b>Sourcefabric GmbH</b><br /> Prinzessinnenstr. 20, Aufgang
 ### Stream info strings, used in _tpl/_html-head.tpl ###
 
 [Stream]
+# Name of your station
+StationName = "Sourcefabric Radio"
+
 # URL of your Airtime server
-AirtimeAPI = "http://sourcefabric.airtime.pro"
+AirtimeAPI = "//sourcefabric.airtime.pro"
 
 # URL of your streaming server
-StreamingServer = "http://sourcefabric.out.airtime.pro"
+StreamingServer = "//sourcefabric.out.airtime.pro"
 
 # Mount point of your Ogg Vorbis stream
 StreamA = "sourcefabric_a"

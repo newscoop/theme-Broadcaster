@@ -8,7 +8,7 @@
   <script src="{{ url static_file='assets/js/article-rating.js' }}"></script>
   {{ /if }}
 
-  <script src="{{ url static_file='assets/js/libs/jquery.showinfo.js' }}"></script>
+  <script src="{{ url static_file='assets/js/libs/jquery.showinfo.custom.js' }}"></script>
   <script src="{{ uri static_file='assets/js/init.js' }}"></script>
   <script src="{{ url static_file='assets/js/libs/jquery.bxslider.min.js' }}"></script>
   <script src="{{ url static_file='assets/js/plugins.js' }}"></script>
