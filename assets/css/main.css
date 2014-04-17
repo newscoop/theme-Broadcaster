@@ -1,5 +1,5 @@
 @import "reset.css";
-@import url(//fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow:700&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow:700&subset=latin,latin-ext);
 .text-indent {
   text-indent: -9999px;
 }
@@ -1369,6 +1369,46 @@ article .info li a {
   font-size: 12px;
   font-weight: normal;
   color: #222222;
+}
+.entry article table {
+  box-shadow: 0 1px 0 0 #FFFFFF;
+  max-width: 100%;
+  width: 100%;
+}
+.entry article table tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 2px;
+  -moz-border-radius-topleft: 2px;
+  border-top-left-radius: 2px;
+}
+.entry article table tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 2px;
+  -moz-border-radius-topright: 2px;
+  border-top-right-radius: 2px;
+}
+.entry article table tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 2px;
+  -moz-border-radius-bottomright: 2px;
+  border-bottom-right-radius: 2px;
+}
+.entry article table tr:last-child td:first-child {
+  -webkit-border-bottom-left-radius: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  border-bottom-left-radius: 2px;
+}
+.entry article table tr td {
+  padding: 7px;
+  border-left: 1px solid #DDDDDD;
+  border-top: 1px solid #DDDDDD;
+}
+.entry article table tr td:last-child {
+  border-right: 1px solid #DDDDDD;
+}
+.entry article table tr:last-child td {
+  border-bottom: 1px solid #DDDDDD;
+}
+.entry article table tbody > tr:nth-child(2n+1) > td,
+.entry article table .art-item .clearfix table tbody > tr:nth-child(2n+1) > th {
+  background-color: #F2F2F2;
 }
 .entry article ul {
   margin: 0;
