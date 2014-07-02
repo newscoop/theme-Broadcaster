@@ -140,7 +140,8 @@ forgotPassword = "Forgot your password?"
 email = "E-mail"
 password = "Password"
 register = "Register"
-login = "Login"
+# the following string is already defined for _tpl/header.tpl
+# login = "Login"
 
 # auth_password-restore.tpl
 resetPassword = "RESET <span>PASSWORD</span>"
