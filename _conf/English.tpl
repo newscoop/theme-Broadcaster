@@ -151,7 +151,7 @@ email = "E-mail"
 password = "Password"
 register = "Register"
 # the following string is already defined for _tpl/header.tpl
-# login = "Login"
+# login
 
 # auth_password-restore.tpl
 resetPassword = "Reset <span>Password</span>"
