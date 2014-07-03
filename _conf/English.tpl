@@ -5,7 +5,6 @@ editArticle = "Edit article"
 premium = "premium*"
 comments = "Comment(s)"
 by = "by"
-and = "and"
 readMore = "READ MORE"
 addComment = "ADD A COMMENT"
 previous = "previous"
@@ -71,21 +70,18 @@ latestLocations = "Latest locations"
 hotSpots = "HOT <span>SPOTS</span>"
 
 # _tpl/front-playlist-articles.tpl
-moreNewStories = "MORE <span>NEW STORIES</span>"
-findMoreStories = "Find more powerful stories in our archives!"
-goToArchives = "GO TO ARCHIVES"
+onAirNow = "On Air Now"
+aboutUs = "About <span>Us</span>"
+latestNews = "Latest <span>News</span>"
 
-# _tpl/front-three-blocks.tpl
-aboutUs = "ABOUT <span>US</span>"
+# _tpl/section-two-blocks.tpl
 mostRead = "MOST <span>READ</span>"
 communityFeed = "COMMUNITY <span>FEED</span>"
-registered = "registered"
 newCommentOn = "New comment on:"
 
 # _tpl/header.tpl
 logout = "Logout"
 login = "Login"
-loginSignup = "Login/SignUp"
 followUs = "Follow Us"
 followAtTwitter = "Follow us on Twitter"
 likeOnFacebook = "Like us on Facebook"
@@ -94,12 +90,6 @@ shareThis = "Share This"
 tweetOnTwitter = "Tweet this"
 postToFacebook = "Post to Facebook"
 shareGooglePlus = "Share on Google+"
-language = "Language"
-home = "Home"
-viewAllPosts = "View all posts filed under"
-communityIndex = "Community index"
-community = "Community"
-artists = "Artists"
 
 # _tpl/relative_date.tpl
 year = "year"
@@ -132,7 +122,6 @@ articlesBy = "Articles by"
 issuesArchive = "ISSUES <span>ARCHIVE</span>"
 
 # auth_index.tpl
-login = "LOGIN <span> </span>"
 loginFailed = "Login failed"
 eitherEmailPassword = "Either your email or password is wrong."
 tryAgain = "Try again please!"
@@ -171,10 +160,6 @@ mailPleaseConfirm = "Please confirm your e-mail address by clicking on the link 
 mailOtherwise = "Otherwise, if it wasn't you who submitted this email address for contact, please ignore this email."
 mailThanks = "Thanks!"
 
-# page.tpl
-aboutUs = "About <span>Us</span>"
-contactUs = "Contact <span>Us</span>"
-
 # register_after.tpl
 confirmSent = "Confirmation <span>has been sent</span>"
 followEmailSteps = "Follow the steps you will find in your email."
@@ -187,7 +172,7 @@ pleaseFillData = "Please <span>fill your data</span>"
 registerTitle = "Register <span> </span>"
 
 # user_index.tpl
-usersIndex = "USERS <span>INDEX</span>"
+userPageTitle = "DJs and <span>Editors</span>"
 inputSearch = "input search"
 active = "Active"
 all = "All"
@@ -195,6 +180,8 @@ editors = "Editors"
 memberFrom = "member from:"
 postsNo = "Number of comments:"
 viewFullProfile = "View full profile"
+
+# user_profile.tpl
 userProfile = "User <span>Profile</span>"
 aboutProfile = "About:"
 dateOfBirth = "Date of birth:"
