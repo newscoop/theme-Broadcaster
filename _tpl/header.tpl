@@ -95,9 +95,9 @@
             {{ set_default_publication }}
             {{ /local }}
           {{ /if }}
-            <h2>Listen Live</h2>
-            <button id="playNow" aria-controls="audio" title="Begin audio streaming">Play Now</button>
-            <p>Current:</p>
+            <h2>{{ #listenLive# }}</h2>
+            <button id="playNow" aria-controls="audio" title="Begin audio streaming">{{ #playNow# }}</button>
+            <p>{{ #current# }}</p>
           </div>
 
           {{*
@@ -121,7 +121,7 @@
         </div><!-- / Header -->
         
         <div id="nav-bar" class="clearfix">
-          <a href="#" class="cat-trigger">Content</a>
+          <a href="#" class="cat-trigger">{{ #content# }}</a>
           {{ local }}
           {{ set_issue number="10" }}
           <ul class="show">

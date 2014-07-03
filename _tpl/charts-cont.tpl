@@ -1,5 +1,5 @@
 <div class="title">
-  <h2>Section: <span>Charts Top 30</span></h2>
+  <h2>{{ #chartsTitle# }}</span></h2>
 </div>
 
 <section class="grid-3">
