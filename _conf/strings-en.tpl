@@ -1,4 +1,4 @@
-### English language template strings for Broadcaster 1.1 ### 
+### en language template strings for Broadcaster 1.1 ### 
 
 # global strings
 editArticle = "Edit Article"
@@ -26,10 +26,10 @@ fileOfType = "File of type:"
 alsoIn = "Also in"
 relatedStories = "Related <span>Stories</span>"
 
-#_tpl/article-author-info.tpl
+# _tpl/article-author-info.tpl
 viewProfile = "View Profile"
 
-#_tpl/article-comments.tpl
+# _tpl/article-comments.tpl
 somethingToSay = "Have something to say?"
 writeComment = "Write a Comment"
 anonymous = "(Anonymous)"
@@ -43,10 +43,10 @@ commentPlaceholder = "Put your comment text here"
 nicknamePlaceholder = "Your nickname"
 emailPlaceholder = "Your e-mail"
 
-#_tpl/article-locked.tpl
+# _tpl/article-locked.tpl
 thisArticleIsLocked = "This article is locked and is accessible only to <mark>registered</mark> and <mark>logged in</mark> users, sorry!"
 
-#_tpl/article-rating.tpl
+# _tpl/article-rating.tpl
 articleRating = "<span>Article</span> rating:"
 voteData = "vote data"
 voteS = "vote(s)."
@@ -150,8 +150,7 @@ forgotPassword = "Forgot your password?"
 email = "E-mail"
 password = "Password"
 register = "Register"
-# the following string is already defined for _tpl/header.tpl
-# login
+# the following string is already defined for _tpl/header.tpl: login
 
 # auth_password-restore.tpl
 resetPassword = "Reset <span>Password</span>"
@@ -213,6 +212,7 @@ organisation = "Organisation:"
 website = "Website:"
 
 [poll]
+
 # _tpl/front-poll.tpl
 pollTitle = "Voting <span>Poll</span>"
 thankYouPoll = "Thank you for participating in this poll!"
