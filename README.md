@@ -93,4 +93,4 @@ These are only the default behaviours, as like all Newscoop themes, Broadcaster 
 Further reading
 ===============
 
-The reference text for developing Newscoop themes is the [Newscoop Cookbook](http://manuals.sourcefabric.org/). If you would like to contribute your tips and tricks to this book, please [contact Sourcefabric](http://www.sourcefabric.org/en/about/contactus/).
+The reference text for developing Newscoop themes is the [Newscoop Cookbook](http://sourcefabric.booktype.pro/newscoop-42-cookbook/ready-to-cook/). If you would like to contribute your tips and tricks to this book, please [contact Sourcefabric](https://www.sourcefabric.org/en/home/contact/).
