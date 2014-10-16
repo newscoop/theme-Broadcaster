@@ -1,4 +1,4 @@
-### az language template strings for Broadcaster 1.1 ### 
+### az language template strings for Broadcaster 1.2 ### 
 
 editArticle = "mətni dəyiş"
 premium = "premium*"
@@ -74,7 +74,7 @@ login = "Daxil ol"
 followUs = "Bizi izlə"
 followAtTwitter = "Bizi Twitter-də izlə"
 likeOnFacebook = "Bizi Facebook-da bəyən"
-signupRSS = " RSS-a qoşul"
+signupRSS = "RSS-a qoşul"
 shareThis = "Paylaş"
 tweetOnTwitter = "Tweeter-ə yaz"
 postToFacebook = "Facebook-da paylaş"

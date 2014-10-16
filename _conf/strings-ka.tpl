@@ -1,4 +1,4 @@
-### ka language template strings for Broadcaster 1.1 ### 
+### ka language template strings for Broadcaster 1.2 ### 
 
 editArticle = "სტატიის რედაქტირება"
 premium = "პრემიუმი*"

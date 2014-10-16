@@ -1,4 +1,4 @@
-### en language template strings for Broadcaster 1.1 ### 
+### en language template strings for Broadcaster 1.2 ### 
 
 # global strings
 editArticle = "Edit Article"
@@ -12,6 +12,11 @@ next = "next"
 page = "Page"
 photo = "photo:"
 welcome = "Welcome"
+
+language = "language:"
+MakeYourOwnRadio = "Make Your Own Radio"
+CallForParticipation = "Call For Participation"
+Join = "Join Us!"
 
 # _tpl/article-aside.tpl
 articleGallery = "Article <span>Gallery</span>"

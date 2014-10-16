@@ -1,4 +1,4 @@
-### ru language template strings for Broadcaster 1.1 ### 
+### ru language template strings for Broadcaster 1.2 ### 
 
 editArticle = "Изменить текст"
 premium = "премиум*"

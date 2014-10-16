@@ -1,4 +1,4 @@
-### hy_AM language template strings for Broadcaster 1.1 ### 
+### hy_AM language template strings for Broadcaster 1.2 ### 
 
 # global strings
 editArticle = "Խմբագրել հոդվածը"
