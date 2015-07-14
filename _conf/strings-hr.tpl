@@ -1,5 +1,5 @@
 
-### hr language template strings for Broadcaster 1.1 ###
+### hr language template strings for Broadcaster 1.2 ###
 
 # global strings
 editArticle = "Uredi članak"
@@ -13,6 +13,10 @@ next = "sljedeći "
 page = "Stranica"
 photo = "slika:"
 welcome = "Dobrodošli"
+language = ""
+MakeYourOwnRadio = ""
+CallForParticipation = ""
+Join = ""
 
 # _tpl/article-aside.tpl
 articleGallery = "Članak Galerija"
@@ -26,9 +30,11 @@ downloadFile = ""
 fileOfType = "Datoteka tipa:"
 alsoIn = "Također u"
 relatedStories = ""
-#_tpl/article-author-info.tpl
+
+# _tpl/article-author-info.tpl
 viewProfile = "Pogledaj profil"
-#_tpl/article-comments.tpl
+
+# _tpl/article-comments.tpl
 somethingToSay = "Imaš nešto za reći?"
 writeComment = "Napiši komentar"
 anonymous = ""
@@ -41,9 +47,11 @@ haveToRegister = "Morate biti registrirani da bi komentirali na članke i slali 
 commentPlaceholder = "Stavite tekst svog komentara ovdje"
 nicknamePlaceholder = "Tvoj nadimak"
 emailPlaceholder = "Vaša e-pošta"
-#_tpl/article-locked.tpl
+
+# _tpl/article-locked.tpl
 thisArticleIsLocked = ""
-#_tpl/article-rating.tpl
+
+# _tpl/article-rating.tpl
 articleRating = ""
 voteData = ""
 voteS = "glas(ovi)."
@@ -148,9 +156,7 @@ email = "E-pošta"
 password = "Lozinka"
 register = "Registracija"
 
-# the following string is already defined for _tpl/header.tpl
-
-# login
+# the following string is already defined for _tpl/header.tpl: login
 
 # auth_password-restore.tpl
 resetPassword = ""

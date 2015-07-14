@@ -1,6 +1,7 @@
-# Translated by Zsolt Magyar <picizse@gmail.com> 2014
+Petrovics Sándor <egeramasrol@gmail.com>, 2014
+Zsolt Magyar <picizse@gmail.com>, 2014 = ""
 
-### hu language template strings for Broadcaster 1.1 ###
+### hu language template strings for Broadcaster 1.2 ###
 
 # global strings
 editArticle = "Cikk szerkesztése"
@@ -14,6 +15,10 @@ next = "következő"
 page = "Oldal"
 photo = "fénykép:"
 welcome = "Üdv,"
+language = "nyelv:"
+MakeYourOwnRadio = "Hozd létre saját rádiódat"
+CallForParticipation = "Részvételre való felhívás"
+Join = "Csatlakozz hozzánk!"
 
 # _tpl/article-aside.tpl
 articleGallery = "Cikk<span>galéria</span>"
@@ -27,9 +32,11 @@ downloadFile = "Fájl <span>letöltése</span>"
 fileOfType = "Fájltípus:"
 alsoIn = "Szintén"
 relatedStories = "Kapcsolódó <span>cikkek</span>"
-#_tpl/article-author-info.tpl
+
+# _tpl/article-author-info.tpl
 viewProfile = "Profil megtekintése"
-#_tpl/article-comments.tpl
+
+# _tpl/article-comments.tpl
 somethingToSay = "Van valami mondanivalód?"
 writeComment = "Szólj hozzá"
 anonymous = "(Névtelen)"
@@ -42,9 +49,11 @@ haveToRegister = "Regisztrálj, hogy hozzászólhass a cikkekhez és üzeneteket
 commentPlaceholder = "Ide írd a hozzászólásod szövegét"
 nicknamePlaceholder = "Beceneved"
 emailPlaceholder = "E-mail címed"
-#_tpl/article-locked.tpl
+
+# _tpl/article-locked.tpl
 thisArticleIsLocked = "Ez a cikk zárolt, amely csak <mark>regisztrált</mark> és <mark>bejelentkezett</mark> felhasználók számára elérhető, bocsi!"
-#_tpl/article-rating.tpl
+
+# _tpl/article-rating.tpl
 articleRating = "<span>Cikk</span> értékelése:"
 voteData = "szavazási adatok"
 voteS = "szavazat(ok)"
@@ -142,16 +151,14 @@ issuesArchive = "Szám <span>archívum</span>"
 
 # auth_index.tpl
 loginFailed = "Sikertelen bejelentkezés"
-eitherEmailPassword = "Vagy az e-mail vagy a jelszó nem megfelelő."
-tryAgain = "Próbáld meg újra!"
+eitherEmailPassword = "Vagy az e-mail cím vagy a jelszó nem megfelelő."
+tryAgain = "Próbálkozz újra!"
 forgotPassword = "Elfelejtetted a jelszavadat?"
 email = "E-mail"
 password = "Jelszó"
 register = "Regisztráció"
 
-# the following string is already defined for _tpl/header.tpl
-
-# login
+# the following string is already defined for _tpl/header.tpl: login
 
 # auth_password-restore.tpl
 resetPassword = "Új jelszó <span>megadása</span>"

@@ -1,5 +1,5 @@
 
-### da language template strings for Broadcaster 1.1 ###
+### da language template strings for Broadcaster 1.2 ###
 
 # global strings
 editArticle = "Rediger artikel"
@@ -13,6 +13,10 @@ next = "næste"
 page = "Side"
 photo = "foto:"
 welcome = "Velkommen"
+language = "sprog:"
+MakeYourOwnRadio = "Lav din egen radio"
+CallForParticipation = "Deltag"
+Join = "Støt op!"
 
 # _tpl/article-aside.tpl
 articleGallery = "Artikel <span>Galleri</span>"
@@ -26,9 +30,11 @@ downloadFile = "Download <span>Fil</span>"
 fileOfType = "Fil af type:"
 alsoIn = "Også i"
 relatedStories = "Relaterede <span>Historier</span>"
-#_tpl/article-author-info.tpl
+
+# _tpl/article-author-info.tpl
 viewProfile = "Se profil"
-#_tpl/article-comments.tpl
+
+# _tpl/article-comments.tpl
 somethingToSay = "Har du noget på hjerte?"
 writeComment = "Skriv en kommentar"
 anonymous = "(Anonym)"
@@ -41,9 +47,11 @@ haveToRegister = "Du skal være registreret for at kommentere på artikler eller
 commentPlaceholder = "Skriv din kommentar her"
 nicknamePlaceholder = "Dit kaldenavn"
 emailPlaceholder = "Din e-mail"
-#_tpl/article-locked.tpl
+
+# _tpl/article-locked.tpl
 thisArticleIsLocked = "Artiklen er låst og kun tilgængelig for brugere der er <mark>registreret</mark> og <mark>logget ind</mark>."
-#_tpl/article-rating.tpl
+
+# _tpl/article-rating.tpl
 articleRating = "<span>Artikel</span> vurdering:"
 voteData = "stemme data"
 voteS = "stemme(r)."
@@ -148,9 +156,7 @@ email = "E-mail"
 password = "Adgangskode"
 register = "Registrer"
 
-# the following string is already defined for _tpl/header.tpl
-
-# login
+# the following string is already defined for _tpl/header.tpl: login
 
 # auth_password-restore.tpl
 resetPassword = "Nulstil <span>Adgangskode</span>"

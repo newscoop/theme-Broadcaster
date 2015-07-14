@@ -1,5 +1,5 @@
 
-### ar language template strings for Broadcaster 1.1 ###
+### ar language template strings for Broadcaster 1.2 ###
 
 # global strings
 editArticle = "حرر المقال"
@@ -13,6 +13,10 @@ next = "التالي"
 page = "صفحة."
 photo = "صورة:"
 welcome = "مرحبا"
+language = ""
+MakeYourOwnRadio = ""
+CallForParticipation = ""
+Join = ""
 
 # _tpl/article-aside.tpl
 articleGallery = "<span>رواق</span> مقالات"
@@ -26,9 +30,11 @@ downloadFile = "تحميل <span>ملف</span>"
 fileOfType = "نوع الملف:"
 alsoIn = "أيضاً في"
 relatedStories = "<span>قصص</span> مرتبطة"
-#_tpl/article-author-info.tpl
+
+# _tpl/article-author-info.tpl
 viewProfile = "إعرض الملف الشخصي"
-#_tpl/article-comments.tpl
+
+# _tpl/article-comments.tpl
 somethingToSay = "لديك شيئ تريد أن تقوله؟"
 writeComment = "أكتب تعليق"
 anonymous = "(مجهول)"
@@ -41,9 +47,11 @@ haveToRegister = "من اللازم أن تسجّل حتى تكتب تعليقا
 commentPlaceholder = "أكتب التعليق لك هنا"
 nicknamePlaceholder = ""
 emailPlaceholder = "البريد الإلكتروني لك"
-#_tpl/article-locked.tpl
+
+# _tpl/article-locked.tpl
 thisArticleIsLocked = ""
-#_tpl/article-rating.tpl
+
+# _tpl/article-rating.tpl
 articleRating = "تقييم <span>المقال</span>"
 voteData = "بيانات التصويت"
 voteS = "صوت."
@@ -148,9 +156,7 @@ email = "البريد الإلكتروني "
 password = "كلمة السر"
 register = "تسجيل"
 
-# the following string is already defined for _tpl/header.tpl
-
-# login
+# the following string is already defined for _tpl/header.tpl: login
 
 # auth_password-restore.tpl
 resetPassword = "إعادة تعيين <span>كلمة السر</span>"

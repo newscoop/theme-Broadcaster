@@ -1,4 +1,4 @@
-### it language template strings for Broadcaster 1.1 ###
+### it language template strings for Broadcaster 1.2 ###
 
 # global strings
 editArticle = "Modifica articolo"
@@ -12,6 +12,10 @@ next = "prossimo"
 page = "Pagina"
 photo = "foto:"
 welcome = ""
+language = ""
+MakeYourOwnRadio = ""
+CallForParticipation = ""
+Join = ""
 
 # _tpl/article-aside.tpl
 articleGallery = "<span>Galleria</span> Articoli"
@@ -25,9 +29,11 @@ downloadFile = ""
 fileOfType = "File di tipo:"
 alsoIn = "Anche in"
 relatedStories = ""
-#_tpl/article-author-info.tpl
+
+# _tpl/article-author-info.tpl
 viewProfile = "Vedi Profilo"
-#_tpl/article-comments.tpl
+
+# _tpl/article-comments.tpl
 somethingToSay = "Hai qualcosa da dire?"
 writeComment = "Scrivi un Commento"
 anonymous = ""
@@ -40,9 +46,11 @@ haveToRegister = "Devi essere registrato per commentare gli articoli o inviare m
 commentPlaceholder = "Inserisci il tuo commento qui"
 nicknamePlaceholder = ""
 emailPlaceholder = "Tua e-mail"
-#_tpl/article-locked.tpl
+
+# _tpl/article-locked.tpl
 thisArticleIsLocked = ""
-#_tpl/article-rating.tpl
+
+# _tpl/article-rating.tpl
 articleRating = ""
 voteData = ""
 voteS = "voto(i)."
@@ -147,9 +155,7 @@ email = "E-mail"
 password = "Password"
 register = ""
 
-# the following string is already defined for _tpl/header.tpl
-
-# login
+# the following string is already defined for _tpl/header.tpl: login
 
 # auth_password-restore.tpl
 resetPassword = ""

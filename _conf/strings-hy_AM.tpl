@@ -1,4 +1,4 @@
-### hy_AM language template strings for Broadcaster 1.2 ### 
+### hy_AM language template strings for Broadcaster 1.2 ###
 
 # global strings
 editArticle = "Խմբագրել հոդվածը"
@@ -12,17 +12,17 @@ next = "Հաջորդ"
 page = "Էջ"
 photo = "Նկար:"
 welcome = "Բարի գալուստ"
-
-# _tpl/article-aside.tpl
 language = "Լեզու:"
 MakeYourOwnRadio = "Ստեղծիր սեփական ռադիոն"
 CallForParticipation = "Հայտերի ընդունում"
 Join = "Միացեք մեզ"
+
+# _tpl/article-aside.tpl
 articleGallery = "Հոդվածների սրահ"
 storyPlaces = "Պատմության վայրը"
 listenAudio = "Լսել"
 downloadAudioFile = "Ներբեռնել աուդիո նիշքը"
-watchVideo = ՞Դիտել հոլովակը"
+watchVideo = "՞Դիտել հոլովակը"
 download = "Ներբեռնել"
 file = "Նիշք"
 downloadFile = "Ներբեռնել նիշքը"
@@ -116,7 +116,7 @@ monthS = "Ամիսներ"
 day = "Օր"
 dayS = "Օրեր"
 hours = "Ժամեր"
-minutes = "Րոպեներ
+minutes = "Րոպեներ"
 seconds = "Վայրկյաններ"
 ago = "Անց"
 
@@ -154,6 +154,8 @@ forgotPassword = "Մոռացե՞լ եք գաղտնաբառը"
 email = "Էլ․ հասցե"
 password = "Գաղտնաբառ"
 register = "Գրանցվել"
+
+# the following string is already defined for _tpl/header.tpl: login
 
 # auth_password-restore.tpl
 resetPassword = "Փոխել գաղտնաբառը"
@@ -222,4 +224,3 @@ thankYouPoll = "Շնորհակալություն քվեարկությանը մա
 alreadyVoted = "Դուք արդեն քվեարկել եք"
 numberOfVotes = "Ձայների ընդհանուր թիվը:"
 pollButton = "Քվեարկեք հիմա"
-
