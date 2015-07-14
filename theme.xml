@@ -23,5 +23,45 @@
     <rendition name="square" width="130" height="130" specs="crop" />
     <rendition name="square large" width="290" height="290" specs="crop" />
     <rendition name="show" width="930" height="260" specs="crop" />
-  </renditions> 
+  </renditions>
+
+  <articlesLists>
+    <list name="Carousel-ar">
+      <template file="article.tpl" />
+    </list>
+    <list name="Carousel-az">
+      <template file="article.tpl" />
+    </list>
+    <list name="Carousel-da">
+      <template file="article.tpl" />
+    </list>
+    <list name="Carousel-en">
+      <template file="article.tpl" />
+    </list>
+    <list name="Carousel-hr">
+      <template file="article.tpl" />
+    </list>
+    <list name="Carousel-hu">
+      <template file="article.tpl" />
+    </list>
+    <list name="Carousel-hy_AM">
+      <template file="article.tpl" />
+    </list>
+    <list name="Carousel-it">
+      <template file="article.tpl" />
+    </list>
+    <list name="Carousel-ka">
+      <template file="article.tpl" />
+    </list>
+    <list name="Carousel-pt">
+      <template file="article.tpl" />
+    </list>
+    <list name="Carousel-ru">
+      <template file="article.tpl" />
+    </list>
+    <list name="Carousel-zh">
+      <template file="article.tpl" />
+    </list>
+  </articlesLists>
+
 </theme>
