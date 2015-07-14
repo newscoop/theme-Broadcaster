@@ -14,7 +14,7 @@ Important: If you go to the theme page and not to the release page, the 'Downloa
 How to install
 ==============
 
-First, install Newscoop as shown in the [Newscoop user manual](http://sourcefabric.booktype.pro/newscoop-44-for-journalists-and-editors/system-requirements/). You do not need to install a sample site, as the dummy content is not required for production use.
+First, ensure that the Public Airtime API is enabled in Airtime System Preferences. Then install Newscoop as shown in the [Newscoop user manual](http://sourcefabric.booktype.pro/newscoop-44-for-journalists-and-editors/system-requirements/).
 
 The Newscoop administration interface includes a theme management and template editing tool, which you can find by clicking Configure on the main navigation menu, then Themes. A new theme can be added to Newscoop by clicking the **Import theme** button on the **Theme management** page. This action opens a dialog box which enables you to select a theme file from your computer. Click the **Browse button** to locate the theme's zip file, then click the **Import** button. Newscoop should report that the import was successful. The new theme should now be displayed in the table on the Theme management page.
 
