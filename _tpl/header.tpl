@@ -74,7 +74,7 @@
         <div id="header" class="clearfix">
 
           <h1>
-            <a href="/">{{ $gimme->publication->name }}</a>
+            <a href="/{{ $gimme->language->code }}/content/">{{ $gimme->publication->name }}</a>
           </h1>
 
           {{ if $gimme->browser->ua_type == "mobile" }}
@@ -125,7 +125,7 @@
           {{ local }}
           {{ set_issue number="10" }}
           <ul class="show">
-            <li><a href="/">Home</a></li>
+            <li><a href="/{{ $gimme->language->code }}/content/">{{ #content# }}</a></li>
             {{ list_sections constraints="number not 30 number not 40 number not 80 number not 90 number not 100" }}
               {{ local }}
               {{ set_issue number="1" }}
@@ -134,7 +134,7 @@
               {{ /list_articles }}
               {{ /local }}
               {{ list_sections constraints="number is 100" }}
-                <li><a href="{{ url options='section' }}">Shows</a></li>
+                <li><a href="{{ url options='section' }}">{{ $gimme->section->name }}</a></li>
               {{ /list_sections }}
             <li><a href="{{ url options='section' }}">{{ $gimme->section->name }}</a></li>
           {{ /list_sections }}
