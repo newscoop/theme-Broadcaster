@@ -35,7 +35,7 @@
   {{ /if }}
   {{ if $gimme->current_list->index == 3 }}
   <div class="title">
-    <h2>More <span>Videos</span></h2>
+    <h2>{{ #moreVideos# }}</h2>
   </div>
 
   <section class="grid-3">

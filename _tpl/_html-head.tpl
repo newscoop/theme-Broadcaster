@@ -88,7 +88,7 @@
     <script src="{{ url static_file="assets/js/libs/modernizr-2.0.6.js" }}"></script>
 
     <!-- Video.js -->
-    <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
-    <script src="http://vjs.zencdn.net/c/video.js"></script>
+    <link href="//vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/c/video.js"></script>
 
 </head>
