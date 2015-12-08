@@ -1,5 +1,5 @@
 {{ config_load file="settings.tpl" section="Site" }}
-{{ config_load file="{{ $gimme->language->english_name }}.tpl" }}
+{{ config_load file="strings-{{ $gimme->language->code }}.tpl" }}
 
   <div id="footer">
       

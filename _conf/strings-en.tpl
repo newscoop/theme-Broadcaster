@@ -1,18 +1,22 @@
-### French language template strings for Broadcaster 1.1 ### 
+### en language template strings for Broadcaster 1.2 ### 
 
 # global strings
-editArticle = "Edit article"
+editArticle = "Edit Article"
 premium = "premium*"
 comments = "Comment(s)"
 by = "by"
-and = "and"
-readMore = "READ MORE"
-addComment = "ADD A COMMENT"
+readMore = "Read More"
+addComment = "Add a Comment"
 previous = "previous"
 next = "next"
 page = "Page"
 photo = "photo:"
-welcome = "WELCOME"
+welcome = "Welcome"
+
+language = "language:"
+MakeYourOwnRadio = "Make Your Own Radio"
+CallForParticipation = "Call For Participation"
+Join = "Join Us!"
 
 # _tpl/article-aside.tpl
 articleGallery = "Article <span>Gallery</span>"
@@ -27,12 +31,12 @@ fileOfType = "File of type:"
 alsoIn = "Also in"
 relatedStories = "Related <span>Stories</span>"
 
-#_tpl/article-author-info.tpl
-viewProfile = "VIEW PROFILE"
+# _tpl/article-author-info.tpl
+viewProfile = "View Profile"
 
-#_tpl/article-comments.tpl
-somethingToSay = "Have something so say?"
-writeComment = "WRITE A COMMENT"
+# _tpl/article-comments.tpl
+somethingToSay = "Have something to say?"
+writeComment = "Write a Comment"
 anonymous = "(Anonymous)"
 writeAComment = "<span>Write</span> a Comment"
 commentNotAccepted = "Your comment has not been accepted."
@@ -44,10 +48,10 @@ commentPlaceholder = "Put your comment text here"
 nicknamePlaceholder = "Your nickname"
 emailPlaceholder = "Your e-mail"
 
-#_tpl/article-locked.tpl
+# _tpl/article-locked.tpl
 thisArticleIsLocked = "This article is locked and is accessible only to <mark>registered</mark> and <mark>logged in</mark> users, sorry!"
 
-#_tpl/article-rating.tpl
+# _tpl/article-rating.tpl
 articleRating = "<span>Article</span> rating:"
 voteData = "vote data"
 voteS = "vote(s)."
@@ -60,32 +64,28 @@ debateClosed = "The debate is closed. The end result is decided."
 pleaseLoginVote = "Please login to vote."
 
 # _tpl/article-debate.tpl
-proArgumentsBy = "PRO arguments by:"
-contraArgumentsBy = "CONTRA arguments by:"
+proArgumentsBy = "Pro arguments by:"
+contraArgumentsBy = "Contra arguments by:"
+
+# _tpl/charts-cont.tpl
+chartsTitle = "Section: <span>Charts Top 30</span>"
 
 # _tpl/footer.tpl
 poweredBy = "Powered by <a href=\"http://www.sourcefabric.org/en/newscoop/\" target=\"_blank\">Newscoop</a> and <a href=\"http://www.sourcefabric.org/en/airtime/\" target=\"_blank\">Airtime</a><br /> Design by <a href=\"http://www.sourcefabric.org/\" target=\"_blank\">Sourcefabric</a>."
 
 # _tpl/front-dynamicmap.tpl
 latestLocations = "Latest locations"
-hotSpots = "HOT <span>SPOTS</span>"
+hotSpots = "Hot <span>Spots</span>"
 
 # _tpl/front-playlist-articles.tpl
-moreNewStories = "MORE <span>NEW STORIES</span>"
-findMoreStories = "Find more powerful stories in our archives!"
-goToArchives = "GO TO ARCHIVES"
-
-# _tpl/front-three-blocks.tpl
-aboutUs = "ABOUT <span>US</span>"
-mostRead = "MOST <span>READ</span>"
-communityFeed = "COMMUNITY <span>FEED</span>"
-registered = "registered"
-newCommentOn = "New comment on:"
+onAirNow = "On Air Now"
+aboutUs = "About <span>Us</span>"
+latestNews = "Latest <span>News</span>"
 
 # _tpl/header.tpl
+content = "Content"
 logout = "Logout"
 login = "Login"
-loginSignup = "Login/SignUp"
 followUs = "Follow Us"
 followAtTwitter = "Follow us on Twitter"
 likeOnFacebook = "Like us on Facebook"
@@ -94,18 +94,26 @@ shareThis = "Share This"
 tweetOnTwitter = "Tweet this"
 postToFacebook = "Post to Facebook"
 shareGooglePlus = "Share on Google+"
-language = "Language"
-home = "Home"
-viewAllPosts = "View all posts filed under"
-communityIndex = "Community index"
-community = "Community"
-artists = "Artists"
+
+# _tpl/player_header.tpl
+listenLive = "Listen Live"
+playNow = "Play Now"
+current = "Current:"
+
+# _tpl/podcast-cont.tpl
+hostedBy = "Hosted by:"
+podcast = "Podcast"
+show = "Show"
+archive = "<span>Archive</span>"
+
+# _tpl/program-grid-cont.tpl
+programGrid = "Program <span>Grid</span>"
 
 # _tpl/relative_date.tpl
 year = "year"
 yearS = "years"
 month = "month"
-monthS = "monthS"
+monthS = "months"
 day = "day"
 dayS = "days"
 hours = "h"
@@ -119,20 +127,27 @@ noSearchResults = "No search results were found for your query."
 
 # _tpl/section-cont.tpl
 section = "Section:"
-moreStories = "MORE <span>STORIES</span>"
+moreStories = "More <span>Stories</span>"
+
+# _tpl/section-two-blocks.tpl
+mostRead = "Most <span>Read</span>"
+communityFeed = "Community <span>Feed</span>"
+newCommentOn = "New comment on:"
 
 # _tpl/topic-cont.tpl
 topic = "Topic:"
-moreThisTopic = "MORE <span>ON THIS TOPIC</span>"
+moreThisTopic = "More <span>On This Topic</span>"
 
 # _tpl/user-content.tpl
 articlesBy = "Articles by"
 
+# _tpl/videos-cont.tpl
+moreVideos = "More <span>Videos</span>"
+
 # archive.tpl
-issuesArchive = "ISSUES <span>ARCHIVE</span>"
+issuesArchive = "Issue <span>Archive</span>"
 
 # auth_index.tpl
-login = "LOGIN <span> </span>"
 loginFailed = "Login failed"
 eitherEmailPassword = "Either your email or password is wrong."
 tryAgain = "Try again please!"
@@ -140,22 +155,22 @@ forgotPassword = "Forgot your password?"
 email = "E-mail"
 password = "Password"
 register = "Register"
-login = "Login"
+# the following string is already defined for _tpl/header.tpl: login
 
 # auth_password-restore.tpl
-resetPassword = "RESET <span>PASSWORD</span>"
+resetPassword = "Reset <span>Password</span>"
 emailNotCorrect = "E-mail is not correct"
 maybeRegisteredOn = "Maybe you registered on"
 withAnotherEmail = "with another e-mail account?"
 requestNewPassword = "Request new password"
 
 # auth_password-restore-after.tpl
-userAccount = "USER <span>ACCOUNT</span>"
+userAccount = "User <span>Account</span>"
 weSentEmail = "We've sent you an e-mail."
 pleaseCheckInbox = "Please check your inbox and click on the link in the email to reset your password."
 
 # auth_password-restore-finish.tpl
-setNewPassword = "SET NEW <span>PASSWORD</span>"
+setNewPassword = "Set New <span>Password</span>"
 passCouldntChange = "Your password could not be changed. Please follow the instructions and try again."
 newPassLabel = "New Password"
 pleaseEnterNewPass = "Please enter your new password (minimum 6 characters)"
@@ -165,14 +180,10 @@ savePassButton = "Save password"
 
 # email_confirm.tpl
 mailHello = "Hello,"
-mailAutomaticalMessage = "This is automatically generated message from the"
+mailAutomaticalMessage = "This is an automatically generated message from the"
 mailPleaseConfirm = "Please confirm your e-mail address by clicking on the link below:"
 mailOtherwise = "Otherwise, if it wasn't you who submitted this email address for contact, please ignore this email."
 mailThanks = "Thanks!"
-
-# page.tpl
-aboutUs = "About <span>Us</span>"
-contactUs = "Contact <span>Us</span>"
 
 # register_after.tpl
 confirmSent = "Confirmation <span>has been sent</span>"
@@ -186,7 +197,7 @@ pleaseFillData = "Please <span>fill your data</span>"
 registerTitle = "Register <span> </span>"
 
 # user_index.tpl
-usersIndex = "USERS <span>INDEX</span>"
+userPageTitle = "DJs and <span>Editors</span>"
 inputSearch = "input search"
 active = "Active"
 all = "All"
@@ -194,6 +205,8 @@ editors = "Editors"
 memberFrom = "member from:"
 postsNo = "Number of comments:"
 viewFullProfile = "View full profile"
+
+# user_profile.tpl
 userProfile = "User <span>Profile</span>"
 aboutProfile = "About:"
 dateOfBirth = "Date of birth:"
@@ -204,8 +217,9 @@ organisation = "Organisation:"
 website = "Website:"
 
 [poll]
+
 # _tpl/front-poll.tpl
-pollTitle = "VOTING <span>POLL</span>"
+pollTitle = "Voting <span>Poll</span>"
 thankYouPoll = "Thank you for participating in this poll!"
 alreadyVoted = "You have already voted"
 numberOfVotes = "Total number of votes:"
