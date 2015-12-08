@@ -77,28 +77,11 @@
             <a href="/{{ $gimme->language->code }}/content/">{{ $gimme->publication->name }}</a>
           </h1>
 
-          {{ if $gimme->browser->ua_type == "mobile" }}
-          <div id="headerLiveTrackHolder" class="radio_player mobile">
-          {{ else }}
-          <div id="headerLiveTrackHolder" class="radio_player desktop">
-            {{ local }}
-            {{ set_publication number = "2" }}
-            {{ set_issue number = "1" }}
-            {{ set_section number = "10" }}
-            {{ list_articles length = "1" constraints = "type is Player" }}
-            <script>
-            var $url = '{{ $gimme->article->url }}';
-            </script>
-            {{ /list_articles }}
-            {{ unset_section }}
-            {{ set_default_issue }}
-            {{ set_default_publication }}
-            {{ /local }}
-          {{ /if }}
-            <h2>{{ #listenLive# }}</h2>
-            <button id="playNow" aria-controls="audio" title="Begin audio streaming">{{ #playNow# }}</button>
-            <p>{{ #current# }}</p>
-          </div>
+          <iframe frameborder="0"
+                  width="280"
+                  height="216"
+                  src="https://sourcefabric.airtime.pro:443/embed/player?stream=auto&title=Now Playing">
+          </iframe>
 
           {{*
           <nav id="language_select">
