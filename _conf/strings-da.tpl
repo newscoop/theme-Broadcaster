@@ -71,7 +71,7 @@ contraArgumentsBy = "Kontra argumenter af:"
 chartsTitle = "Sektion: <span>Top 30 Hitliste</span>"
 
 # _tpl/footer.tpl
-poweredBy = "Bruger <a href=\"http://www.sourcefabric.org/en/newscoop/\" target=\"_blank\">Newscoop</a> og <a href=\"http://www.sourcefabric.org/en/airtime/\" target=\"_blank\">Airtime</a>"
+poweredBy = "Bruger <a href=\"http://www.sourcefabric.org/en/newscoop/\" target=\"_blank\">Newscoop</a> og <a href=\"http://www.sourcefabric.org/en/airtime/\" target=\"_blank\">Airtime</a><br /> Ontwerp door <a href=\"http://www.sourcefabric.org/\" target=\"_blank\">Sourcefabric</a>."
 
 # _tpl/front-dynamicmap.tpl
 latestLocations = "Seneste steder"

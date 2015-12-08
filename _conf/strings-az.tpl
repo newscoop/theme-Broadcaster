@@ -71,7 +71,7 @@ contraArgumentsBy = "Razılaşmayanlar:"
 chartsTitle = "Bölmə: 30 ən"
 
 # _tpl/footer.tpl
-poweredBy = "Sayt<a href=\"http://www.sourcefabric.org/en/newscoop/\" target=\"_blank\">Newscoop</a> və <a href=\"http://www.sourcefabric.org/en/airtime/\" target=\"_blank\">Airtime</a> əsasında yaradılıb."
+poweredBy = "Sayt<a href=\"http://www.sourcefabric.org/en/newscoop/\" target=\"_blank\">Newscoop</a> və <a href=\"http://www.sourcefabric.org/en/airtime/\" target=\"_blank\">Airtime</a> əsasında yaradılıb.<br /> Dizayn <a href=\"http://www.sourcefabric.org/\" target=\"_blank\">Sourcefabric</a>."
 
 # _tpl/front-dynamicmap.tpl
 latestLocations = "son məkanlar"

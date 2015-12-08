@@ -71,7 +71,7 @@ contraArgumentsBy = "المعارضون:"
 chartsTitle = ""
 
 # _tpl/footer.tpl
-poweredBy = "مدعوم من <a href=\"http://www.sourcefabric.org/en/newscoop/\" target=\"_blank\">نيوسكوب</a> و <a href=\"http://www.sourcefabric.org/en/airtime/\" target=\"_blank\">أيرتايم</a>"
+poweredBy = "مدعوم من <a href=\"http://www.sourcefabric.org/en/newscoop/\" target=\"_blank\">نيوسكوب</a> و <a href=\"http://www.sourcefabric.org/en/airtime/\" target=\"_blank\">أيرتايم</a><br /> التصميم <a href=\"http://www.sourcefabric.org/\" target=\"_blank\">Sourcefabric</a>."
 
 # _tpl/front-dynamicmap.tpl
 latestLocations = "آخر المواقع"

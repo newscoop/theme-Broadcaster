@@ -71,7 +71,7 @@ contraArgumentsBy = "Contra arguments by:"
 chartsTitle = "Section: <span>Charts Top 30</span>"
 
 # _tpl/footer.tpl
-poweredBy = "Powered by <a href=\"http://www.sourcefabric.org/en/newscoop/\" target=\"_blank\">Newscoop</a> and <a href=\"http://www.sourcefabric.org/en/airtime/\" target=\"_blank\">Airtime</a>"
+poweredBy = "Powered by <a href=\"http://www.sourcefabric.org/en/newscoop/\" target=\"_blank\">Newscoop</a> and <a href=\"http://www.sourcefabric.org/en/airtime/\" target=\"_blank\">Airtime</a><br /> Design by <a href=\"http://www.sourcefabric.org/\" target=\"_blank\">Sourcefabric</a>."
 
 # _tpl/front-dynamicmap.tpl
 latestLocations = "Latest locations"

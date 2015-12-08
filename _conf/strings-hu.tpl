@@ -73,7 +73,7 @@ contraArgumentsBy = "Kontra érvek:"
 chartsTitle = "Rovat: <span>Charts Top 30</span>"
 
 # _tpl/footer.tpl
-poweredBy = "Technológia: <a href=\"http://www.sourcefabric.org/en/newscoop/\" target=\"_blank\">Newscoop</a> és <a href=\"http://www.sourcefabric.org/en/airtime/\" target=\"_blank\">Airtime</a>"
+poweredBy = "Technológia: <a href=\"http://www.sourcefabric.org/en/newscoop/\" target=\"_blank\">Newscoop</a> és <a href=\"http://www.sourcefabric.org/en/airtime/\" target=\"_blank\">Airtime</a> Tervezte <a href=\"http://www.sourcefabric.org/\" target=\"_blank\">Sourcefabric</a>."
 
 # _tpl/front-dynamicmap.tpl
 latestLocations = "Legutóbbi helyek"
