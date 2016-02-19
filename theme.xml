@@ -16,7 +16,7 @@
   </output>
   
   <renditions>
-    <rendition name="front" width="610" height="372" specs="crop" />
+    <rendition name="front" width="625" height="372" specs="crop" />
     <rendition name="big" width="600" height="400" specs="crop" />
     <rendition name="onethird" width="290" height="190" specs="crop" />
     <rendition name="onehalf" width="450" height="295" specs="crop" />
