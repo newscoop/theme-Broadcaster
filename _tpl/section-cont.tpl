@@ -7,7 +7,7 @@
 
 {{ $listLength = 9 }}
 
-{{ list_articles length=$listLength }}
+{{ list_articles length=$listLength order="bypublishdate desc" }}
 
   {{ if $gimme->current_list->at_beginning }}
     {{ if $gimme->current_list->index lte 2 }}
@@ -67,7 +67,7 @@
 {{* section is not news, do something else with the content *}}
 
 <section class="grid-3">
-    {{ list_articles length="12" }}
+    {{ list_articles length="12" order="bypublishdate desc" }}
     <article>
       {{ if $gimme->section->number == 30 }}
         <a href="{{ url option='article' }}">{{ include file="_tpl/img/img_square_lrg.tpl" }}</a>
